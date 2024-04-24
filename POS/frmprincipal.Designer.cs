@@ -1,6 +1,6 @@
 ﻿namespace POS
 {
-    partial class Form1
+    partial class frmprincipal
     {
         /// <summary>
         ///  Required designer variable.
