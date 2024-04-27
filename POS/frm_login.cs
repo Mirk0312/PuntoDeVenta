@@ -6,5 +6,28 @@ namespace POS
         {
             InitializeComponent();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+          
+          
+        }
+
+        private void btn_ingresar_Click(object sender, EventArgs e)
+        {
+            //Validar usuario y contraseña
+            if (CapaNegocio.Utilerias.validaVacio(txt_usuario.Text))
+            {
+                //Llamar a la BD
+
+                this.Close();
+               
+
+            }
+            else 
+            {
+                MessageBox.Show("Es obligatorio ingresar el usuario");
+            }
+        }
     }
 }
