@@ -1,6 +1,6 @@
 ﻿namespace POS
 {
-    partial class frmprincipal
+    partial class frm_principal
     {
         /// <summary>
         ///  Required designer variable.
@@ -34,9 +34,9 @@
             pictureBox1 = new PictureBox();
             btn_cerrar = new Button();
             panel2 = new Panel();
+            btn_catalogos = new Button();
             btn_inicio = new Button();
             btn_clientes = new Button();
-            btn_catalogos = new Button();
             btn_proveedor = new Button();
             btn_productos = new Button();
             panel3 = new Panel();
@@ -101,8 +101,8 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(btn_catalogos);
             panel2.Controls.Add(btn_inicio);
+            panel2.Controls.Add(btn_catalogos);
             panel2.Controls.Add(btn_clientes);
             panel2.Controls.Add(btn_proveedor);
             panel2.Controls.Add(btn_productos);
@@ -112,9 +112,19 @@
             panel2.Size = new Size(215, 358);
             panel2.TabIndex = 1;
             // 
+            // btn_catalogos
+            // 
+            btn_catalogos.Location = new Point(28, 276);
+            btn_catalogos.Margin = new Padding(3, 2, 3, 2);
+            btn_catalogos.Name = "btn_catalogos";
+            btn_catalogos.Size = new Size(148, 64);
+            btn_catalogos.TabIndex = 6;
+            btn_catalogos.Text = "Catalogos";
+            btn_catalogos.UseVisualStyleBackColor = true;
+            // 
             // btn_inicio
             // 
-            btn_inicio.Location = new Point(28, 2);
+            btn_inicio.Location = new Point(28, 4);
             btn_inicio.Margin = new Padding(3, 2, 3, 2);
             btn_inicio.Name = "btn_inicio";
             btn_inicio.Size = new Size(148, 64);
@@ -131,16 +141,7 @@
             btn_clientes.TabIndex = 7;
             btn_clientes.Text = "Clientes";
             btn_clientes.UseVisualStyleBackColor = true;
-            // 
-            // btn_catalogos
-            // 
-            btn_catalogos.Location = new Point(28, 276);
-            btn_catalogos.Margin = new Padding(3, 2, 3, 2);
-            btn_catalogos.Name = "btn_catalogos";
-            btn_catalogos.Size = new Size(148, 64);
-            btn_catalogos.TabIndex = 6;
-            btn_catalogos.Text = "Catalogos";
-            btn_catalogos.UseVisualStyleBackColor = true;
+            btn_clientes.Click += this.btn_clientes_Click;
             // 
             // btn_proveedor
             // 
@@ -161,6 +162,7 @@
             btn_productos.TabIndex = 4;
             btn_productos.Text = "Productos";
             btn_productos.UseVisualStyleBackColor = true;
+            btn_productos.Click += this.btn_productos_Click;
             // 
             // panel3
             // 
@@ -187,7 +189,7 @@
             progressBar1.Size = new Size(946, 22);
             progressBar1.TabIndex = 4;
             // 
-            // frmprincipal
+            // frm_principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -199,7 +201,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
-            Name = "frmprincipal";
+            Name = "frm_principal";
             Load += frmprincipal_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

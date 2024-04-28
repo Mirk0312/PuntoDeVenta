@@ -1,8 +1,8 @@
 namespace POS
 {
-    public partial class frmprincipal : Form
+    public partial class frm_principal : Form
     {
-        public frmprincipal()
+        public frm_principal()
         {
             InitializeComponent();
         }

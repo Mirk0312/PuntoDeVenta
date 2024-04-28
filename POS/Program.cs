@@ -14,7 +14,7 @@ namespace POS
  
             Application.Run(new frm_login());
 
-            Application.Run(new frmprincipal());
+            Application.Run(new frm_principal());
  
         }
     }
