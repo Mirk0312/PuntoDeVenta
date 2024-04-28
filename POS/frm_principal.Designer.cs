@@ -141,7 +141,8 @@
             btn_clientes.TabIndex = 7;
             btn_clientes.Text = "Clientes";
             btn_clientes.UseVisualStyleBackColor = true;
-            btn_clientes.Click += this.btn_clientes_Click;
+        
+
             // 
             // btn_proveedor
             // 
@@ -162,7 +163,7 @@
             btn_productos.TabIndex = 4;
             btn_productos.Text = "Productos";
             btn_productos.UseVisualStyleBackColor = true;
-            btn_productos.Click += this.btn_productos_Click;
+          
             // 
             // panel3
             // 
