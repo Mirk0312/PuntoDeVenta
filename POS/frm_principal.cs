@@ -12,9 +12,16 @@ namespace POS
         {
             //Cargar Login
             frm_login frm = new frm_login();
-          
+
         }
 
-
+        private void btn_productos_Click(object sender, EventArgs e)
+        {
+            frm_productos frm = new frm_productos();
+            frm.TopLevel = false;
+            panel_principal.Controls.Add(frm);
+            frm.Dock = DockStyle.Fill;
+            frm.Show();
+        }
     }
 }
