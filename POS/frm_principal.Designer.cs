@@ -28,23 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
+
+
+            components = new System.ComponentModel.Container();
+
             panel1 = new Panel();
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
             btn_cerrar = new Button();
             panel2 = new Panel();
+
             btn_catalogos = new Button();
             btn_inicio = new Button();
             btn_clientes = new Button();
+
+            btn_inicio = new Button();
+            btn_clientes = new Button();
+            btn_catalogos = new Button();
+
             btn_proveedor = new Button();
             btn_productos = new Button();
             panel3 = new Panel();
             panel4 = new Panel();
+
             progressBar1 = new ProgressBar();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
+
+            toolTip1 = new ToolTip(components);
+            toolStrip1 = new ToolStrip();
+            toolStripLabel1 = new ToolStripLabel();
+            toolStripLabel2 = new ToolStripLabel();
+            toolStripLabel3 = new ToolStripLabel();
+            toolStripLabel4 = new ToolStripLabel();
+            toolStripLabel5 = new ToolStripLabel();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
+            panel4.SuspendLayout();
+            toolStrip1.SuspendLayout();
+
             SuspendLayout();
             // 
             // panel1
@@ -91,7 +116,13 @@
             // 
             // btn_cerrar
             // 
+
             btn_cerrar.Location = new Point(844, 8);
+
+            btn_cerrar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_cerrar.ForeColor = Color.Red;
+            btn_cerrar.Location = new Point(861, 10);
+
             btn_cerrar.Margin = new Padding(3, 2, 3, 2);
             btn_cerrar.Name = "btn_cerrar";
             btn_cerrar.Size = new Size(82, 33);
@@ -102,8 +133,13 @@
             // panel2
             // 
             panel2.Controls.Add(btn_inicio);
+
             panel2.Controls.Add(btn_catalogos);
             panel2.Controls.Add(btn_clientes);
+
+            panel2.Controls.Add(btn_clientes);
+            panel2.Controls.Add(btn_catalogos);
+
             panel2.Controls.Add(btn_proveedor);
             panel2.Controls.Add(btn_productos);
             panel2.Location = new Point(1, 115);
@@ -112,6 +148,7 @@
             panel2.Size = new Size(215, 358);
             panel2.TabIndex = 1;
             // 
+
             // btn_catalogos
             // 
             btn_catalogos.Location = new Point(28, 276);
@@ -125,6 +162,11 @@
             // btn_inicio
             // 
             btn_inicio.Location = new Point(28, 4);
+
+            // btn_inicio
+            // 
+            btn_inicio.Location = new Point(28, 2);
+
             btn_inicio.Margin = new Padding(3, 2, 3, 2);
             btn_inicio.Name = "btn_inicio";
             btn_inicio.Size = new Size(148, 64);
@@ -141,7 +183,20 @@
             btn_clientes.TabIndex = 7;
             btn_clientes.Text = "Clientes";
             btn_clientes.UseVisualStyleBackColor = true;
+
         
+
+
+            // 
+            // btn_catalogos
+            // 
+            btn_catalogos.Location = new Point(28, 140);
+            btn_catalogos.Margin = new Padding(3, 2, 3, 2);
+            btn_catalogos.Name = "btn_catalogos";
+            btn_catalogos.Size = new Size(148, 64);
+            btn_catalogos.TabIndex = 6;
+            btn_catalogos.Text = "Catalogos";
+            btn_catalogos.UseVisualStyleBackColor = true;
 
             // 
             // btn_proveedor
@@ -156,26 +211,35 @@
             // 
             // btn_productos
             // 
+
             btn_productos.Location = new Point(28, 140);
+
+            btn_productos.Location = new Point(28, 281);
+
             btn_productos.Margin = new Padding(3, 2, 3, 2);
             btn_productos.Name = "btn_productos";
             btn_productos.Size = new Size(148, 64);
             btn_productos.TabIndex = 4;
             btn_productos.Text = "Productos";
             btn_productos.UseVisualStyleBackColor = true;
-          
+
             // 
             // panel3
             // 
             panel3.Location = new Point(221, 115);
             panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
+
             panel3.Size = new Size(734, 358);
+
+            panel3.Size = new Size(735, 358);
+
             panel3.TabIndex = 2;
             // 
             // panel4
             // 
             panel4.BackColor = SystemColors.ActiveCaption;
+
             panel4.Location = new Point(1, 478);
             panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
@@ -189,6 +253,59 @@
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(946, 22);
             progressBar1.TabIndex = 4;
+
+            panel4.Controls.Add(toolStrip1);
+            panel4.Dock = DockStyle.Bottom;
+            panel4.Location = new Point(0, 477);
+            panel4.Margin = new Padding(3, 2, 3, 2);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(956, 95);
+            panel4.TabIndex = 3;
+            // 
+            // toolStrip1
+            // 
+            toolStrip1.BackColor = Color.PaleTurquoise;
+            toolStrip1.Dock = DockStyle.Bottom;
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripLabel1, toolStripLabel2, toolStripLabel3, toolStripLabel4, toolStripLabel5 });
+            toolStrip1.Location = new Point(0, 70);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(956, 25);
+            toolStrip1.TabIndex = 0;
+            toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripLabel1
+            // 
+            toolStripLabel1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(52, 22);
+            toolStripLabel1.Text = "Usuario:";
+            // 
+            // toolStripLabel2
+            // 
+            toolStripLabel2.Name = "toolStripLabel2";
+            toolStripLabel2.Size = new Size(43, 22);
+            toolStripLabel2.Text = "xxxxxx";
+            // 
+            // toolStripLabel3
+            // 
+            toolStripLabel3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            toolStripLabel3.Name = "toolStripLabel3";
+            toolStripLabel3.Size = new Size(42, 22);
+            toolStripLabel3.Text = "Fecha:";
+            // 
+            // toolStripLabel4
+            // 
+            toolStripLabel4.Name = "toolStripLabel4";
+            toolStripLabel4.Size = new Size(83, 22);
+            toolStripLabel4.Text = "DD/MM/YYYY";
+            // 
+            // toolStripLabel5
+            // 
+            toolStripLabel5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            toolStripLabel5.Name = "toolStripLabel5";
+            toolStripLabel5.Size = new Size(51, 22);
+            toolStripLabel5.Text = "Version:";
+
             // 
             // frm_principal
             // 
@@ -196,18 +313,28 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(956, 572);
+
             Controls.Add(progressBar1);
+
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "frm_principal";
+
             Load += frmprincipal_Load;
+
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
+
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
+
             ResumeLayout(false);
         }
 
@@ -227,5 +354,14 @@
         private Button btn_cerrar;
         private Panel panel4;
         private ProgressBar progressBar1;
+
+        private ToolStrip toolStrip1;
+        private ToolTip toolTip1;
+        private ToolStripLabel toolStripLabel1;
+        private ToolStripLabel toolStripLabel2;
+        private ToolStripLabel toolStripLabel3;
+        private ToolStripLabel toolStripLabel4;
+        private ToolStripLabel toolStripLabel5;
+
     }
 }

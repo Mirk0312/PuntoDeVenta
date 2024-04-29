@@ -107,6 +107,46 @@
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.icons8_pent_50;
+            pictureBox4.Location = new Point(690, 16);
+            pictureBox4.Margin = new Padding(3, 4, 3, 4);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(59, 67);
+            pictureBox4.TabIndex = 9;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.icons8_camisa_50;
+            pictureBox3.Location = new Point(14, 16);
+            pictureBox3.Margin = new Padding(3, 4, 3, 4);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(66, 67);
+            pictureBox3.TabIndex = 8;
+            pictureBox3.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(234, 33);
+            label3.Name = "label3";
+            label3.Size = new Size(309, 41);
+            label3.TabIndex = 7;
+            label3.Text = "--Acceso al sistema--";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.icons8_candado_30;
+            pictureBox2.Location = new Point(86, 253);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(37, 45);
+            pictureBox2.TabIndex = 6;
+            pictureBox2.TabStop = false;
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.icons8_usuario_30;
@@ -135,7 +175,9 @@
             txt_password.Location = new Point(270, 272);
             txt_password.Margin = new Padding(3, 4, 3, 4);
             txt_password.Name = "txt_password";
+
             txt_password.PasswordChar = '*';
+
             txt_password.Size = new Size(254, 27);
             txt_password.TabIndex = 3;
             // 
@@ -180,8 +222,10 @@
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;
             Name = "frm_login";
+
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
+
             Text = "Form1";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
