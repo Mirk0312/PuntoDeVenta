@@ -7,6 +7,26 @@ namespace POS
             InitializeComponent();
         }
 
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+          
+          
+        }
+
+        private void btn_ingresar_Click(object sender, EventArgs e)
+        {
+            //Validar usuario y contrase�a
+            if (CapaNegocio.Utilerias.validaVacio(txt_usuario.Text))
+            {
+                //Llamar a la BD
+
+                this.Close();
+               
+
+            }
+            else 
+
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
             if(CapaNegocio.Utilerias.validaVacio(txt_usuario.Text))
@@ -15,6 +35,7 @@ namespace POS
                 this.Close();
             }
             else
+
             {
                 MessageBox.Show("Es obligatorio ingresar el usuario");
             }
