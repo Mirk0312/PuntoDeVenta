@@ -16,5 +16,32 @@ namespace POS
         {
             InitializeComponent();
         }
+        private void nuevo()
+        {
+            try {
+                txt_ID.Enabled = false;
+                txt_ID.Text = "NUEVO";
+
+
+            }
+
+        }
+
+        private void btn_nuevo_Click(object sender, EventArgs e)
+        {
+            nuevo();
+        }
+
+        private void btn_guardar_Click(object sender, EventArgs e)
+        {
+            if (txt_ID.Text == "nuevo".ToUpper()) 
+            {
+                //estrucutura para un "INSERT"
+            }
+            else
+            {
+                //estructura para un "UPDATE"
+            }
+        }
     }
 }
