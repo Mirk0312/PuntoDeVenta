@@ -22,7 +22,17 @@ namespace POS
                 txt_ID.Enabled = false;
                 txt_ID.Text = "NUEVO";
 
+                txt_codigo.Text = "" ;
+                txt_nombre.Text = "" ;
+                txt_descripcion.Text = "" ;
+                txt_venta.Text = "";
+                txt_costo.Text = "";
+                cbx_unidad.SelectedIndex = 0;
+                cbx_ubicacion.SelectedIndex = 0;
 
+                }catch(Exception ex)
+            {
+                MessageBox.Show("Error en NUEVO", ex.Message);
             }
 
         }
