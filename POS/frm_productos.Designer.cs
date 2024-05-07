@@ -48,6 +48,7 @@
             cbx_unidad = new ComboBox();
             cbx_ubicacion = new ComboBox();
             label9 = new Label();
+            btn_Buscar = new Button();
             SuspendLayout();
             // 
             // btn_nuevo
@@ -218,11 +219,22 @@
             label9.TabIndex = 21;
             label9.Text = "Frm de productos";
             // 
+            // btn_Buscar
+            // 
+            btn_Buscar.Location = new Point(292, 65);
+            btn_Buscar.Name = "btn_Buscar";
+            btn_Buscar.Size = new Size(75, 23);
+            btn_Buscar.TabIndex = 22;
+            btn_Buscar.Text = "BUSCAR";
+            btn_Buscar.UseVisualStyleBackColor = true;
+            btn_Buscar.Click += btn_Buscar_Click;
+            // 
             // frm_productos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btn_Buscar);
             Controls.Add(label9);
             Controls.Add(cbx_ubicacion);
             Controls.Add(cbx_unidad);
@@ -275,5 +287,6 @@
         private ComboBox cbx_unidad;
         private ComboBox cbx_ubicacion;
         private Label label9;
+        private Button btn_Buscar;
     }
 }
