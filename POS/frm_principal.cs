@@ -46,5 +46,25 @@ namespace POS
             frmproveedor.Dock = DockStyle.Fill;
             frmproveedor.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel_principal_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
