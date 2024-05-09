@@ -70,5 +70,15 @@ namespace POS
             //Consultar BD
             //Mostrar o llenar los campos en pantalla
         }
+
+        private void frm_productos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_CerrarCP_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
