@@ -51,8 +51,9 @@
             btn_Buscar = new Button();
             panel1 = new Panel();
             panel2 = new Panel();
-            pictureBox1 = new PictureBox();
             btn_CerrarCP = new Button();
+            pictureBox1 = new PictureBox();
+            button1 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -88,7 +89,7 @@
             // 
             btn_cancelar.Image = Properties.Resources.CancelarArchivo;
             btn_cancelar.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_cancelar.Location = new Point(287, 13);
+            btn_cancelar.Location = new Point(417, 13);
             btn_cancelar.Margin = new Padding(3, 4, 3, 4);
             btn_cancelar.Name = "btn_cancelar";
             btn_cancelar.Size = new Size(100, 40);
@@ -258,6 +259,7 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(btn_nuevo);
             panel1.Controls.Add(btn_cancelar);
             panel1.Controls.Add(btn_guardar);
@@ -279,15 +281,6 @@
             panel2.Size = new Size(914, 75);
             panel2.TabIndex = 24;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.CatalogoProdctos;
-            pictureBox1.Location = new Point(49, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(48, 48);
-            pictureBox1.TabIndex = 22;
-            pictureBox1.TabStop = false;
-            // 
             // btn_CerrarCP
             // 
             btn_CerrarCP.Image = Properties.Resources.CerrarVentana;
@@ -300,6 +293,28 @@
             btn_CerrarCP.TextAlign = ContentAlignment.MiddleRight;
             btn_CerrarCP.UseVisualStyleBackColor = true;
             btn_CerrarCP.Click += btn_CerrarCP_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.CatalogoProdctos;
+            pictureBox1.Location = new Point(49, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(48, 48);
+            pictureBox1.TabIndex = 22;
+            pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.Image = Properties.Resources.EliminarArchivo;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(285, 13);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(100, 40);
+            button1.TabIndex = 3;
+            button1.Text = "      Eliminar";
+            button1.TextAlign = ContentAlignment.MiddleRight;
+            button1.UseVisualStyleBackColor = true;
             // 
             // frm_productos
             // 
@@ -368,5 +383,6 @@
         private Panel panel2;
         private PictureBox pictureBox1;
         private Button btn_CerrarCP;
+        private Button button1;
     }
 }
