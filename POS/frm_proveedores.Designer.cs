@@ -29,23 +29,20 @@
         private void InitializeComponent()
         {
             btn_Buscar = new Button();
-            cbx_ubicacion = new ComboBox();
-            cbx_unidad = new ComboBox();
             txt_venta = new TextBox();
             txt_costo = new TextBox();
-            txt_descripcion = new TextBox();
             txt_nombre = new TextBox();
             txt_codigo = new TextBox();
             label8 = new Label();
             label7 = new Label();
             label6 = new Label();
-            label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             txt_ID = new TextBox();
             label9 = new Label();
             panel1 = new Panel();
+            button1 = new Button();
             btn_nuevo = new Button();
             btn_cancelar = new Button();
             btn_guardar = new Button();
@@ -53,7 +50,7 @@
             btn_CerrarCP = new Button();
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            button1 = new Button();
+            textBox1 = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -69,27 +66,9 @@
             btn_Buscar.TabIndex = 39;
             btn_Buscar.UseVisualStyleBackColor = true;
             // 
-            // cbx_ubicacion
-            // 
-            cbx_ubicacion.FormattingEnabled = true;
-            cbx_ubicacion.Location = new Point(155, 346);
-            cbx_ubicacion.Margin = new Padding(3, 4, 3, 4);
-            cbx_ubicacion.Name = "cbx_ubicacion";
-            cbx_ubicacion.Size = new Size(152, 28);
-            cbx_ubicacion.TabIndex = 38;
-            // 
-            // cbx_unidad
-            // 
-            cbx_unidad.FormattingEnabled = true;
-            cbx_unidad.Location = new Point(155, 305);
-            cbx_unidad.Margin = new Padding(3, 4, 3, 4);
-            cbx_unidad.Name = "cbx_unidad";
-            cbx_unidad.Size = new Size(152, 28);
-            cbx_unidad.TabIndex = 37;
-            // 
             // txt_venta
             // 
-            txt_venta.Location = new Point(155, 439);
+            txt_venta.Location = new Point(155, 323);
             txt_venta.Margin = new Padding(3, 4, 3, 4);
             txt_venta.Name = "txt_venta";
             txt_venta.Size = new Size(265, 27);
@@ -97,19 +76,11 @@
             // 
             // txt_costo
             // 
-            txt_costo.Location = new Point(155, 394);
+            txt_costo.Location = new Point(155, 384);
             txt_costo.Margin = new Padding(3, 4, 3, 4);
             txt_costo.Name = "txt_costo";
             txt_costo.Size = new Size(265, 27);
             txt_costo.TabIndex = 35;
-            // 
-            // txt_descripcion
-            // 
-            txt_descripcion.Location = new Point(155, 259);
-            txt_descripcion.Margin = new Padding(3, 4, 3, 4);
-            txt_descripcion.Name = "txt_descripcion";
-            txt_descripcion.Size = new Size(265, 27);
-            txt_descripcion.TabIndex = 34;
             // 
             // txt_nombre
             // 
@@ -130,65 +101,55 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(9, 445);
+            label8.Location = new Point(12, 384);
             label8.Name = "label8";
-            label8.Size = new Size(46, 20);
+            label8.Size = new Size(136, 20);
             label8.TabIndex = 31;
-            label8.Text = "Venta";
+            label8.Text = "Venta del producto";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(9, 353);
+            label7.Location = new Point(17, 324);
             label7.Name = "label7";
-            label7.Size = new Size(75, 20);
+            label7.Size = new Size(137, 20);
             label7.TabIndex = 30;
-            label7.Text = "Ubicacion";
+            label7.Text = "Costo del producto";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(9, 400);
+            label6.Location = new Point(23, 270);
             label6.Name = "label6";
-            label6.Size = new Size(47, 20);
+            label6.Size = new Size(69, 20);
             label6.TabIndex = 29;
-            label6.Text = "Costo";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(9, 307);
-            label5.Name = "label5";
-            label5.Size = new Size(133, 20);
-            label5.TabIndex = 28;
-            label5.Text = "Unidad de medida";
+            label6.Text = "Producto";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(9, 265);
+            label4.Location = new Point(26, 166);
             label4.Name = "label4";
-            label4.Size = new Size(87, 20);
+            label4.Size = new Size(66, 20);
             label4.TabIndex = 27;
-            label4.Text = "Descripcion";
+            label4.Text = "Empresa";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(9, 219);
+            label3.Location = new Point(23, 216);
             label3.Name = "label3";
-            label3.Size = new Size(64, 20);
+            label3.Size = new Size(80, 20);
             label3.TabIndex = 26;
-            label3.Text = "Nombre";
+            label3.Text = "Encargado";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(9, 161);
             label2.Name = "label2";
-            label2.Size = new Size(58, 20);
+            label2.Size = new Size(0, 20);
             label2.TabIndex = 25;
-            label2.Text = "Codigo";
             // 
             // txt_ID
             // 
@@ -201,7 +162,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(9, 116);
+            label9.Location = new Point(35, 120);
             label9.Name = "label9";
             label9.Size = new Size(24, 20);
             label9.TabIndex = 23;
@@ -219,6 +180,19 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(914, 66);
             panel1.TabIndex = 40;
+            // 
+            // button1
+            // 
+            button1.Image = Properties.Resources.EliminarArchivo;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(286, 13);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(100, 40);
+            button1.TabIndex = 4;
+            button1.Text = "      Eliminar";
+            button1.TextAlign = ContentAlignment.MiddleRight;
+            button1.UseVisualStyleBackColor = true;
             // 
             // btn_nuevo
             // 
@@ -279,10 +253,11 @@
             btn_CerrarCP.Text = "        Cerrar";
             btn_CerrarCP.TextAlign = ContentAlignment.MiddleRight;
             btn_CerrarCP.UseVisualStyleBackColor = true;
+            btn_CerrarCP.Click += btn_CerrarCP_Click;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.CatalogoProdctos;
+            pictureBox1.Image = Properties.Resources.CatalogoProveedor;
             pictureBox1.Location = new Point(49, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(48, 48);
@@ -293,44 +268,36 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(119, 25);
+            label1.Location = new Point(106, 21);
             label1.Name = "label1";
             label1.Size = new Size(280, 31);
             label1.TabIndex = 21;
             label1.Text = "Catalogo de proveedores";
             // 
-            // button1
+            // textBox1
             // 
-            button1.Image = Properties.Resources.EliminarArchivo;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(286, 13);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(100, 40);
-            button1.TabIndex = 4;
-            button1.Text = "      Eliminar";
-            button1.TextAlign = ContentAlignment.MiddleRight;
-            button1.UseVisualStyleBackColor = true;
+            textBox1.Location = new Point(155, 267);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(265, 27);
+            textBox1.TabIndex = 42;
             // 
             // frm_proveedores
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+            Controls.Add(textBox1);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(btn_Buscar);
-            Controls.Add(cbx_ubicacion);
-            Controls.Add(cbx_unidad);
             Controls.Add(txt_venta);
             Controls.Add(txt_costo);
-            Controls.Add(txt_descripcion);
             Controls.Add(txt_nombre);
             Controls.Add(txt_codigo);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -354,17 +321,13 @@
         #endregion
 
         private Button btn_Buscar;
-        private ComboBox cbx_ubicacion;
-        private ComboBox cbx_unidad;
         private TextBox txt_venta;
         private TextBox txt_costo;
-        private TextBox txt_descripcion;
         private TextBox txt_nombre;
         private TextBox txt_codigo;
         private Label label8;
         private Label label7;
         private Label label6;
-        private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
@@ -379,5 +342,6 @@
         private PictureBox pictureBox1;
         private Label label1;
         private Button button1;
+        private TextBox textBox1;
     }
 }

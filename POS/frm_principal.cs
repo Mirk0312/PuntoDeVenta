@@ -46,6 +46,8 @@ namespace POS
             frmproveedor.Dock = DockStyle.Fill;
             frmproveedor.Show();
         }
+    
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -64,6 +66,20 @@ namespace POS
 
         private void panel_principal_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void btn_CerrarCP_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_cerrarSesion_Click_1(object sender, EventArgs e)
+        {
+           frm_principal principal = new frm_principal();
+            principal.Close();
+            frm_login login = new frm_login();
+            login.Show();
 
         }
     }
