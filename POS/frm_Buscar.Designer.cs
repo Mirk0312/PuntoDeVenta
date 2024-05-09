@@ -47,16 +47,18 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(1, 2);
+            panel1.Location = new Point(1, 3);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 115);
+            panel1.Size = new Size(914, 153);
             panel1.TabIndex = 0;
             // 
             // btn_buscar
             // 
-            btn_buscar.Location = new Point(582, 51);
+            btn_buscar.Location = new Point(620, 59);
+            btn_buscar.Margin = new Padding(3, 4, 3, 4);
             btn_buscar.Name = "btn_buscar";
-            btn_buscar.Size = new Size(75, 23);
+            btn_buscar.Size = new Size(86, 31);
             btn_buscar.TabIndex = 4;
             btn_buscar.Text = "Buscar";
             btn_buscar.UseVisualStyleBackColor = true;
@@ -64,25 +66,27 @@
             // 
             // txt_buscar
             // 
-            txt_buscar.Location = new Point(212, 46);
+            txt_buscar.Location = new Point(242, 61);
+            txt_buscar.Margin = new Padding(3, 4, 3, 4);
             txt_buscar.Name = "txt_buscar";
-            txt_buscar.Size = new Size(317, 23);
+            txt_buscar.Size = new Size(362, 27);
             txt_buscar.TabIndex = 3;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(104, 46);
+            label2.Location = new Point(119, 61);
             label2.Name = "label2";
-            label2.Size = new Size(82, 15);
+            label2.Size = new Size(104, 20);
             label2.TabIndex = 2;
             label2.Text = "Dato a buscar:";
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(25, 23);
+            pictureBox1.Location = new Point(29, 31);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(48, 48);
+            pictureBox1.Size = new Size(55, 64);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
@@ -90,9 +94,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(104, 7);
+            label1.Location = new Point(119, 9);
             label1.Name = "label1";
-            label1.Size = new Size(132, 20);
+            label1.Size = new Size(166, 24);
             label1.TabIndex = 0;
             label1.Text = "LABEL DE PRUEBA";
             // 
@@ -104,19 +108,22 @@
             dgV_datos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgV_datos.Dock = DockStyle.Bottom;
             dgV_datos.GridColor = Color.White;
-            dgV_datos.Location = new Point(0, 123);
+            dgV_datos.Location = new Point(0, 164);
+            dgV_datos.Margin = new Padding(3, 4, 3, 4);
             dgV_datos.Name = "dgV_datos";
             dgV_datos.ReadOnly = true;
-            dgV_datos.Size = new Size(800, 327);
+            dgV_datos.RowHeadersWidth = 51;
+            dgV_datos.Size = new Size(914, 436);
             dgV_datos.TabIndex = 1;
             // 
             // frm_Buscar
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(dgV_datos);
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frm_Buscar";
             Text = "frm_Buscar";
             Load += frm_Buscar_Load;

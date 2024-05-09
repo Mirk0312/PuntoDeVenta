@@ -16,5 +16,10 @@ namespace POS
         {
             InitializeComponent();
         }
+
+        private void frm_proveedores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
