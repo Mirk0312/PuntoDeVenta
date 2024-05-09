@@ -50,10 +50,10 @@
             label9 = new Label();
             btn_Buscar = new Button();
             panel1 = new Panel();
+            button1 = new Button();
             panel2 = new Panel();
             btn_CerrarCP = new Button();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -239,7 +239,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(119, 25);
+            label9.Location = new Point(113, 21);
             label9.Name = "label9";
             label9.Size = new Size(257, 31);
             label9.TabIndex = 21;
@@ -248,7 +248,7 @@
             // btn_Buscar
             // 
             btn_Buscar.Image = Properties.Resources.Buscar;
-            btn_Buscar.Location = new Point(315, 97);
+            btn_Buscar.Location = new Point(315, 98);
             btn_Buscar.Margin = new Padding(3, 4, 3, 4);
             btn_Buscar.Name = "btn_Buscar";
             btn_Buscar.Size = new Size(32, 31);
@@ -268,6 +268,19 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(914, 66);
             panel1.TabIndex = 23;
+            // 
+            // button1
+            // 
+            button1.Image = Properties.Resources.EliminarArchivo;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(285, 13);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(100, 40);
+            button1.TabIndex = 3;
+            button1.Text = "      Eliminar";
+            button1.TextAlign = ContentAlignment.MiddleRight;
+            button1.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -296,25 +309,12 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.CatalogoProdctos;
-            pictureBox1.Location = new Point(49, 12);
+            pictureBox1.Image = Properties.Resources.CatalogoProductos;
+            pictureBox1.Location = new Point(59, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(48, 48);
             pictureBox1.TabIndex = 22;
             pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.Image = Properties.Resources.EliminarArchivo;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(285, 13);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(100, 40);
-            button1.TabIndex = 3;
-            button1.Text = "      Eliminar";
-            button1.TextAlign = ContentAlignment.MiddleRight;
-            button1.UseVisualStyleBackColor = true;
             // 
             // frm_productos
             // 
