@@ -31,6 +31,8 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_principal));
             panel2 = new Panel();
+            panel13 = new Panel();
+            label14 = new Label();
             panel11 = new Panel();
             label12 = new Label();
             panel9 = new Panel();
@@ -70,9 +72,8 @@
             label4 = new Label();
             label3 = new Label();
             panel_principal = new Panel();
-            panel13 = new Panel();
-            label14 = new Label();
             panel2.SuspendLayout();
+            panel13.SuspendLayout();
             panel11.SuspendLayout();
             panel9.SuspendLayout();
             panel14.SuspendLayout();
@@ -87,7 +88,6 @@
             panel4.SuspendLayout();
             toolStrip1.SuspendLayout();
             panel1.SuspendLayout();
-            panel13.SuspendLayout();
             SuspendLayout();
             // 
             // panel2
@@ -113,6 +113,31 @@
             panel2.Size = new Size(140, 572);
             panel2.TabIndex = 1;
             panel2.Paint += panel2_Paint;
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.DimGray;
+            panel13.Controls.Add(label14);
+            panel13.Font = new Font("Segoe UI", 12F);
+            panel13.Location = new Point(0, 296);
+            panel13.Margin = new Padding(3, 2, 3, 2);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(136, 28);
+            panel13.TabIndex = 34;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.BackColor = Color.DimGray;
+            label14.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label14.Image = (Image)resources.GetObject("label14.Image");
+            label14.ImageAlign = ContentAlignment.MiddleLeft;
+            label14.Location = new Point(5, 0);
+            label14.Name = "label14";
+            label14.Size = new Size(135, 23);
+            label14.TabIndex = 25;
+            label14.Text = "      Operaciones";
+            label14.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel11
             // 
@@ -549,31 +574,6 @@
             panel_principal.TabIndex = 4;
             panel_principal.Paint += panel_principal_Paint;
             // 
-            // panel13
-            // 
-            panel13.BackColor = Color.DimGray;
-            panel13.Controls.Add(label14);
-            panel13.Font = new Font("Segoe UI", 12F);
-            panel13.Location = new Point(0, 296);
-            panel13.Margin = new Padding(3, 2, 3, 2);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(136, 28);
-            panel13.TabIndex = 34;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.BackColor = Color.DimGray;
-            label14.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label14.Image = (Image)resources.GetObject("label14.Image");
-            label14.ImageAlign = ContentAlignment.MiddleLeft;
-            label14.Location = new Point(5, 0);
-            label14.Name = "label14";
-            label14.Size = new Size(135, 23);
-            label14.TabIndex = 25;
-            label14.Text = "      Operaciones";
-            label14.TextAlign = ContentAlignment.MiddleRight;
-            // 
             // frm_principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -589,6 +589,8 @@
             Name = "frm_principal";
             Load += frmprincipal_Load;
             panel2.ResumeLayout(false);
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
             panel9.ResumeLayout(false);
@@ -615,8 +617,6 @@
             toolStrip1.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel13.ResumeLayout(false);
-            panel13.PerformLayout();
             ResumeLayout(false);
         }
 
