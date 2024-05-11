@@ -20,16 +20,16 @@ namespace POS
         {
             try
             {
-                txt_ID.Enabled = false;
-                txt_ID.Text = "NUEVO";
+                txt_IDProduc.Enabled = false;
+                txt_IDProduc.Text = "NUEVO";
 
-                txt_codigo.Text = "";
-                txt_nombre.Text = "";
-                txt_descripcion.Text = "";
-                txt_venta.Text = "";
-                txt_costo.Text = "";
-                cbx_unidad.SelectedIndex = 0;
-                cbx_ubicacion.SelectedIndex = 0;
+                txt_CodigoProduc.Text = "";
+                txt_NombreProduc.Text = "";
+                txt_DescripcionProduc.Text = "";
+                txt_VentaProduc.Text = "";
+                txt_CostoProduc.Text = "";
+                cbx_UnidadProduc.SelectedIndex = 0;
+                cbx_UbicacionProduc.SelectedIndex = 0;
 
             }
             catch (Exception ex)
@@ -46,7 +46,7 @@ namespace POS
 
         private void btn_guardar_Click(object sender, EventArgs e)
         {
-            if (txt_ID.Text == "nuevo".ToUpper())
+            if (txt_IDProduc.Text == "nuevo".ToUpper())
             {
                 //estrucutura para un "INSERT"
             }
@@ -63,7 +63,7 @@ namespace POS
             frmhijo.setQuery("SELECT * FROM PRODUCTOS");
             frmhijo.setCampo("nombre");
             DialogResult resultado = frmhijo.ShowDialog();
-            txt_ID.Text = frmhijo.ID_BUSQUEDA;
+            txt_IDProduc.Text = frmhijo.ID_BUSQUEDA;
             //Mostrar frmBuscar, despues del cierre
 
             //obtener ID de la busqueda

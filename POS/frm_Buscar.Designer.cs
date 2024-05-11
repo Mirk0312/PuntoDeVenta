@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            btn_buscar = new Button();
-            txt_buscar = new TextBox();
+            btn_CerrarB = new Button();
+            btn_BuscarB = new Button();
+            txt_BuscarB = new TextBox();
             label2 = new Label();
             pictureBox1 = new PictureBox();
             label1 = new Label();
@@ -42,51 +43,62 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(btn_buscar);
-            panel1.Controls.Add(txt_buscar);
+            panel1.Controls.Add(btn_CerrarB);
+            panel1.Controls.Add(btn_BuscarB);
+            panel1.Controls.Add(txt_BuscarB);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(1, 3);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(1, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(914, 153);
+            panel1.Size = new Size(800, 115);
             panel1.TabIndex = 0;
             // 
-            // btn_buscar
+            // btn_CerrarB
             // 
-            btn_buscar.Location = new Point(620, 59);
-            btn_buscar.Margin = new Padding(3, 4, 3, 4);
-            btn_buscar.Name = "btn_buscar";
-            btn_buscar.Size = new Size(86, 31);
-            btn_buscar.TabIndex = 4;
-            btn_buscar.Text = "Buscar";
-            btn_buscar.UseVisualStyleBackColor = true;
-            btn_buscar.Click += btn_buscar_Click;
+            btn_CerrarB.Image = Properties.Resources.CerrarVentana;
+            btn_CerrarB.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_CerrarB.Location = new Point(704, 6);
+            btn_CerrarB.Margin = new Padding(3, 2, 3, 2);
+            btn_CerrarB.Name = "btn_CerrarB";
+            btn_CerrarB.Size = new Size(83, 24);
+            btn_CerrarB.TabIndex = 25;
+            btn_CerrarB.Text = "        Cerrar";
+            btn_CerrarB.TextAlign = ContentAlignment.MiddleRight;
+            btn_CerrarB.UseVisualStyleBackColor = true;
+            btn_CerrarB.Click += btn_CerrarCP_Click;
             // 
-            // txt_buscar
+            // btn_BuscarB
             // 
-            txt_buscar.Location = new Point(242, 61);
-            txt_buscar.Margin = new Padding(3, 4, 3, 4);
-            txt_buscar.Name = "txt_buscar";
-            txt_buscar.Size = new Size(362, 27);
-            txt_buscar.TabIndex = 3;
+            btn_BuscarB.Location = new Point(542, 44);
+            btn_BuscarB.Name = "btn_BuscarB";
+            btn_BuscarB.Size = new Size(75, 23);
+            btn_BuscarB.TabIndex = 4;
+            btn_BuscarB.Text = "Buscar";
+            btn_BuscarB.UseVisualStyleBackColor = true;
+            btn_BuscarB.Click += btn_buscar_Click;
+            // 
+            // txt_BuscarB
+            // 
+            txt_BuscarB.Location = new Point(212, 46);
+            txt_BuscarB.Name = "txt_BuscarB";
+            txt_BuscarB.Size = new Size(317, 23);
+            txt_BuscarB.TabIndex = 3;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(119, 61);
+            label2.Location = new Point(104, 52);
             label2.Name = "label2";
-            label2.Size = new Size(104, 20);
+            label2.Size = new Size(82, 15);
             label2.TabIndex = 2;
             label2.Text = "Dato a buscar:";
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(29, 31);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(25, 23);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(55, 64);
+            pictureBox1.Size = new Size(48, 48);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
@@ -94,9 +106,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(119, 9);
+            label1.Location = new Point(104, 7);
             label1.Name = "label1";
-            label1.Size = new Size(79, 25);
+            label1.Size = new Size(65, 20);
             label1.TabIndex = 0;
             label1.Text = "Buscar";
             // 
@@ -108,22 +120,21 @@
             dgV_datos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgV_datos.Dock = DockStyle.Bottom;
             dgV_datos.GridColor = Color.White;
-            dgV_datos.Location = new Point(0, 164);
-            dgV_datos.Margin = new Padding(3, 4, 3, 4);
+            dgV_datos.Location = new Point(0, 123);
             dgV_datos.Name = "dgV_datos";
             dgV_datos.ReadOnly = true;
             dgV_datos.RowHeadersWidth = 51;
-            dgV_datos.Size = new Size(914, 436);
+            dgV_datos.Size = new Size(800, 327);
             dgV_datos.TabIndex = 1;
             // 
             // frm_Buscar
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(dgV_datos);
             Controls.Add(panel1);
-            Margin = new Padding(3, 4, 3, 4);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "frm_Buscar";
             Text = "frm_Buscar";
             Load += frm_Buscar_Load;
@@ -137,11 +148,12 @@
         #endregion
 
         private Panel panel1;
-        private Button btn_buscar;
-        private TextBox txt_buscar;
+        private Button btn_BuscarB;
+        private TextBox txt_BuscarB;
         private Label label2;
         private PictureBox pictureBox1;
         private Label label1;
         private DataGridView dgV_datos;
+        private Button btn_CerrarB;
     }
 }
