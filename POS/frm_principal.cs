@@ -76,10 +76,11 @@ namespace POS
 
         private void btn_cerrarSesion_Click_1(object sender, EventArgs e)
         {
-            frm_principal principal = new frm_principal();
-            principal.Close();
-            frm_login login = new frm_login();
-            login.Show();
+            this.Hide();
+            frm_login loginForm = new frm_login();
+            loginForm.ShowDialog();
+
+            this.Show();
 
         }
 
