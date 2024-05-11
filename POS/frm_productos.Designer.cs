@@ -228,6 +228,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.LightCyan;
             label9.Location = new Point(99, 16);
             label9.Name = "label9";
             label9.Size = new Size(216, 25);
@@ -246,7 +247,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.BackColor = Color.DarkBlue;
             panel1.Controls.Add(btn_EliminarProduc);
             panel1.Controls.Add(btn_NuevoProduc);
             panel1.Controls.Add(btn_CancelarProduc);
@@ -272,7 +273,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = SystemColors.ActiveCaption;
+            panel2.BackColor = Color.DarkBlue;
             panel2.Controls.Add(btn_CerrarProduc);
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(label9);
@@ -287,7 +288,7 @@
             // 
             btn_CerrarProduc.Image = Properties.Resources.CerrarVentana;
             btn_CerrarProduc.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_CerrarProduc.Location = new Point(707, 19);
+            btn_CerrarProduc.Location = new Point(705, 16);
             btn_CerrarProduc.Margin = new Padding(3, 2, 3, 2);
             btn_CerrarProduc.Name = "btn_CerrarProduc";
             btn_CerrarProduc.Size = new Size(83, 22);
