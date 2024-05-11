@@ -213,6 +213,16 @@ namespace POS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_clientes_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-clientes-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_pent_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-pent-50", resourceCulture);

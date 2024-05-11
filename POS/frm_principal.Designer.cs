@@ -67,13 +67,13 @@
             label1 = new Label();
             label2 = new Label();
             panel1 = new Panel();
+            label17 = new Label();
+            label16 = new Label();
             btn_CerrarCP = new Button();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             panel_principal = new Panel();
-            label16 = new Label();
-            label17 = new Label();
             panel2.SuspendLayout();
             panel13.SuspendLayout();
             panel11.SuspendLayout();
@@ -409,7 +409,7 @@
             // 
             // panel4
             // 
-            panel4.BackColor = Color.LightCyan;
+            panel4.BackColor = Color.Azure;
             panel4.Controls.Add(toolStrip1);
             panel4.Location = new Point(163, 666);
             panel4.Name = "panel4";
@@ -514,6 +514,31 @@
             panel1.Size = new Size(929, 160);
             panel1.TabIndex = 0;
             // 
+            // label17
+            // 
+            label17.BackColor = Color.LightCyan;
+            label17.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.Image = Properties.Resources.icons8_approval_24;
+            label17.ImageAlign = ContentAlignment.MiddleRight;
+            label17.Location = new Point(445, 78);
+            label17.Name = "label17";
+            label17.Size = new Size(134, 44);
+            label17.TabIndex = 26;
+            label17.Text = "Permiso";
+            // 
+            // label16
+            // 
+            label16.BackColor = Color.LightCyan;
+            label16.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.Image = Properties.Resources.icons8_usuario_30;
+            label16.ImageAlign = ContentAlignment.MiddleRight;
+            label16.Location = new Point(445, 3);
+            label16.Name = "label16";
+            label16.Size = new Size(134, 56);
+            label16.TabIndex = 25;
+            label16.Text = " Nombre";
+            label16.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // btn_CerrarCP
             // 
             btn_CerrarCP.Image = Properties.Resources.CerrarVentana;
@@ -569,31 +594,6 @@
             panel_principal.Size = new Size(920, 501);
             panel_principal.TabIndex = 4;
             panel_principal.Paint += panel_principal_Paint;
-            // 
-            // label16
-            // 
-            label16.BackColor = Color.LightCyan;
-            label16.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.Image = Properties.Resources.icons8_usuario_30;
-            label16.ImageAlign = ContentAlignment.MiddleRight;
-            label16.Location = new Point(445, 3);
-            label16.Name = "label16";
-            label16.Size = new Size(134, 56);
-            label16.TabIndex = 25;
-            label16.Text = " Nombre";
-            label16.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // label17
-            // 
-            label17.BackColor = Color.LightCyan;
-            label17.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label17.Image = Properties.Resources.icons8_approval_24;
-            label17.ImageAlign = ContentAlignment.MiddleRight;
-            label17.Location = new Point(445, 78);
-            label17.Name = "label17";
-            label17.Size = new Size(134, 44);
-            label17.TabIndex = 26;
-            label17.Text = "Permiso";
             // 
             // frm_principal
             // 
