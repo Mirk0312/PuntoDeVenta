@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace POS
 {
-    public partial class frm_proveedores : Form
+    public partial class frm_movimientos : Form
     {
-        public frm_proveedores()
+        public frm_movimientos()
         {
             InitializeComponent();
-        }
-
-        private void frm_proveedores_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_CerrarCP_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
