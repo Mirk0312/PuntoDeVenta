@@ -214,6 +214,7 @@
             Controls.Add(label7);
             Controls.Add(label8);
             Controls.Add(label9);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "frm_usuarios";
             Text = "frm_usuarios";
             panel1.ResumeLayout(false);

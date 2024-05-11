@@ -357,6 +357,7 @@
             label6.TabIndex = 25;
             label6.Text = "      Usuarios";
             label6.TextAlign = ContentAlignment.MiddleRight;
+            label6.Click += btn_usuarios_Click;
             // 
             // btn_cerrarSesion
             // 

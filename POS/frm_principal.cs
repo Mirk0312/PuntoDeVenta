@@ -9,7 +9,7 @@ namespace POS
         {
             InitializeComponent();
             Abierto = true;
-          
+
         }
 
 
@@ -75,27 +75,35 @@ namespace POS
 
         private void btn_cerrarSesion_Click_1(object sender, EventArgs e)
         {
-            
-                if (this.Visible) // Si el formulario principal está visible
-                {
-                    this.Hide(); // Oculta el formulario principal
-                    frm_login loginForm = new frm_login();
-                    loginForm.ShowDialog(); // Muestra el formulario de inicio de sesión
-                    this.Close(); // Cierra el formulario principal después de mostrar el formulario de inicio de sesión
-                }
-                else // Si el formulario de inicio de sesión está visible
-                {
-                    // Cierra la aplicación
-                    Application.Exit();
-                }
+
+            if (this.Visible) // Si el formulario principal está visible
+            {
+                this.Hide(); // Oculta el formulario principal
+                frm_login loginForm = new frm_login();
+                loginForm.ShowDialog(); // Muestra el formulario de inicio de sesión
+                this.Close(); // Cierra el formulario principal después de mostrar el formulario de inicio de sesión
             }
+            else // Si el formulario de inicio de sesión está visible
+            {
+                // Cierra la aplicación
+                Application.Exit();
+            }
+        }
 
 
-        
+
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        private void btn_usuarios_Click(object sender, EventArgs e)
+        {
+            frm_usuarios frmusuarios = new frm_usuarios();
+            frmusuarios.TopLevel = false;
+            panel_principal.Controls.Add(frmusuarios);
+            frmusuarios.Dock = DockStyle.Fill;
+            frmusuarios.Show();
         }
     }
 }
