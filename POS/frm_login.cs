@@ -20,7 +20,7 @@ namespace POS
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
             //Validar usuario y contrase�a
-            if (CapaNegocio.Utilerias.validaVacio(txt_usuario.Text))
+            if (CapaNegocio.Utilerias.validaVacio(txt_UsuarioL.Text))
             {
                 //Llamar a la BD
 

@@ -16,7 +16,7 @@ namespace POS
         private String query = "";
         private String consulta = "";
         private String campo = "";
-        public  String ID_BUSQUEDA = "";
+        public String ID_BUSQUEDA = "";
         public void setQuery(String valor)
         {
             query = valor.Trim();
@@ -35,13 +35,13 @@ namespace POS
         {
             if (query.Length == 0)
                 consulta = "SELECT 'SIN DATOS A BUSCAR O BUSQUEDA INCOMPLETA DESCRIPCION";
-            else if(txt_buscar.Text.Length == 0)
+            else if (txt_BuscarB.Text.Length == 0)
             {
-                consulta = query + " order by " +campo+ "nombre asc" ;
+                consulta = query + " order by " + campo + "nombre asc";
             }
             else
             {
-                consulta = query + "where " + campo + " like % " + txt_buscar.Text + "%";
+                consulta = query + "where " + campo + " like % " + txt_BuscarB.Text + "%";
             }
             return consulta;
         }
@@ -71,7 +71,7 @@ namespace POS
                 //crear un metodo en capaDatos que reciba parametros SQLCommand, retorne un DataSet
                 DataSet dataSet = new DataSet();
                 dgV_datos.DataSource = dataSet.Tables[0];
-                
+
 
 
             }
@@ -84,13 +84,18 @@ namespace POS
 
         private void btn_buscar_Click(object sender, EventArgs e)
         {
-            String cadena = txt_buscar.Text;
+            String cadena = txt_BuscarB.Text;
             if (cadena.Length == 0)
                 cadena = query;
             else
                 cadena = "";
             query = "";
             mostrarResultados();
+        }
+
+        private void btn_CerrarCP_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
