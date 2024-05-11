@@ -127,14 +127,14 @@
             // 
             label14.AutoSize = true;
             label14.BackColor = Color.DimGray;
-            label14.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label14.Font = new Font("Segoe UI", 12F, FontStyle.Underline, GraphicsUnit.Point, 0);
             label14.Image = (Image)resources.GetObject("label14.Image");
             label14.ImageAlign = ContentAlignment.MiddleLeft;
             label14.Location = new Point(6, 0);
             label14.Name = "label14";
-            label14.Size = new Size(171, 30);
+            label14.Size = new Size(146, 28);
             label14.TabIndex = 25;
-            label14.Text = "      Operaciones";
+            label14.Text = "     Operaciones";
             label14.TextAlign = ContentAlignment.MiddleRight;
             // 
             // panel11
@@ -175,12 +175,12 @@
             // 
             label10.AutoSize = true;
             label10.BackColor = Color.DarkGray;
-            label10.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Underline, GraphicsUnit.Point, 0);
             label10.Image = (Image)resources.GetObject("label10.Image");
             label10.ImageAlign = ContentAlignment.MiddleLeft;
             label10.Location = new Point(5, 1);
             label10.Name = "label10";
-            label10.Size = new Size(136, 30);
+            label10.Size = new Size(141, 31);
             label10.TabIndex = 25;
             label10.Text = "      Compras";
             label10.TextAlign = ContentAlignment.MiddleRight;
@@ -199,12 +199,12 @@
             // 
             label15.AutoSize = true;
             label15.BackColor = Color.DarkGray;
-            label15.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label15.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label15.Image = (Image)resources.GetObject("label15.Image");
             label15.ImageAlign = ContentAlignment.MiddleLeft;
             label15.Location = new Point(3, 7);
             label15.Name = "label15";
-            label15.Size = new Size(175, 30);
+            label15.Size = new Size(144, 22);
             label15.TabIndex = 25;
             label15.Text = "      Movimientos";
             label15.TextAlign = ContentAlignment.MiddleRight;
@@ -223,12 +223,12 @@
             // 
             label13.AutoSize = true;
             label13.BackColor = Color.DarkGray;
-            label13.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label13.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Underline, GraphicsUnit.Point, 0);
             label13.Image = (Image)resources.GetObject("label13.Image");
             label13.ImageAlign = ContentAlignment.MiddleLeft;
             label13.Location = new Point(5, 0);
             label13.Name = "label13";
-            label13.Size = new Size(113, 30);
+            label13.Size = new Size(118, 31);
             label13.TabIndex = 25;
             label13.Text = "      Ventas";
             label13.TextAlign = ContentAlignment.MiddleRight;
@@ -237,9 +237,9 @@
             // 
             panel6.BackColor = Color.DimGray;
             panel6.Controls.Add(label7);
-            panel6.Location = new Point(1, 179);
+            panel6.Location = new Point(1, 167);
             panel6.Name = "panel6";
-            panel6.Size = new Size(155, 37);
+            panel6.Size = new Size(155, 35);
             panel6.TabIndex = 27;
             // 
             // label7
@@ -261,24 +261,24 @@
             panel10.BackColor = Color.DarkGray;
             panel10.Controls.Add(label11);
             panel10.Font = new Font("Segoe UI", 12F);
-            panel10.Location = new Point(1, 352);
+            panel10.Location = new Point(1, 341);
             panel10.Name = "panel10";
-            panel10.Size = new Size(155, 37);
+            panel10.Size = new Size(155, 48);
             panel10.TabIndex = 33;
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.BackColor = Color.DarkGray;
-            label11.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 0);
             label11.Image = (Image)resources.GetObject("label11.Image");
             label11.ImageAlign = ContentAlignment.MiddleLeft;
-            label11.Location = new Point(5, 0);
+            label11.Location = new Point(7, 11);
             label11.Name = "label11";
-            label11.Size = new Size(146, 30);
+            label11.Size = new Size(145, 26);
             label11.TabIndex = 25;
             label11.Text = "      Productos";
-            label11.TextAlign = ContentAlignment.MiddleRight;
+            label11.TextAlign = ContentAlignment.TopRight;
             label11.Click += btn_productos_Click;
             // 
             // panel7
@@ -286,24 +286,24 @@
             panel7.BackColor = Color.DarkGray;
             panel7.Controls.Add(label8);
             panel7.Font = new Font("Segoe UI", 12F);
-            panel7.Location = new Point(1, 309);
+            panel7.Location = new Point(1, 296);
             panel7.Name = "panel7";
-            panel7.Size = new Size(155, 37);
+            panel7.Size = new Size(155, 39);
             panel7.TabIndex = 29;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.BackColor = Color.DarkGray;
-            label8.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 0);
             label8.Image = (Image)resources.GetObject("label8.Image");
             label8.ImageAlign = ContentAlignment.MiddleLeft;
-            label8.Location = new Point(5, 0);
+            label8.Location = new Point(-6, 0);
             label8.Name = "label8";
-            label8.Size = new Size(172, 30);
+            label8.Size = new Size(165, 26);
             label8.TabIndex = 25;
             label8.Text = "      Proveedores";
-            label8.TextAlign = ContentAlignment.MiddleRight;
+            label8.TextAlign = ContentAlignment.TopRight;
             label8.Click += btn_proveedor_Click;
             // 
             // panel8
@@ -311,9 +311,9 @@
             panel8.BackColor = Color.DarkGray;
             panel8.Controls.Add(label9);
             panel8.Font = new Font("Segoe UI", 12F);
-            panel8.Location = new Point(1, 267);
+            panel8.Location = new Point(1, 255);
             panel8.Name = "panel8";
-            panel8.Size = new Size(155, 37);
+            panel8.Size = new Size(155, 35);
             panel8.TabIndex = 28;
             panel8.Click += btn_clientes_Click;
             // 
@@ -321,12 +321,12 @@
             // 
             label9.AutoSize = true;
             label9.BackColor = Color.DarkGray;
-            label9.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 0);
             label9.Image = (Image)resources.GetObject("label9.Image");
             label9.ImageAlign = ContentAlignment.MiddleLeft;
-            label9.Location = new Point(5, 0);
+            label9.Location = new Point(3, 0);
             label9.Name = "label9";
-            label9.Size = new Size(125, 30);
+            label9.Size = new Size(149, 32);
             label9.TabIndex = 25;
             label9.Text = "      Clientes";
             label9.TextAlign = ContentAlignment.MiddleRight;
@@ -337,9 +337,9 @@
             panel3.BackColor = Color.DimGray;
             panel3.Controls.Add(label6);
             panel3.Font = new Font("Segoe UI", 12F);
-            panel3.Location = new Point(1, 221);
+            panel3.Location = new Point(1, 208);
             panel3.Name = "panel3";
-            panel3.Size = new Size(155, 40);
+            panel3.Size = new Size(155, 41);
             panel3.TabIndex = 26;
             // 
             // label6
@@ -359,23 +359,30 @@
             // btn_cerrarSesion
             // 
             btn_cerrarSesion.BackColor = Color.LightGray;
-            btn_cerrarSesion.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_cerrarSesion.Location = new Point(0, 668);
+            btn_cerrarSesion.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_cerrarSesion.Image = Properties.Resources.cerrar;
+            btn_cerrarSesion.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_cerrarSesion.Location = new Point(1, 685);
             btn_cerrarSesion.Name = "btn_cerrarSesion";
-            btn_cerrarSesion.Size = new Size(159, 53);
+            btn_cerrarSesion.Size = new Size(155, 66);
             btn_cerrarSesion.TabIndex = 14;
             btn_cerrarSesion.Text = "Cerrar Sesion";
+            btn_cerrarSesion.TextAlign = ContentAlignment.MiddleRight;
             btn_cerrarSesion.UseVisualStyleBackColor = false;
             btn_cerrarSesion.Click += btn_cerrarSesion_Click_1;
             // 
             // btn_configuracion
             // 
             btn_configuracion.BackColor = Color.LightGray;
-            btn_configuracion.Location = new Point(0, 609);
+            btn_configuracion.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_configuracion.Image = Properties.Resources.confi;
+            btn_configuracion.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_configuracion.Location = new Point(0, 610);
             btn_configuracion.Name = "btn_configuracion";
-            btn_configuracion.Size = new Size(159, 53);
+            btn_configuracion.Size = new Size(157, 69);
             btn_configuracion.TabIndex = 12;
             btn_configuracion.Text = "Configuracion";
+            btn_configuracion.TextAlign = ContentAlignment.MiddleRight;
             btn_configuracion.UseVisualStyleBackColor = false;
             // 
             // panel5
@@ -394,7 +401,7 @@
             pictureBox1.Image = Properties.Resources.logo_nuevo;
             pictureBox1.Location = new Point(6, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(154, 173);
+            pictureBox1.Size = new Size(154, 170);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -466,23 +473,25 @@
             // 
             // label1
             // 
-            label1.AutoSize = true;
             label1.BackColor = Color.Azure;
             label1.Font = new Font("Segoe UI", 13.8F);
-            label1.Location = new Point(518, 8);
+            label1.Image = (Image)resources.GetObject("label1.Image");
+            label1.ImageAlign = ContentAlignment.MiddleRight;
+            label1.Location = new Point(482, 8);
             label1.Name = "label1";
-            label1.Size = new Size(103, 31);
+            label1.Size = new Size(134, 31);
             label1.TabIndex = 2;
             label1.Text = "Nombre:";
             // 
             // label2
             // 
-            label2.AutoSize = true;
             label2.BackColor = Color.Azure;
             label2.Font = new Font("Segoe UI", 13.8F);
-            label2.Location = new Point(518, 64);
+            label2.Image = (Image)resources.GetObject("label2.Image");
+            label2.ImageAlign = ContentAlignment.MiddleRight;
+            label2.Location = new Point(482, 64);
             label2.Name = "label2";
-            label2.Size = new Size(100, 31);
+            label2.Size = new Size(136, 31);
             label2.TabIndex = 3;
             label2.Text = "Permiso:";
             // 
@@ -522,9 +531,9 @@
             label5.Font = new Font("Segoe UI", 13.8F);
             label5.Location = new Point(624, 64);
             label5.Name = "label5";
-            label5.Size = new Size(102, 31);
+            label5.Size = new Size(113, 31);
             label5.TabIndex = 5;
-            label5.Text = "xxxxxxxx";
+            label5.Text = "-----------";
             // 
             // label4
             // 
@@ -533,21 +542,22 @@
             label4.Font = new Font("Segoe UI", 13.8F);
             label4.Location = new Point(622, 8);
             label4.Name = "label4";
-            label4.Size = new Size(102, 31);
+            label4.Size = new Size(113, 31);
             label4.TabIndex = 4;
-            label4.Text = "xxxxxxxx";
+            label4.Text = "-----------";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = Color.Azure;
+            label3.BackColor = Color.DarkBlue;
             label3.Dock = DockStyle.Fill;
             label3.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.HighlightText;
             label3.Location = new Point(0, 0);
             label3.Name = "label3";
-            label3.Size = new Size(340, 69);
+            label3.Size = new Size(323, 69);
             label3.TabIndex = 0;
-            label3.Text = "StarK Style";
+            label3.Text = "StarKStyle";
             // 
             // panel_principal
             // 
