@@ -148,6 +148,8 @@
             // 
             // btn_eliminar
             // 
+            btn_eliminar.Image = Properties.Resources.EliminarArchivo;
+            btn_eliminar.ImageAlign = ContentAlignment.MiddleLeft;
             btn_eliminar.Location = new Point(7, 435);
             btn_eliminar.Name = "btn_eliminar";
             btn_eliminar.Size = new Size(125, 52);
@@ -157,6 +159,8 @@
             // 
             // btn_agregar
             // 
+            btn_agregar.Image = Properties.Resources.icons8_add_24;
+            btn_agregar.ImageAlign = ContentAlignment.MiddleLeft;
             btn_agregar.Location = new Point(7, 282);
             btn_agregar.Name = "btn_agregar";
             btn_agregar.Size = new Size(125, 52);
@@ -278,6 +282,8 @@
             // 
             // button1
             // 
+            button1.Image = Properties.Resources.icons8_update_24;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.Location = new Point(7, 353);
             button1.Name = "button1";
             button1.Size = new Size(125, 50);

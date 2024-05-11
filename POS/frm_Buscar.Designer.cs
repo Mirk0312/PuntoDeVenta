@@ -93,12 +93,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(119, 9);
             label1.Name = "label1";
-            label1.Size = new Size(166, 24);
+            label1.Size = new Size(79, 25);
             label1.TabIndex = 0;
-            label1.Text = "LABEL DE PRUEBA";
+            label1.Text = "Buscar";
             // 
             // dgV_datos
             // 

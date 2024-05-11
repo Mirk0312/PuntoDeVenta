@@ -173,6 +173,16 @@ namespace POS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_approval_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-approval-24", resourceCulture);
@@ -236,6 +246,16 @@ namespace POS.Properties {
         internal static System.Drawing.Bitmap icons8_productos_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-productos-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_update_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-update-24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
