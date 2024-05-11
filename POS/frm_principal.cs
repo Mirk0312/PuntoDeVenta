@@ -1,10 +1,15 @@
+using System.Drawing.Drawing2D;
+
 namespace POS
 {
     public partial class frm_principal : Form
     {
+        public static bool Abierto = false;
         public frm_principal()
         {
             InitializeComponent();
+            Abierto = true;
+          
         }
 
 
@@ -58,12 +63,6 @@ namespace POS
         {
 
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void panel_principal_Paint(object sender, PaintEventArgs e)
         {
 
@@ -76,13 +75,23 @@ namespace POS
 
         private void btn_cerrarSesion_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            frm_login loginForm = new frm_login();
-            loginForm.ShowDialog();
+            
+                if (this.Visible) // Si el formulario principal está visible
+                {
+                    this.Hide(); // Oculta el formulario principal
+                    frm_login loginForm = new frm_login();
+                    loginForm.ShowDialog(); // Muestra el formulario de inicio de sesión
+                    this.Close(); // Cierra el formulario principal después de mostrar el formulario de inicio de sesión
+                }
+                else // Si el formulario de inicio de sesión está visible
+                {
+                    // Cierra la aplicación
+                    Application.Exit();
+                }
+            }
 
-            this.Show();
 
-        }
+        
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {

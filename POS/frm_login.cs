@@ -1,3 +1,5 @@
+using System.Diagnostics.Eventing.Reader;
+
 namespace POS
 {
     public partial class frm_login : Form
@@ -5,6 +7,7 @@ namespace POS
         public frm_login()
         {
             InitializeComponent();
+           
         }
 
 
@@ -35,6 +38,18 @@ namespace POS
         private void txt_password_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_cerrar_Click(object sender, EventArgs e)
+        {
+            if (frm_principal.Abierto)
+            {
+                this.Close();
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }

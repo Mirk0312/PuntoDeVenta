@@ -72,6 +72,8 @@
             label4 = new Label();
             label3 = new Label();
             panel_principal = new Panel();
+            label16 = new Label();
+            label17 = new Label();
             panel2.SuspendLayout();
             panel13.SuspendLayout();
             panel11.SuspendLayout();
@@ -249,7 +251,7 @@
             label7.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.Image = Properties.Resources.icons8_casa_25;
             label7.ImageAlign = ContentAlignment.MiddleLeft;
-            label7.Location = new Point(3, 0);
+            label7.Location = new Point(3, -3);
             label7.Name = "label7";
             label7.Size = new Size(100, 30);
             label7.TabIndex = 25;
@@ -387,7 +389,7 @@
             // 
             // panel5
             // 
-            panel5.BackColor = Color.DarkSlateGray;
+            panel5.BackColor = Color.Black;
             panel5.Controls.Add(pictureBox1);
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 0);
@@ -398,20 +400,20 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.logo_nuevo;
-            pictureBox1.Location = new Point(6, 3);
+            pictureBox1.Image = Properties.Resources.STARK50_removebg_preview1;
+            pictureBox1.Location = new Point(2, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(154, 170);
+            pictureBox1.Size = new Size(158, 161);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // panel4
             // 
-            panel4.BackColor = Color.DarkBlue;
+            panel4.BackColor = Color.LightCyan;
             panel4.Controls.Add(toolStrip1);
-            panel4.Location = new Point(163, 672);
+            panel4.Location = new Point(163, 666);
             panel4.Name = "panel4";
-            panel4.Size = new Size(929, 91);
+            panel4.Size = new Size(929, 97);
             panel4.TabIndex = 3;
             panel4.Paint += panel4_Paint;
             // 
@@ -421,7 +423,7 @@
             toolStrip1.Dock = DockStyle.Bottom;
             toolStrip1.ImageScalingSize = new Size(20, 20);
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripLabel1, toolStripLabel2, toolStripLabel3, toolStripLabel4, toolStripLabel5 });
-            toolStrip1.Location = new Point(0, 66);
+            toolStrip1.Location = new Point(0, 72);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(929, 25);
             toolStrip1.TabIndex = 0;
@@ -497,7 +499,9 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.DarkBlue;
+            panel1.BackColor = Color.FromArgb(0, 0, 192);
+            panel1.Controls.Add(label17);
+            panel1.Controls.Add(label16);
             panel1.Controls.Add(btn_CerrarCP);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
@@ -509,7 +513,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(929, 160);
             panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
             // 
             // btn_CerrarCP
             // 
@@ -529,7 +532,7 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Azure;
             label5.Font = new Font("Segoe UI", 13.8F);
-            label5.Location = new Point(624, 64);
+            label5.Location = new Point(622, 91);
             label5.Name = "label5";
             label5.Size = new Size(113, 31);
             label5.TabIndex = 5;
@@ -548,25 +551,49 @@
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.DarkBlue;
+            label3.BackColor = Color.Azure;
             label3.Dock = DockStyle.Fill;
             label3.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.HighlightText;
+            label3.ForeColor = Color.FromArgb(64, 0, 0);
             label3.Location = new Point(0, 0);
             label3.Name = "label3";
-            label3.Size = new Size(323, 69);
+            label3.Size = new Size(929, 160);
             label3.TabIndex = 0;
             label3.Text = "StarKStyle";
             // 
             // panel_principal
             // 
-            panel_principal.Location = new Point(169, 167);
+            panel_principal.Location = new Point(169, 165);
             panel_principal.Margin = new Padding(3, 4, 3, 4);
             panel_principal.Name = "panel_principal";
-            panel_principal.Size = new Size(920, 499);
+            panel_principal.Size = new Size(920, 501);
             panel_principal.TabIndex = 4;
             panel_principal.Paint += panel_principal_Paint;
+            // 
+            // label16
+            // 
+            label16.BackColor = Color.LightCyan;
+            label16.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.Image = Properties.Resources.icons8_usuario_30;
+            label16.ImageAlign = ContentAlignment.MiddleRight;
+            label16.Location = new Point(445, 3);
+            label16.Name = "label16";
+            label16.Size = new Size(134, 56);
+            label16.TabIndex = 25;
+            label16.Text = " Nombre";
+            label16.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label17
+            // 
+            label17.BackColor = Color.LightCyan;
+            label17.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.Image = Properties.Resources.icons8_approval_24;
+            label17.ImageAlign = ContentAlignment.MiddleRight;
+            label17.Location = new Point(445, 78);
+            label17.Name = "label17";
+            label17.Size = new Size(134, 44);
+            label17.TabIndex = 26;
+            label17.Text = "Permiso";
             // 
             // frm_principal
             // 
@@ -657,5 +684,7 @@
         private Label label15;
         private Panel panel13;
         private Label label14;
+        private Label label17;
+        private Label label16;
     }
 }
