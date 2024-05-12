@@ -78,6 +78,7 @@ namespace POS
 
             if (this.Visible) // Si el formulario principal está visible
             {
+                MessageBox.Show("Cerrando Sesion.."); //Mensaje de cierre de Sesión
                 this.Hide(); // Oculta el formulario principal
                 frm_login loginForm = new frm_login();
                 loginForm.ShowDialog(); // Muestra el formulario de inicio de sesión
@@ -99,11 +100,16 @@ namespace POS
         }
         private void btn_usuarios_Click(object sender, EventArgs e)
         {
-            frm_usuarios frmusuarios = new frm_usuarios();
+            frm_perfiles frmusuarios = new frm_perfiles();
             frmusuarios.TopLevel = false;
             panel_principal.Controls.Add(frmusuarios);
             frmusuarios.Dock = DockStyle.Fill;
             frmusuarios.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

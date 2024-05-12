@@ -31,7 +31,6 @@
             panel1 = new Panel();
             btn_CerrarC = new Button();
             label1 = new Label();
-            btn_cerrarsesionclientes = new Button();
             panel2 = new Panel();
             label5 = new Label();
             label4 = new Label();
@@ -95,17 +94,6 @@
             label1.TabIndex = 0;
             label1.Text = "Clientes";
             label1.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // btn_cerrarsesionclientes
-            // 
-            btn_cerrarsesionclientes.Image = Properties.Resources.cerrar;
-            btn_cerrarsesionclientes.Location = new Point(721, 86);
-            btn_cerrarsesionclientes.Margin = new Padding(3, 2, 3, 2);
-            btn_cerrarsesionclientes.Name = "btn_cerrarsesionclientes";
-            btn_cerrarsesionclientes.Size = new Size(67, 38);
-            btn_cerrarsesionclientes.TabIndex = 1;
-            btn_cerrarsesionclientes.UseVisualStyleBackColor = true;
-            btn_cerrarsesionclientes.Click += btn_cerrarsesionclientes_Click;
             // 
             // panel2
             // 
@@ -339,7 +327,6 @@
             ClientSize = new Size(800, 437);
             Controls.Add(button1);
             Controls.Add(btn_ActualizarC);
-            Controls.Add(btn_cerrarsesionclientes);
             Controls.Add(pictureBox1);
             Controls.Add(btn_EliminarC);
             Controls.Add(btn_AgregarC);
@@ -397,7 +384,6 @@
         private Label label7;
         private Label label6;
         private PictureBox pictureBox1;
-        private Button btn_cerrarsesionclientes;
         private Button btn_ActualizarC;
         private Button btn_CerrarC;
         private Button button1;
