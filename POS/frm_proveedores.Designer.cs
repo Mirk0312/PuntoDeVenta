@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btn_Buscar = new Button();
+            btn_BuscarP = new Button();
             txt_CostoP = new TextBox();
             txt_VentaP = new TextBox();
             txt_EncargadoP = new TextBox();
@@ -56,14 +56,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // btn_Buscar
+            // btn_BuscarP
             // 
-            btn_Buscar.Image = Properties.Resources.Buscar;
-            btn_Buscar.Location = new Point(265, 86);
-            btn_Buscar.Name = "btn_Buscar";
-            btn_Buscar.Size = new Size(28, 23);
-            btn_Buscar.TabIndex = 39;
-            btn_Buscar.UseVisualStyleBackColor = true;
+            btn_BuscarP.Image = Properties.Resources.Buscar;
+            btn_BuscarP.Location = new Point(265, 86);
+            btn_BuscarP.Name = "btn_BuscarP";
+            btn_BuscarP.Size = new Size(28, 23);
+            btn_BuscarP.TabIndex = 39;
+            btn_BuscarP.UseVisualStyleBackColor = true;
             // 
             // txt_CostoP
             // 
@@ -170,7 +170,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.BackColor = Color.DarkBlue;
             panel1.Controls.Add(btn_ELiminarP);
             panel1.Controls.Add(btn_NuevoP);
             panel1.Controls.Add(btn_CancelarP);
@@ -229,7 +229,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = SystemColors.ActiveCaption;
+            panel2.BackColor = Color.DarkBlue;
             panel2.Controls.Add(btn_CerrarP);
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(label1);
@@ -244,10 +244,10 @@
             // 
             btn_CerrarP.Image = Properties.Resources.CerrarVentana;
             btn_CerrarP.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_CerrarP.Location = new Point(707, 19);
+            btn_CerrarP.Location = new Point(696, 16);
             btn_CerrarP.Margin = new Padding(3, 2, 3, 2);
             btn_CerrarP.Name = "btn_CerrarP";
-            btn_CerrarP.Size = new Size(83, 22);
+            btn_CerrarP.Size = new Size(83, 25);
             btn_CerrarP.TabIndex = 23;
             btn_CerrarP.Text = "        Cerrar";
             btn_CerrarP.TextAlign = ContentAlignment.MiddleRight;
@@ -267,7 +267,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.DarkBlue;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.AliceBlue;
             label1.Location = new Point(93, 16);
             label1.Name = "label1";
             label1.Size = new Size(236, 25);
@@ -289,7 +291,7 @@
             Controls.Add(txt_ProductoP);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(btn_Buscar);
+            Controls.Add(btn_BuscarP);
             Controls.Add(txt_CostoP);
             Controls.Add(txt_VentaP);
             Controls.Add(txt_EncargadoP);
@@ -320,7 +322,7 @@
 
         #endregion
 
-        private Button btn_Buscar;
+        private Button btn_BuscarP;
         private TextBox txt_CostoP;
         private TextBox txt_VentaP;
         private TextBox txt_EncargadoP;

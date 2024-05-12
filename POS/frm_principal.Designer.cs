@@ -379,9 +379,9 @@
             label6.ImageAlign = ContentAlignment.MiddleLeft;
             label6.Location = new Point(3, 8);
             label6.Name = "label6";
-            label6.Size = new Size(107, 23);
+            label6.Size = new Size(98, 23);
             label6.TabIndex = 25;
-            label6.Text = "      Usuarios";
+            label6.Text = "      Perfiles";
             label6.TextAlign = ContentAlignment.MiddleRight;
             label6.Click += btn_usuarios_Click;
             // 
@@ -603,6 +603,7 @@
             label3.Size = new Size(813, 120);
             label3.TabIndex = 0;
             label3.Text = "StarKStyle";
+            label3.Click += label3_Click;
             // 
             // panel_principal
             // 
