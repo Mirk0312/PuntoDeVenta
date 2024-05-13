@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,13 +47,37 @@ namespace POS
 
         private void btn_guardar_Click(object sender, EventArgs e)
         {
+            //Validar datos 
+            if (txt_CodigoProduc.Text.Length == 0) {
+                MessageBox.Show("Obligatorio codigo del producto");
+            } else if (txt_NombreProduc.Text.Length == 0) 
+            {
+                MessageBox.Show("Obligatorio NOMBRE del producto"); //LLenar campos
+            }
+
+            //Recolectar campos
+            String codigo, nombre, descripcion, ubicacion, costo;
+            codigo = txt_CodigoProduc.Text;
+            nombre = txt_NombreProduc.Text;
+            descripcion = txt_DescripcionProduc.Text;
+
+            Productos pr = new Productos(codigo,nombre,descripcion,ubicacion,costo);
+
+
+            //Instanciar clase productos de capa negocio
+
             if (txt_IDProduc.Text == "nuevo".ToUpper())
             {
                 //estrucutura para un "INSERT"
+                if (pr.fnInsertar()) 
+                {
+                    MessageBox.Show("Guardado correctamente");
+                }
             }
-            else
+            else 
             {
                 //estructura para un "UPDATE"
+                pr.fnActualizar();
             }
         }
 
