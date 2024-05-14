@@ -15,9 +15,13 @@ namespace CapaDatos
         private SqlCommand comandoSQL = new SqlCommand();
         public int RenglonesAfectados = 0;
 
-        public DataUsuarios(){}
+        public DataUsuarios()
+        { 
+           
+        }
+        
 
-        public void Insertar(string nombre, string apellidoP, string apellidoM, string correo, string direccion, string telefono) 
+        public Boolean Insertar(string nombre, string apellidoP, string apellidoM, string correo, string direccion, string telefono) 
         {
             try {
                 //Abrir conexion 
@@ -51,7 +55,8 @@ namespace CapaDatos
 
         public Boolean Autenticar(string usuario, string pass)
         {
-            try {
+            try 
+            {
 
             //Abrir conexion 
             comandoSQL.Connection = connSQL.AbrirConexion();

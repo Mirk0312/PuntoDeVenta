@@ -56,12 +56,15 @@ namespace POS
             }
 
             //Recolectar campos
-            String codigo, nombre, descripcion, ubicacion, costo;
+            String codigo, nombre, descripcion, ubicacion, costo, venta;
             codigo = txt_CodigoProduc.Text;
             nombre = txt_NombreProduc.Text;
             descripcion = txt_DescripcionProduc.Text;
+            ubicacion = cbx_UbicacionProduc.SelectedValue.ToString();
+            costo = txt_CostoProduc.Text;
+            venta = txt_VentaProduc.Text;
 
-            Productos pr = new Productos(codigo,nombre,descripcion,ubicacion,costo);
+            Productos pr = new Productos(codigo,nombre,descripcion,ubicacion,costo, venta);
 
 
             //Instanciar clase productos de capa negocio

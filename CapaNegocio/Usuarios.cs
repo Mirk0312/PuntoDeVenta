@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    internal class Usuarios
+    public class Usuarios
     {
         String usuario, password;
         public void setUsuario(string usuario) {
@@ -22,7 +22,10 @@ namespace CapaNegocio
         {
             this.password = password;
         }
-        public string getPassword()      {  return this.password;}
+        public string getPassword()      
+        {  
+            return this.password;
+        }
 
 
         public Boolean fnValidarLogin()
@@ -35,6 +38,7 @@ namespace CapaNegocio
                 DataUsuarios user = new DataUsuarios();
                 user.Autenticar(getUsuario(), getPassword());
                 //enviar datos
+
 
                 //esperar respuesta
                 return true;
