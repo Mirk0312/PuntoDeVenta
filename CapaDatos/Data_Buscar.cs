@@ -16,18 +16,15 @@ namespace CapaDatos
 
         public int renglonesAfectados = 0;
 
-        public DataTable consultaDataGridView(String laconsulta)
+        public DataTable consultaDataGridView(String laConsulta)
         {
             DataTable consultaData = new DataTable();
 
             comandoSQL.Connection = connSQL.AbrirConexion();
+            SqlDataAdapter consultaDataAdapter = new SqlDataAdapter(comandoSQL);
+            consultaDataAdapter
 
-            comandoSQL.CommandText = "proc_InsertarProducto";
-
-            comandoSQL.CommandType = CommandType.StoredProcedure;
-
-            comandoSQL.CommandType = CommandType.Text;
-
+           
 
             return consultaData;
         }

@@ -69,8 +69,9 @@ namespace POS
                 String consultaBuscar = getConsulta();
                 //LLENAR DATAGRIDVIEW
                 //crear un metodo en capaDatos que reciba parametros SQLCommand, retorne un DataSet
-                DataSet dataSet = new DataSet();
-                dgV_datos.DataSource = dataSet.Tables[0];
+                CapaDatos.Data_buscar datos = new CapaDatos.Data_buscar();
+                DataTable dt = datos.consultaDataGridView(consultaBuscar);
+                dgV_datos.DataSource = dt;
 
 
 
@@ -96,6 +97,11 @@ namespace POS
         private void btn_CerrarCP_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgV_datos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
