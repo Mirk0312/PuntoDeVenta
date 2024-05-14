@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaDatos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -21,28 +22,27 @@ namespace CapaNegocio
         {
             this.password = password;
         }
-        public string getPassword()
-        {
-            return this.password;
-        }
-        //public Boolean fnValidarLogin()
+        public string getPassword()      {  return this.password;}
+
+
+        public Boolean fnValidarLogin()
         {
             try
             {
 
                 Boolean resultado = false;
                 //Instanciar usuario en la capa de datos
-                //Data_Usuarios user = new Data_Usuarios();
-                //resultado = user.Autenticar(getUsuario(), getPassword());
+                DataUsuarios user = new DataUsuarios();
+                user.Autenticar(getUsuario(), getPassword());
                 //enviar datos
 
                 //esperar respuesta
-               // return true;
+                return true;
 
             }
-           // catch (Exception ex)
+           catch (Exception ex)
             {
-               // Console.WriteLine("[fnValidarLogin] ---> " + ex.Message);
+             Console.WriteLine("[fnValidarLogin] ---> " + ex.Message);
             }
         }
     }
