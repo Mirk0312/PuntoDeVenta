@@ -11,6 +11,7 @@ namespace CapaNegocio
         String codigo, nombre, descripcion, ubicacion, costo;
         //Hacer propiedades SET y GET
         //o hacer el constructor y pasar los valores
+        //agregado
         public Productos()
         {
 

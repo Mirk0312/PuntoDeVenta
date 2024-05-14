@@ -25,23 +25,24 @@ namespace CapaNegocio
         {
             return this.password;
         }
-        public Boolean fnValidarLogin()
+        //public Boolean fnValidarLogin()
         {
             try
             {
+
                 Boolean resultado = false;
                 //Instanciar usuario en la capa de datos
-                Data_Usuarios user = new Data_Usuarios();
-                resultado = user.Autenticar(getUsuario(), getPassword());
+                //Data_Usuarios user = new Data_Usuarios();
+                //resultado = user.Autenticar(getUsuario(), getPassword());
                 //enviar datos
 
                 //esperar respuesta
-                return true;
+               // return true;
 
             }
-            catch (Exception ex)
+           // catch (Exception ex)
             {
-                Console.WriteLine("[fnValidarLogin] ---> " + ex.Message);
+               // Console.WriteLine("[fnValidarLogin] ---> " + ex.Message);
             }
         }
     }

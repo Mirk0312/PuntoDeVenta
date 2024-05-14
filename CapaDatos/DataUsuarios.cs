@@ -9,17 +9,17 @@ namespace CapaDatos
 {
     public class DataUsuarios
     {
-        private ConexionSQL SQLconn = new ConexionSQL();
-        private SqlCommand comandoSQL = new SqlCommand();
-        public int RenglonesAfectados = 0;
+        //private ConexionSQL SQLconn = new ConexionSQL();
+        //private SqlCommand comandoSQL = new SqlCommand();
+        //public int RenglonesAfectados = 0;
 
-        public Data_Usuarios(){}
+        //public Data_Usuarios(){}
 
         public void Autenticar (string usuario, string pass)
         {
             try {
                 //Abrir conexion 
-                comandoSQL.Connection = connSQL.AbrirConexion();
+          //      comandoSQL.Connection = connSQL.AbrirConexion();
             
             } 
             catch { }
