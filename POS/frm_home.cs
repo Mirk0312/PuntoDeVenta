@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace POS
 {
-    public partial class frm_usuarios : Form
+    public partial class frm_home : Form
     {
-        public frm_usuarios()
+        public frm_home()
         {
             InitializeComponent();
         }

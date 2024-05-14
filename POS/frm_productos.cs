@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,16 +21,16 @@ namespace POS
         {
             try
             {
-                txt_ID.Enabled = false;
-                txt_ID.Text = "NUEVO";
+                txt_IDProduc.Enabled = false;
+                txt_IDProduc.Text = "NUEVO";
 
-                txt_codigo.Text = "";
-                txt_nombre.Text = "";
-                txt_descripcion.Text = "";
-                txt_venta.Text = "";
-                txt_costo.Text = "";
-                cbx_unidad.SelectedIndex = 0;
-                cbx_ubicacion.SelectedIndex = 0;
+                txt_CodigoProduc.Text = "";
+                txt_NombreProduc.Text = "";
+                txt_DescripcionProduc.Text = "";
+                txt_VentaProduc.Text = "";
+                txt_CostoProduc.Text = "";
+                cbx_UnidadProduc.SelectedIndex = 0;
+                cbx_UbicacionProduc.SelectedIndex = 0;
 
             }
             catch (Exception ex)
@@ -46,13 +47,40 @@ namespace POS
 
         private void btn_guardar_Click(object sender, EventArgs e)
         {
-            if (txt_ID.Text == "nuevo".ToUpper())
+            //Validar datos 
+            if (txt_CodigoProduc.Text.Length == 0) {
+                MessageBox.Show("Obligatorio codigo del producto");
+            } else if (txt_NombreProduc.Text.Length == 0) 
+            {
+                MessageBox.Show("Obligatorio NOMBRE del producto"); //LLenar campos
+            }
+
+            //Recolectar campos
+            String codigo, nombre, descripcion, ubicacion, costo, venta;
+            codigo = txt_CodigoProduc.Text;
+            nombre = txt_NombreProduc.Text;
+            descripcion = txt_DescripcionProduc.Text;
+            ubicacion = cbx_UbicacionProduc.SelectedValue.ToString();
+            costo = txt_CostoProduc.Text;
+            venta = txt_VentaProduc.Text;
+
+            Productos pr = new Productos(codigo,nombre,descripcion,ubicacion,costo, venta);
+
+
+            //Instanciar clase productos de capa negocio
+
+            if (txt_IDProduc.Text == "nuevo".ToUpper())
             {
                 //estrucutura para un "INSERT"
+                if (pr.fnInsertar()) 
+                {
+                    MessageBox.Show("Guardado correctamente");
+                }
             }
-            else
+            else 
             {
                 //estructura para un "UPDATE"
+                pr.fnActualizar();
             }
         }
 
@@ -63,7 +91,7 @@ namespace POS
             frmhijo.setQuery("SELECT * FROM PRODUCTOS");
             frmhijo.setCampo("nombre");
             DialogResult resultado = frmhijo.ShowDialog();
-            txt_ID.Text = frmhijo.ID_BUSQUEDA;
+            txt_IDProduc.Text = frmhijo.ID_BUSQUEDA;
             //Mostrar frmBuscar, despues del cierre
 
             //obtener ID de la busqueda
