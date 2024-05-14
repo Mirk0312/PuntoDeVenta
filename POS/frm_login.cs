@@ -19,6 +19,48 @@ namespace POS
 
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
+
+            //Validar
+            Boolean validado = false;
+            String aviso = "Ninguno";
+            String usuario, password;
+            if (txt_UsuarioL.Text.Length == 0)
+            {
+                validado = false;
+                aviso = "Obligatorio ingresar usuario \n ";
+
+            }
+            if (txt_passwordL.Text.Length == 0)
+            {
+                validado = false;
+                aviso = "Obligatorio ingresar contraseña \n ";
+
+            }
+            //Recolectar campos en pantalla
+            if (validado) 
+            { 
+            usuario = txt_UsuarioL.Text;
+            password = txt_passwordL.Text;
+                //Instanciar objeto
+                Usuarios user = new Usuarios();
+                user.setUsuario(usuario);
+                user.setPassword(password);
+                if (user.) 
+                
+                
+                { 
+                
+                }
+                //Consultar UsuarioValido()
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Atender lo siguiente: \n" + aviso);
+            }
+
+
+
             //Validar usuario y contrase�a
             if (CapaNegocio.Utilerias.validaVacio(txt_UsuarioL.Text))
             {

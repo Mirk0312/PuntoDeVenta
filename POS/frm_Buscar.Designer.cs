@@ -126,6 +126,7 @@
             dgV_datos.RowHeadersWidth = 51;
             dgV_datos.Size = new Size(800, 327);
             dgV_datos.TabIndex = 1;
+            dgV_datos.CellContentClick += dgV_datos_CellContentClick;
             // 
             // frm_Buscar
             // 
