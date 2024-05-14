@@ -39,7 +39,6 @@ namespace CapaNegocio
                 user.Autenticar(getUsuario(), getPassword());
                 //enviar datos
 
-
                 //esperar respuesta
                 return true;
 

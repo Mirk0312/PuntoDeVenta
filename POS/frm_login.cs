@@ -1,4 +1,5 @@
 using System.Diagnostics.Eventing.Reader;
+using CapaNegocio;
 
 namespace POS
 {
@@ -37,19 +38,19 @@ namespace POS
 
             }
             //Recolectar campos en pantalla
-            if (validado) 
-            { 
-            usuario = txt_UsuarioL.Text;
-            password = txt_passwordL.Text;
+            if (validado)
+            {
+                usuario = txt_UsuarioL.Text;
+                password = txt_passwordL.Text;
                 //Instanciar objeto
                 Usuarios user = new Usuarios();
                 user.setUsuario(usuario);
                 user.setPassword(password);
-                if (user.) 
-                
-                
-                { 
-                
+                if (user.setUsuario == true())
+
+
+                {
+
                 }
                 //Consultar UsuarioValido()
                 this.Close();
@@ -58,24 +59,12 @@ namespace POS
             {
                 MessageBox.Show("Atender lo siguiente: \n" + aviso);
             }
-
-
-
-            //Validar usuario y contrase�a
-            if (CapaNegocio.Utilerias.validaVacio(txt_UsuarioL.Text))
-            {
-                //Llamar a la BD
-
-                this.Close();
-
-
-            }
-            else
-            {
-                MessageBox.Show("Es obligatorio ingresar el usuario");
-            }
-
         }
+
+
+            
+
+    
 
         private void txt_password_TextChanged(object sender, EventArgs e)
         {
