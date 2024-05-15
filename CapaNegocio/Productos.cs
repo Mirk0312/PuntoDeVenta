@@ -10,14 +10,14 @@ namespace CapaNegocio
 {
     public class Productos
     {
-        string id, codigo, nombre, descripcion, ubicacion, costo;
+       private string id, codigo, nombre, descripcion, ubicacion, costo;
 
         public void setID(string valor)
         {
             id = valor;
 
         }
-        public String getID()
+        public string getID()
         {
             return id;
         }
@@ -89,7 +89,22 @@ namespace CapaNegocio
         }
         public Boolean fnActualizar()
         {
-          return false;
+            try
+            {
+                // Crear una instancia de la clase Data_Productos para manejar las operaciones de base de datos
+                Data_Productos prod = new Data_Productos();
+
+              
+                bool resultado = prod.Actualizar(id, codigo, nombre, descripcion, ubicacion, costo);
+
+     
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar el producto: " + ex.Message);
+                return false; 
+            }
         }
 
 

@@ -28,28 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btn_EliminarCliente = new Button();
-            this.txt_RFCClientes = new TextBox();
-            label11 = new Label();
-            this.txt_CorreoClientes = new TextBox();
-            txt_TelefonoClientes = new TextBox();
-            this.txt_NombreClientes = new TextBox();
-            this.txt_ClaveClientes = new TextBox();
-            this.txt_NumeroDeCliente = new TextBox();
-            label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            pictureBox1 = new PictureBox();
-            this.btn_ActualizarCliente = new Button();
-            btn_EditarCliente = new Button();
-            panel2 = new Panel();
-            this.btn_CerrarCliente = new Button();
-            label1 = new Label();
-            panel1 = new Panel();
-            btn_NuevoCliente = new Button();
-            btn_GuardarCliente = new Button();
+            
+        
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -69,12 +49,7 @@
             // 
             // txt_RFCClientes
             // 
-            this.txt_RFCClientes.Location = new Point(194, 187);
-            this.txt_RFCClientes.Margin = new Padding(3, 2, 3, 2);
-            this.txt_RFCClientes.Name = "txt_RFCClientes";
-            this.txt_RFCClientes.Size = new Size(259, 23);
-            this.txt_RFCClientes.TabIndex = 28;
-            // 
+          
             // label11
             // 
             label11.AutoSize = true;
@@ -87,11 +62,7 @@
             // 
             // txt_CorreoClientes
             // 
-            this.txt_CorreoClientes.Location = new Point(193, 294);
-            this.txt_CorreoClientes.Margin = new Padding(3, 2, 3, 2);
-            this.txt_CorreoClientes.Name = "txt_CorreoClientes";
-            this.txt_CorreoClientes.Size = new Size(260, 23);
-            this.txt_CorreoClientes.TabIndex = 26;
+          
             // 
             // txt_TelefonoClientes
             // 
@@ -103,27 +74,14 @@
             // 
             // txt_NombreClientes
             // 
-            this.txt_NombreClientes.Location = new Point(193, 136);
-            this.txt_NombreClientes.Margin = new Padding(3, 2, 3, 2);
-            this.txt_NombreClientes.Name = "txt_NombreClientes";
-            this.txt_NombreClientes.Size = new Size(260, 23);
-            this.txt_NombreClientes.TabIndex = 24;
-            // 
+            
             // txt_ClaveClientes
             // 
-            this.txt_ClaveClientes.Location = new Point(194, 242);
-            this.txt_ClaveClientes.Margin = new Padding(3, 2, 3, 2);
-            this.txt_ClaveClientes.Name = "txt_ClaveClientes";
-            this.txt_ClaveClientes.Size = new Size(259, 23);
-            this.txt_ClaveClientes.TabIndex = 23;
+         
             // 
             // txt_NumeroDeCliente
             // 
-            this.txt_NumeroDeCliente.Location = new Point(193, 83);
-            this.txt_NumeroDeCliente.Margin = new Padding(3, 2, 3, 2);
-            this.txt_NumeroDeCliente.Name = "txt_NumeroDeCliente";
-            this.txt_NumeroDeCliente.Size = new Size(260, 23);
-            this.txt_NumeroDeCliente.TabIndex = 22;
+           
             // 
             // label10
             // 
@@ -188,15 +146,7 @@
             // 
             // btn_ActualizarCliente
             // 
-            this.btn_ActualizarCliente.Image = Properties.Resources.icons8_update_24;
-            this.btn_ActualizarCliente.ImageAlign = ContentAlignment.MiddleLeft;
-            this.btn_ActualizarCliente.Location = new Point(376, 10);
-            this.btn_ActualizarCliente.Margin = new Padding(3, 2, 3, 2);
-            this.btn_ActualizarCliente.Name = "btn_ActualizarCliente";
-            this.btn_ActualizarCliente.Size = new Size(104, 30);
-            this.btn_ActualizarCliente.TabIndex = 33;
-            this.btn_ActualizarCliente.Text = "    Actualizar";
-            this.btn_ActualizarCliente.UseVisualStyleBackColor = true;
+           
             // 
             // btn_EditarCliente
             // 
@@ -213,7 +163,7 @@
             // panel2
             // 
             panel2.BackColor = Color.DarkBlue;
-            panel2.Controls.Add(this.btn_CerrarCliente);
+            
             panel2.Controls.Add(label1);
             panel2.Controls.Add(pictureBox1);
             panel2.Dock = DockStyle.Top;
@@ -225,16 +175,7 @@
             // 
             // btn_CerrarCliente
             // 
-            this.btn_CerrarCliente.Image = Properties.Resources.CerrarVentana;
-            this.btn_CerrarCliente.ImageAlign = ContentAlignment.MiddleLeft;
-            this.btn_CerrarCliente.Location = new Point(705, 11);
-            this.btn_CerrarCliente.Margin = new Padding(3, 2, 3, 2);
-            this.btn_CerrarCliente.Name = "btn_CerrarCliente";
-            this.btn_CerrarCliente.Size = new Size(83, 27);
-            this.btn_CerrarCliente.TabIndex = 23;
-            this.btn_CerrarCliente.Text = "        Cerrar";
-            this.btn_CerrarCliente.TextAlign = ContentAlignment.MiddleRight;
-            this.btn_CerrarCliente.UseVisualStyleBackColor = true;
+          
             // 
             // label1
             // 
@@ -253,7 +194,7 @@
             panel1.Controls.Add(btn_NuevoCliente);
             panel1.Controls.Add(btn_GuardarCliente);
             panel1.Controls.Add(btn_EliminarCliente);
-            panel1.Controls.Add(this.btn_ActualizarCliente);
+            
             panel1.Controls.Add(btn_EditarCliente);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 387);
@@ -291,13 +232,7 @@
             ClientSize = new Size(800, 437);
             Controls.Add(panel1);
             Controls.Add(panel2);
-            Controls.Add(this.txt_RFCClientes);
-            Controls.Add(label11);
-            Controls.Add(this.txt_CorreoClientes);
-            Controls.Add(txt_TelefonoClientes);
-            Controls.Add(this.txt_NombreClientes);
-            Controls.Add(this.txt_ClaveClientes);
-            Controls.Add(this.txt_NumeroDeCliente);
+            
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
