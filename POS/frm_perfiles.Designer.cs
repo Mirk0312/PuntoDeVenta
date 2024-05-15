@@ -33,158 +33,121 @@
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
-            btn_EliminarP = new Button();
-            btn_AgregarP = new Button();
-            txt_TelefonoP = new TextBox();
-            txt_CorreoP = new TextBox();
-            txt_ApellidoMP = new TextBox();
-            txt_ApellidoPP = new TextBox();
-            txt_NombreP = new TextBox();
-            panel1 = new Panel();
+            txt_TelefonoPe = new TextBox();
+            txt_CorreoPe = new TextBox();
+            txt_ApellidoMPe = new TextBox();
+            txt_ApellidoPPe = new TextBox();
+            txt_NombrePe = new TextBox();
             btn_CerrarP = new Button();
             pictureBox1 = new PictureBox();
-            picturebox_prueba = new PictureBox();
-            PERFIL = new Label();
-            txt_DireccionP = new TextBox();
+            txt_DireccionPe = new TextBox();
             label1 = new Label();
-            panel1.SuspendLayout();
+            panel2 = new Panel();
+            label2 = new Label();
+            panel1 = new Panel();
+            this.btn_EliminarPe = new Button();
+            this.btn_NuevoPe = new Button();
+            btn_CancelarPe = new Button();
+            btn_GuardarPe = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picturebox_prueba).BeginInit();
+            panel2.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 17.25F, FontStyle.Bold);
-            label5.Location = new Point(12, 291);
+            label5.Font = new Font("Segoe UI", 10.2F);
+            label5.Location = new Point(12, 375);
             label5.Name = "label5";
-            label5.Size = new Size(138, 31);
+            label5.Size = new Size(85, 23);
             label5.TabIndex = 10;
-            label5.Text = "* Direccion:";
+            label5.Text = "Direccion:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 17.25F, FontStyle.Bold);
-            label6.Location = new Point(12, 245);
+            label6.Font = new Font("Segoe UI", 10.2F);
+            label6.Location = new Point(12, 314);
             label6.Name = "label6";
-            label6.Size = new Size(234, 31);
+            label6.Size = new Size(155, 23);
             label6.TabIndex = 9;
-            label6.Text = "* Correo electronico:";
+            label6.Text = "Correo electronico:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 17.25F, FontStyle.Bold);
-            label7.Location = new Point(12, 198);
+            label7.Font = new Font("Segoe UI", 10.2F);
+            label7.Location = new Point(12, 251);
             label7.Name = "label7";
-            label7.Size = new Size(225, 31);
+            label7.Size = new Size(146, 23);
             label7.TabIndex = 8;
-            label7.Text = "* Apellido Materno:";
+            label7.Text = "Apellido Materno:";
+            label7.Click += label7_Click;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 17.25F, FontStyle.Bold);
-            label8.Location = new Point(12, 140);
+            label8.Font = new Font("Segoe UI", 10.2F);
+            label8.Location = new Point(12, 174);
             label8.Name = "label8";
-            label8.Size = new Size(216, 31);
+            label8.Size = new Size(140, 23);
             label8.TabIndex = 7;
-            label8.Text = "* Apellido Paterno:";
+            label8.Text = "Apellido Paterno:";
+            label8.Click += label8_Click;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 17.25F, FontStyle.Bold);
-            label9.Location = new Point(12, 87);
+            label9.Font = new Font("Segoe UI", 10.2F);
+            label9.Location = new Point(12, 103);
             label9.Name = "label9";
-            label9.Size = new Size(124, 31);
+            label9.Size = new Size(77, 23);
             label9.TabIndex = 6;
-            label9.Text = "* Nombre:";
+            label9.Text = "Nombre:";
             // 
-            // btn_EliminarP
+            // txt_TelefonoPe
             // 
-            btn_EliminarP.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_EliminarP.Location = new Point(610, 254);
-            btn_EliminarP.Margin = new Padding(3, 2, 3, 2);
-            btn_EliminarP.Name = "btn_EliminarP";
-            btn_EliminarP.Size = new Size(134, 48);
-            btn_EliminarP.TabIndex = 19;
-            btn_EliminarP.Text = "Eliminar";
-            btn_EliminarP.UseVisualStyleBackColor = true;
+            txt_TelefonoPe.Location = new Point(270, 444);
+            txt_TelefonoPe.Name = "txt_TelefonoPe";
+            txt_TelefonoPe.Size = new Size(300, 27);
+            txt_TelefonoPe.TabIndex = 17;
             // 
-            // btn_AgregarP
+            // txt_CorreoPe
             // 
-            btn_AgregarP.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_AgregarP.Location = new Point(610, 181);
-            btn_AgregarP.Margin = new Padding(3, 2, 3, 2);
-            btn_AgregarP.Name = "btn_AgregarP";
-            btn_AgregarP.Size = new Size(134, 48);
-            btn_AgregarP.TabIndex = 18;
-            btn_AgregarP.Text = "Agregar";
-            btn_AgregarP.UseVisualStyleBackColor = true;
+            txt_CorreoPe.Location = new Point(270, 314);
+            txt_CorreoPe.Name = "txt_CorreoPe";
+            txt_CorreoPe.Size = new Size(300, 27);
+            txt_CorreoPe.TabIndex = 16;
             // 
-            // txt_TelefonoP
+            // txt_ApellidoMPe
             // 
-            txt_TelefonoP.Location = new Point(274, 354);
-            txt_TelefonoP.Margin = new Padding(3, 2, 3, 2);
-            txt_TelefonoP.Name = "txt_TelefonoP";
-            txt_TelefonoP.Size = new Size(263, 23);
-            txt_TelefonoP.TabIndex = 17;
+            txt_ApellidoMPe.Location = new Point(270, 247);
+            txt_ApellidoMPe.Name = "txt_ApellidoMPe";
+            txt_ApellidoMPe.Size = new Size(300, 27);
+            txt_ApellidoMPe.TabIndex = 15;
             // 
-            // txt_CorreoP
+            // txt_ApellidoPPe
             // 
-            txt_CorreoP.Location = new Point(274, 253);
-            txt_CorreoP.Margin = new Padding(3, 2, 3, 2);
-            txt_CorreoP.Name = "txt_CorreoP";
-            txt_CorreoP.Size = new Size(263, 23);
-            txt_CorreoP.TabIndex = 16;
+            txt_ApellidoPPe.Location = new Point(270, 173);
+            txt_ApellidoPPe.Name = "txt_ApellidoPPe";
+            txt_ApellidoPPe.Size = new Size(300, 27);
+            txt_ApellidoPPe.TabIndex = 14;
             // 
-            // txt_ApellidoMP
+            // txt_NombrePe
             // 
-            txt_ApellidoMP.Location = new Point(274, 199);
-            txt_ApellidoMP.Margin = new Padding(3, 2, 3, 2);
-            txt_ApellidoMP.Name = "txt_ApellidoMP";
-            txt_ApellidoMP.Size = new Size(263, 23);
-            txt_ApellidoMP.TabIndex = 15;
-            // 
-            // txt_ApellidoPP
-            // 
-            txt_ApellidoPP.Location = new Point(274, 148);
-            txt_ApellidoPP.Margin = new Padding(3, 2, 3, 2);
-            txt_ApellidoPP.Name = "txt_ApellidoPP";
-            txt_ApellidoPP.Size = new Size(263, 23);
-            txt_ApellidoPP.TabIndex = 14;
-            // 
-            // txt_NombreP
-            // 
-            txt_NombreP.Location = new Point(274, 97);
-            txt_NombreP.Margin = new Padding(3, 2, 3, 2);
-            txt_NombreP.Name = "txt_NombreP";
-            txt_NombreP.Size = new Size(263, 23);
-            txt_NombreP.TabIndex = 13;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Navy;
-            panel1.Controls.Add(btn_CerrarP);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(picturebox_prueba);
-            panel1.Controls.Add(PERFIL);
-            panel1.Location = new Point(0, -1);
-            panel1.Margin = new Padding(3, 2, 3, 2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(802, 75);
-            panel1.TabIndex = 20;
+            txt_NombrePe.Location = new Point(270, 102);
+            txt_NombrePe.Name = "txt_NombrePe";
+            txt_NombrePe.Size = new Size(300, 27);
+            txt_NombrePe.TabIndex = 13;
             // 
             // btn_CerrarP
             // 
             btn_CerrarP.Image = Properties.Resources.CerrarVentana;
             btn_CerrarP.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_CerrarP.Location = new Point(705, 12);
-            btn_CerrarP.Margin = new Padding(3, 2, 3, 2);
+            btn_CerrarP.Location = new Point(779, 23);
             btn_CerrarP.Name = "btn_CerrarP";
-            btn_CerrarP.Size = new Size(83, 22);
+            btn_CerrarP.Size = new Size(95, 29);
             btn_CerrarP.TabIndex = 25;
             btn_CerrarP.Text = "        Cerrar";
             btn_CerrarP.TextAlign = ContentAlignment.MiddleRight;
@@ -195,81 +158,142 @@
             // 
             pictureBox1.BackColor = Color.SlateGray;
             pictureBox1.Image = Properties.Resources.icons8_clientes_100;
-            pictureBox1.Location = new Point(190, 2);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 71);
+            pictureBox1.Size = new Size(98, 60);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
-            // picturebox_prueba
+            // txt_DireccionPe
             // 
-            picturebox_prueba.BackColor = Color.SlateGray;
-            picturebox_prueba.Image = Properties.Resources.icons8_clientes_100;
-            picturebox_prueba.Location = new Point(541, 2);
-            picturebox_prueba.Margin = new Padding(3, 2, 3, 2);
-            picturebox_prueba.Name = "picturebox_prueba";
-            picturebox_prueba.Size = new Size(102, 71);
-            picturebox_prueba.TabIndex = 1;
-            picturebox_prueba.TabStop = false;
-            // 
-            // PERFIL
-            // 
-            PERFIL.AutoSize = true;
-            PERFIL.Font = new Font("Myanmar Text", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            PERFIL.ForeColor = SystemColors.ButtonFace;
-            PERFIL.Location = new Point(349, 22);
-            PERFIL.Name = "PERFIL";
-            PERFIL.Size = new Size(118, 53);
-            PERFIL.TabIndex = 0;
-            PERFIL.Text = "PERFIL";
-            // 
-            // txt_DireccionP
-            // 
-            txt_DireccionP.Location = new Point(274, 299);
-            txt_DireccionP.Margin = new Padding(3, 2, 3, 2);
-            txt_DireccionP.Name = "txt_DireccionP";
-            txt_DireccionP.Size = new Size(263, 23);
-            txt_DireccionP.TabIndex = 21;
+            txt_DireccionPe.Location = new Point(270, 374);
+            txt_DireccionPe.Name = "txt_DireccionPe";
+            txt_DireccionPe.Size = new Size(300, 27);
+            txt_DireccionPe.TabIndex = 21;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 17.25F, FontStyle.Bold);
-            label1.Location = new Point(12, 346);
+            label1.Font = new Font("Segoe UI", 10.2F);
+            label1.Location = new Point(12, 448);
             label1.Name = "label1";
-            label1.Size = new Size(129, 31);
+            label1.Size = new Size(78, 23);
             label1.TabIndex = 22;
-            label1.Text = "* Telefono:";
+            label1.Text = "Telefono:";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.DarkBlue;
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(btn_CerrarP);
+            panel2.Controls.Add(pictureBox1);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(914, 75);
+            panel2.TabIndex = 42;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.DarkBlue;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.AliceBlue;
+            label2.Location = new Point(116, 23);
+            label2.Name = "label2";
+            label2.Size = new Size(94, 31);
+            label2.TabIndex = 21;
+            label2.Text = "Perfiles";
+            label2.Click += label2_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.DarkBlue;
+            panel1.Controls.Add(this.btn_EliminarPe);
+            panel1.Controls.Add(this.btn_NuevoPe);
+            panel1.Controls.Add(btn_CancelarPe);
+            panel1.Controls.Add(btn_GuardarPe);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(0, 533);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(914, 67);
+            panel1.TabIndex = 41;
+            // 
+            // btn_EliminarPe
+            // 
+            this.btn_EliminarPe.Image = Properties.Resources.EliminarArchivo;
+            this.btn_EliminarPe.ImageAlign = ContentAlignment.MiddleLeft;
+            this.btn_EliminarPe.Location = new Point(286, 13);
+            this.btn_EliminarPe.Margin = new Padding(3, 4, 3, 4);
+            this.btn_EliminarPe.Name = "btn_EliminarPe";
+            this.btn_EliminarPe.Size = new Size(101, 40);
+            this.btn_EliminarPe.TabIndex = 4;
+            this.btn_EliminarPe.Text = "      Eliminar";
+            this.btn_EliminarPe.TextAlign = ContentAlignment.MiddleRight;
+            this.btn_EliminarPe.UseVisualStyleBackColor = true;
+            // 
+            // btn_NuevoPe
+            // 
+            this.btn_NuevoPe.Image = Properties.Resources.NuevoArchivo;
+            this.btn_NuevoPe.ImageAlign = ContentAlignment.MiddleLeft;
+            this.btn_NuevoPe.Location = new Point(23, 13);
+            this.btn_NuevoPe.Margin = new Padding(3, 4, 3, 4);
+            this.btn_NuevoPe.Name = "btn_NuevoPe";
+            this.btn_NuevoPe.Size = new Size(101, 40);
+            this.btn_NuevoPe.TabIndex = 0;
+            this.btn_NuevoPe.Text = "      Nuevo";
+            this.btn_NuevoPe.UseVisualStyleBackColor = true;
+            // 
+            // btn_CancelarPe
+            // 
+            btn_CancelarPe.Image = Properties.Resources.CancelarArchivo;
+            btn_CancelarPe.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_CancelarPe.Location = new Point(421, 13);
+            btn_CancelarPe.Margin = new Padding(3, 4, 3, 4);
+            btn_CancelarPe.Name = "btn_CancelarPe";
+            btn_CancelarPe.Size = new Size(101, 40);
+            btn_CancelarPe.TabIndex = 2;
+            btn_CancelarPe.Text = "      Cancelar";
+            btn_CancelarPe.UseVisualStyleBackColor = true;
+            // 
+            // btn_GuardarPe
+            // 
+            btn_GuardarPe.Image = Properties.Resources.GuardarArchivo;
+            btn_GuardarPe.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_GuardarPe.Location = new Point(155, 13);
+            btn_GuardarPe.Margin = new Padding(3, 4, 3, 4);
+            btn_GuardarPe.Name = "btn_GuardarPe";
+            btn_GuardarPe.Size = new Size(101, 40);
+            btn_GuardarPe.TabIndex = 1;
+            btn_GuardarPe.Text = "      Guardar";
+            btn_GuardarPe.UseVisualStyleBackColor = true;
             // 
             // frm_perfiles
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
-            Controls.Add(txt_DireccionP);
+            ClientSize = new Size(914, 600);
             Controls.Add(panel1);
-            Controls.Add(btn_EliminarP);
-            Controls.Add(btn_AgregarP);
-            Controls.Add(txt_TelefonoP);
-            Controls.Add(txt_CorreoP);
-            Controls.Add(txt_ApellidoMP);
-            Controls.Add(txt_ApellidoPP);
-            Controls.Add(txt_NombreP);
+            Controls.Add(panel2);
+            Controls.Add(label1);
+            Controls.Add(txt_DireccionPe);
+            Controls.Add(txt_TelefonoPe);
+            Controls.Add(txt_CorreoPe);
+            Controls.Add(txt_ApellidoMPe);
+            Controls.Add(txt_ApellidoPPe);
+            Controls.Add(txt_NombrePe);
             Controls.Add(label5);
             Controls.Add(label6);
             Controls.Add(label7);
             Controls.Add(label8);
             Controls.Add(label9);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "frm_perfiles";
             Text = "frm_usuarios";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picturebox_prueba).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -283,17 +307,21 @@
         private Label label9;
         private Button btn_EliminarP;
         private Button btn_AgregarP;
-        private TextBox txt_TelefonoP;
-        private TextBox txt_CorreoP;
-        private TextBox txt_ApellidoMP;
-        private TextBox txt_ApellidoPP;
-        private TextBox txt_NombreP;
-        private Panel panel1;
-        private PictureBox picturebox_prueba;
-        private Label PERFIL;
+        private TextBox txt_TelefonoPe;
+        private TextBox txt_CorreoPe;
+        private TextBox txt_ApellidoMPe;
+        private TextBox txt_ApellidoPPe;
+        private TextBox txt_NombrePe;
         private PictureBox pictureBox1;
-        private TextBox txt_DireccionP;
+        private TextBox txt_DireccionPe;
         private Label label1;
         private Button btn_CerrarP;
+        private Panel panel2;
+        private Label label2;
+        private Panel panel1;
+        private Button button1;
+        private Button btn_NuevoP;
+        private Button btn_CancelarPe;
+        private Button btn_GuardarPe;
     }
 }

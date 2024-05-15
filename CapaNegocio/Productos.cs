@@ -18,6 +18,7 @@ namespace CapaNegocio
         }
         public Boolean fnInsertar() 
         {
+           
             return false;    
         }
         public Boolean fnActualizar() 

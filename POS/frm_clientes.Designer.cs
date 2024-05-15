@@ -28,14 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
             btn_CerrarC = new Button();
-            label1 = new Label();
-            panel2 = new Panel();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
             btn_EliminarC = new Button();
             btn_AgregarC = new Button();
             txt_RFCC = new TextBox();
@@ -52,115 +45,36 @@
             label6 = new Label();
             pictureBox1 = new PictureBox();
             btn_ActualizarC = new Button();
-            button1 = new Button();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
+            btn_EditarC = new Button();
+            panel2 = new Panel();
+            label2 = new Label();
+            panel1 = new Panel();
+            btn_GuardarC = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.DarkBlue;
-            panel1.Controls.Add(btn_CerrarC);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(-1, 2);
-            panel1.Margin = new Padding(3, 2, 3, 2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(803, 38);
-            panel1.TabIndex = 1;
             // 
             // btn_CerrarC
             // 
             btn_CerrarC.Image = Properties.Resources.CerrarVentana;
             btn_CerrarC.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_CerrarC.Location = new Point(698, 11);
-            btn_CerrarC.Margin = new Padding(3, 2, 3, 2);
+            btn_CerrarC.Location = new Point(807, 26);
             btn_CerrarC.Name = "btn_CerrarC";
-            btn_CerrarC.Size = new Size(83, 24);
+            btn_CerrarC.Size = new Size(95, 32);
             btn_CerrarC.TabIndex = 24;
             btn_CerrarC.Text = "        Cerrar";
             btn_CerrarC.TextAlign = ContentAlignment.MiddleRight;
             btn_CerrarC.UseVisualStyleBackColor = true;
             btn_CerrarC.Click += btn_CerrarCP_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Sitka Display", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.LightCyan;
-            label1.Location = new Point(344, -9);
-            label1.Name = "label1";
-            label1.Size = new Size(126, 47);
-            label1.TabIndex = 0;
-            label1.Text = "Clientes";
-            label1.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.DarkBlue;
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(label2);
-            panel2.ForeColor = Color.DarkCyan;
-            panel2.Location = new Point(-1, 44);
-            panel2.Margin = new Padding(3, 2, 3, 2);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(803, 38);
-            panel2.TabIndex = 2;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.GhostWhite;
-            label5.Location = new Point(637, 8);
-            label5.Name = "label5";
-            label5.Size = new Size(152, 25);
-            label5.TabIndex = 4;
-            label5.Text = "* Complementos";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.GhostWhite;
-            label4.Location = new Point(440, 8);
-            label4.Name = "label4";
-            label4.Size = new Size(139, 25);
-            label4.TabIndex = 3;
-            label4.Text = "* Huella Digital";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.GhostWhite;
-            label3.Location = new Point(203, 8);
-            label3.Name = "label3";
-            label3.Size = new Size(175, 25);
-            label3.TabIndex = 2;
-            label3.Text = "* Datos Facturacion";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.GhostWhite;
-            label2.Location = new Point(13, 8);
-            label2.Name = "label2";
-            label2.Size = new Size(140, 25);
-            label2.TabIndex = 0;
-            label2.Text = "* Datos Basicos";
-            // 
             // btn_EliminarC
             // 
             btn_EliminarC.Image = Properties.Resources.EliminarArchivo;
             btn_EliminarC.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_EliminarC.Location = new Point(22, 362);
-            btn_EliminarC.Margin = new Padding(3, 2, 3, 2);
+            btn_EliminarC.Location = new Point(286, 15);
             btn_EliminarC.Name = "btn_EliminarC";
-            btn_EliminarC.Size = new Size(104, 39);
+            btn_EliminarC.Size = new Size(110, 40);
             btn_EliminarC.TabIndex = 31;
             btn_EliminarC.Text = "  Eliminar";
             btn_EliminarC.UseVisualStyleBackColor = true;
@@ -169,109 +83,102 @@
             // 
             btn_AgregarC.Image = Properties.Resources.icons8_add_24;
             btn_AgregarC.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_AgregarC.Location = new Point(22, 204);
-            btn_AgregarC.Margin = new Padding(3, 2, 3, 2);
+            btn_AgregarC.Location = new Point(25, 13);
             btn_AgregarC.Name = "btn_AgregarC";
-            btn_AgregarC.Size = new Size(104, 39);
+            btn_AgregarC.Size = new Size(103, 40);
             btn_AgregarC.TabIndex = 30;
             btn_AgregarC.Text = "  Agregar";
             btn_AgregarC.UseVisualStyleBackColor = true;
             // 
             // txt_RFCC
             // 
-            txt_RFCC.Location = new Point(592, 166);
-            txt_RFCC.Margin = new Padding(3, 2, 3, 2);
+            txt_RFCC.Location = new Point(242, 214);
             txt_RFCC.Name = "txt_RFCC";
-            txt_RFCC.Size = new Size(151, 23);
+            txt_RFCC.Size = new Size(362, 27);
             txt_RFCC.TabIndex = 28;
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(649, 140);
+            label11.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.Location = new Point(25, 214);
             label11.Name = "label11";
-            label11.Size = new Size(49, 21);
+            label11.Size = new Size(43, 23);
             label11.TabIndex = 27;
-            label11.Text = "* RFC";
+            label11.Text = "RFC:";
             // 
             // txt_CorreoC
             // 
-            txt_CorreoC.Location = new Point(592, 234);
-            txt_CorreoC.Margin = new Padding(3, 2, 3, 2);
+            txt_CorreoC.Location = new Point(242, 326);
             txt_CorreoC.Name = "txt_CorreoC";
-            txt_CorreoC.Size = new Size(151, 23);
+            txt_CorreoC.Size = new Size(362, 27);
             txt_CorreoC.TabIndex = 26;
             // 
             // txt_TelefonoC
             // 
-            txt_TelefonoC.Location = new Point(374, 234);
-            txt_TelefonoC.Margin = new Padding(3, 2, 3, 2);
+            txt_TelefonoC.Location = new Point(242, 388);
             txt_TelefonoC.Name = "txt_TelefonoC";
-            txt_TelefonoC.Size = new Size(152, 23);
+            txt_TelefonoC.Size = new Size(362, 27);
             txt_TelefonoC.TabIndex = 25;
             // 
             // txt_NombreC
             // 
-            txt_NombreC.Location = new Point(169, 234);
-            txt_NombreC.Margin = new Padding(3, 2, 3, 2);
+            txt_NombreC.Location = new Point(242, 161);
             txt_NombreC.Name = "txt_NombreC";
-            txt_NombreC.Size = new Size(152, 23);
+            txt_NombreC.Size = new Size(362, 27);
             txt_NombreC.TabIndex = 24;
             // 
             // txt_ClaveC
             // 
-            txt_ClaveC.Location = new Point(374, 167);
-            txt_ClaveC.Margin = new Padding(3, 2, 3, 2);
+            txt_ClaveC.Location = new Point(242, 265);
             txt_ClaveC.Name = "txt_ClaveC";
-            txt_ClaveC.Size = new Size(152, 23);
+            txt_ClaveC.Size = new Size(362, 27);
             txt_ClaveC.TabIndex = 23;
             // 
             // txt_NumeroclienteC
             // 
-            txt_NumeroclienteC.Location = new Point(169, 167);
-            txt_NumeroclienteC.Margin = new Padding(3, 2, 3, 2);
+            txt_NumeroclienteC.Location = new Point(242, 113);
             txt_NumeroclienteC.Name = "txt_NumeroclienteC";
-            txt_NumeroclienteC.Size = new Size(152, 23);
+            txt_NumeroclienteC.Size = new Size(362, 27);
             txt_NumeroclienteC.TabIndex = 22;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(639, 210);
+            label10.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.Location = new Point(25, 330);
             label10.Name = "label10";
-            label10.Size = new Size(72, 21);
+            label10.Size = new Size(62, 23);
             label10.TabIndex = 21;
-            label10.Text = "* Correo";
+            label10.Text = "Correo";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(404, 211);
+            label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.Location = new Point(25, 388);
             label9.Name = "label9";
-            label9.Size = new Size(96, 21);
+            label9.Size = new Size(83, 23);
             label9.TabIndex = 20;
-            label9.Text = "* Teléfono: ";
+            label9.Text = "Teléfono: ";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(195, 211);
+            label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Location = new Point(25, 162);
             label8.Name = "label8";
-            label8.Size = new Size(88, 21);
+            label8.Size = new Size(77, 23);
             label8.TabIndex = 19;
-            label8.Text = "* Nombre:";
+            label8.Text = "Nombre:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label7.Location = new Point(419, 141);
+            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(25, 265);
             label7.Name = "label7";
-            label7.Size = new Size(56, 21);
+            label7.Size = new Size(55, 23);
             label7.TabIndex = 18;
             label7.Text = "Clave:";
             label7.Click += label7_Click;
@@ -279,20 +186,19 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label6.Location = new Point(183, 141);
+            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(25, 113);
             label6.Name = "label6";
-            label6.Size = new Size(122, 21);
+            label6.Size = new Size(123, 23);
             label6.TabIndex = 17;
             label6.Text = "No. de Cliente:";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.icons8_clientes_100;
-            pictureBox1.Location = new Point(22, 88);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(3, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(104, 102);
+            pictureBox1.Size = new Size(119, 136);
             pictureBox1.TabIndex = 32;
             pictureBox1.TabStop = false;
             // 
@@ -300,36 +206,82 @@
             // 
             btn_ActualizarC.Image = Properties.Resources.icons8_update_24;
             btn_ActualizarC.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_ActualizarC.Location = new Point(22, 257);
-            btn_ActualizarC.Margin = new Padding(3, 2, 3, 2);
+            btn_ActualizarC.Location = new Point(425, 13);
             btn_ActualizarC.Name = "btn_ActualizarC";
-            btn_ActualizarC.Size = new Size(104, 38);
+            btn_ActualizarC.Size = new Size(109, 38);
             btn_ActualizarC.TabIndex = 33;
             btn_ActualizarC.Text = "    Actualizar";
             btn_ActualizarC.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_EditarC
             // 
-            button1.Image = Properties.Resources.icons8_update_24;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(22, 310);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(104, 38);
-            button1.TabIndex = 34;
-            button1.Text = "    Editar";
-            button1.UseVisualStyleBackColor = true;
+            btn_EditarC.Image = Properties.Resources.icons8_update_24;
+            btn_EditarC.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_EditarC.Location = new Point(560, 10);
+            btn_EditarC.Name = "btn_EditarC";
+            btn_EditarC.Size = new Size(107, 41);
+            btn_EditarC.TabIndex = 34;
+            btn_EditarC.Text = "    Editar";
+            btn_EditarC.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.DarkBlue;
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(pictureBox1);
+            panel2.Controls.Add(btn_CerrarC);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(914, 75);
+            panel2.TabIndex = 42;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.DarkBlue;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.AliceBlue;
+            label2.Location = new Point(128, 23);
+            label2.Name = "label2";
+            label2.Size = new Size(99, 31);
+            label2.TabIndex = 21;
+            label2.Text = "Clientes";
+            label2.Click += label2_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.DarkBlue;
+            panel1.Controls.Add(btn_GuardarC);
+            panel1.Controls.Add(btn_AgregarC);
+            panel1.Controls.Add(btn_EditarC);
+            panel1.Controls.Add(btn_EliminarC);
+            panel1.Controls.Add(btn_ActualizarC);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(0, 516);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(914, 67);
+            panel1.TabIndex = 43;
+            // 
+            // btn_GuardarC
+            // 
+            btn_GuardarC.Image = Properties.Resources.GuardarArchivo;
+            btn_GuardarC.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_GuardarC.Location = new Point(155, 13);
+            btn_GuardarC.Margin = new Padding(3, 4, 3, 4);
+            btn_GuardarC.Name = "btn_GuardarC";
+            btn_GuardarC.Size = new Size(101, 40);
+            btn_GuardarC.TabIndex = 1;
+            btn_GuardarC.Text = "      Guardar";
+            btn_GuardarC.UseVisualStyleBackColor = true;
             // 
             // frm_clientes
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 437);
-            Controls.Add(button1);
-            Controls.Add(btn_ActualizarC);
-            Controls.Add(pictureBox1);
-            Controls.Add(btn_EliminarC);
-            Controls.Add(btn_AgregarC);
+            ClientSize = new Size(914, 583);
+            Controls.Add(panel1);
+            Controls.Add(panel2);
             Controls.Add(txt_RFCC);
             Controls.Add(label11);
             Controls.Add(txt_CorreoC);
@@ -342,33 +294,21 @@
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "frm_clientes";
             Text = "frm_clientes";
             Load += frm_clientes_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Panel panel1;
-        private Label label1;
-        private Panel panel2;
-        private Label label5;
-        private Label label4;
-        private Label label3;
-        private Label label2;
         private Button btn_EliminarC;
         private Button btn_AgregarC;
         private TextBox txt_RFCC;
@@ -386,6 +326,10 @@
         private PictureBox pictureBox1;
         private Button btn_ActualizarC;
         private Button btn_CerrarC;
-        private Button button1;
+        private Button btn_EditarC;
+        private Panel panel2;
+        private Label label2;
+        private Panel panel1;
+        private Button btn_GuardarC;
     }
 }
