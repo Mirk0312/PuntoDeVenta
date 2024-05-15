@@ -56,31 +56,34 @@ namespace POS
             }
 
             //Recolectar campos
-            String codigo, nombre, descripcion, ubicacion, costo, venta;
-            codigo = txt_CodigoProduc.Text;
-            nombre = txt_NombreProduc.Text;
-            descripcion = txt_DescripcionProduc.Text;
-            ubicacion = cbx_UbicacionProduc.SelectedValue.ToString();
-            costo = txt_CostoProduc.Text;
-            venta = txt_VentaProduc.Text;
+            string codigo = txt_CodigoProduc.Text;
+            string nombre = txt_NombreProduc.Text;
+            string descripcion = txt_DescripcionProduc.Text;
+            string ubicacion = cbx_UbicacionProduc.SelectedValue.ToString();
+            string costo = txt_CostoProduc.Text;
+            string venta = txt_VentaProduc.Text;
+            string idProducto = txt_IDProduc.Text;
 
             Productos pr = new Productos(codigo,nombre,descripcion,ubicacion,costo, venta);
 
 
             //Instanciar clase productos de capa negocio
 
-            if (txt_IDProduc.Text == "nuevo".ToUpper())
+            // Determinar si es un nuevo registro o una actualización
+            if (txt_IDProduc.Text.ToUpper() == "NUEVO")
             {
-                //estrucutura para un "INSERT"
-                if (pr.fnInsertar()) 
+                // Estructura para un "INSERT"
+                if (pr.fnInsertar())
                 {
                     MessageBox.Show("Guardado correctamente");
+                    nuevo(); // Limpiar campos después de guardar
                 }
             }
-            else 
+            else
             {
-                //estructura para un "UPDATE"
-                pr.fnActualizar();
+
+                // Estructura para un "UPDATE"
+                pr.fnActualizar(idProducto, codigo, nombre, descripcion, ubicacion, costo, venta);
             }
         }
 

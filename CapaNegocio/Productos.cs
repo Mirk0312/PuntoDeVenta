@@ -36,15 +36,16 @@ namespace CapaNegocio
             return resultado;
             
         }
-        public Boolean fnActualizar() 
+        public Boolean fnActualizar(string id, string codigo, string nombre, string descripcion, string ubicacion, string costo, string venta)
         {
             Boolean resultado = false;
             Data_Productos prod = new Data_Productos();
-            resultado = prod.Insertar(codigo, nombre, descripcion, ubicacion, costo, venta);
+            resultado = prod.Actualizar(id, codigo, nombre, descripcion, ubicacion, costo, venta);
             return resultado;
-
-
         }
 
+
     }
+
 }
+

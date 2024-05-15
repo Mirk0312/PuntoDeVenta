@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -19,14 +19,12 @@ namespace CapaDatos
         {
             try
             {
-
                 comandoSQL.Connection = connSQL.AbrirConexion();
                 //Enviar nombre de recursos SQL
-                comandoSQL.CommandText = "proc_InsertarUsuario";
+                comandoSQL.CommandText = "proc_InsertarProducto";
                 //TIPO DE CONEXION
                 comandoSQL.CommandType = CommandType.StoredProcedure;
                 //Agregar parametros
-              
                 comandoSQL.Parameters.AddWithValue("@codigo", codigo);
                 comandoSQL.Parameters.AddWithValue("@nombre", nombre);
                 comandoSQL.Parameters.AddWithValue("@descripcion", descripcion);
@@ -34,22 +32,64 @@ namespace CapaDatos
                 comandoSQL.Parameters.AddWithValue("@costo", costo);
                 comandoSQL.Parameters.AddWithValue("@venta", venta);
 
-
-
+                // Ejecutar la consulta y obtener el número de filas afectadas
                 renglonesAfectados = comandoSQL.ExecuteNonQuery();
+
+                // Limpiar los parámetros del comando
                 comandoSQL.Parameters.Clear();
+
+                // Cerrar la conexión
                 connSQL.CerrarConexion();
-                //Cerrar conexion
+
+                // Devolver true si la inserción fue exitosa
                 return true;
             }
-            catch (Exception ex) 
-            { 
-                Console.WriteLine(ex.ToString());   
+            catch (Exception ex)
+            {
+                // Manejar la excepción e imprimir el mensaje de error
+                Console.WriteLine(ex.ToString());
+                // Devolver false si ocurrió un error durante la inserción
+                return false;
             }
         }
 
-        
+        public Boolean Actualizar(string id, string codigo, string nombre, string descripcion, string ubicacion, string costo, string venta)
+        {
+            try
+            {
+                comandoSQL.Connection = connSQL.AbrirConexion();
+                //Enviar nombre de recursos SQL
+                comandoSQL.CommandText = "proc_ActualizarProducto";
+                //TIPO DE CONEXION
+                comandoSQL.CommandType = CommandType.StoredProcedure;
+                //Agregar parametros
+                comandoSQL.Parameters.AddWithValue("@id", id);
+                comandoSQL.Parameters.AddWithValue("@codigo", codigo);
+                comandoSQL.Parameters.AddWithValue("@nombre", nombre);
+                comandoSQL.Parameters.AddWithValue("@descripcion", descripcion);
+                comandoSQL.Parameters.AddWithValue("@ubicacion", ubicacion);
+                comandoSQL.Parameters.AddWithValue("@costo", costo);
+                comandoSQL.Parameters.AddWithValue("@venta", venta);
 
+                // Ejecutar la consulta y obtener el número de filas afectadas
+                renglonesAfectados = comandoSQL.ExecuteNonQuery();
+
+                // Limpiar los parámetros del comando
+                comandoSQL.Parameters.Clear();
+
+                // Cerrar la conexión
+                connSQL.CerrarConexion();
+
+                // Devolver true si la actualización fue exitosa
+                return true;
+            }
+            catch (Exception ex)
+            {
+                // Manejar la excepción e imprimir el mensaje de error
+                Console.WriteLine(ex.ToString());
+                // Devolver false si ocurrió un error durante la actualización
+                return false;
+            }
+        }
     }
-    
 }
