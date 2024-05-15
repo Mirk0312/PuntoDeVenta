@@ -15,10 +15,11 @@ namespace CapaDatos
 
         public int renglonesAfectados = 0;
 
-        public Boolean Insertar(string codigo, string nombre, string descripcion, string ubicacion, string costo, string venta)
+        public Boolean Insertar(string codigo, string nombre, string descripcion, string ubicacion, string costo)
         {
             try
             {
+                //abrir conexion
                 comandoSQL.Connection = connSQL.AbrirConexion();
                 //Enviar nombre de recursos SQL
                 comandoSQL.CommandText = "proc_InsertarProducto";
@@ -30,8 +31,7 @@ namespace CapaDatos
                 comandoSQL.Parameters.AddWithValue("@descripcion", descripcion);
                 comandoSQL.Parameters.AddWithValue("@ubicacion", ubicacion);
                 comandoSQL.Parameters.AddWithValue("@costo", costo);
-                comandoSQL.Parameters.AddWithValue("@venta", venta);
-
+              
                 // Ejecutar la consulta y obtener el número de filas afectadas
                 renglonesAfectados = comandoSQL.ExecuteNonQuery();
 
@@ -53,10 +53,11 @@ namespace CapaDatos
             }
         }
 
-        public Boolean Actualizar(string id, string codigo, string nombre, string descripcion, string ubicacion, string costo, string venta)
+        public Boolean Actualizar(String id, string codigo, string nombre, string descripcion, string ubicacion, string costo)
         {
             try
             {
+                //abrir conexion
                 comandoSQL.Connection = connSQL.AbrirConexion();
                 //Enviar nombre de recursos SQL
                 comandoSQL.CommandText = "proc_ActualizarProducto";
@@ -69,8 +70,7 @@ namespace CapaDatos
                 comandoSQL.Parameters.AddWithValue("@descripcion", descripcion);
                 comandoSQL.Parameters.AddWithValue("@ubicacion", ubicacion);
                 comandoSQL.Parameters.AddWithValue("@costo", costo);
-                comandoSQL.Parameters.AddWithValue("@venta", venta);
-
+              
                 // Ejecutar la consulta y obtener el número de filas afectadas
                 renglonesAfectados = comandoSQL.ExecuteNonQuery();
 
