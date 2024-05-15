@@ -24,18 +24,23 @@ namespace CapaDatos
         {
             try
             {
+                //abrir conexion
                 comandoSQL.Connection = connSQL.AbrirConexion();
+                //enviar nombre del recurso sql
                 comandoSQL.CommandText = "proc_InsertarUsuario";
+                //Tipo de comando
                 comandoSQL.CommandType = CommandType.StoredProcedure;
+                //Agregar parametros
                 comandoSQL.Parameters.AddWithValue("@nombre", nombre);
                 comandoSQL.Parameters.AddWithValue("@apellidoP", apellidoP);
                 comandoSQL.Parameters.AddWithValue("@apellidoM", apellidoM);
                 comandoSQL.Parameters.AddWithValue("@correo", correo);
                 comandoSQL.Parameters.AddWithValue("@direccion", direccion);
                 comandoSQL.Parameters.AddWithValue("@telefono", telefono);
-
+                //ejecutar query
                 RenglonesAfectados = comandoSQL.ExecuteNonQuery();
                 comandoSQL.Parameters.Clear();
+                //cerrar sesion
                 connSQL.CerrarConexion();
 
                 return true; // Indica que la inserción fue exitosa
@@ -50,15 +55,20 @@ namespace CapaDatos
         public Boolean Autenticar(string usuario, string pass)
         {
             try
-            {
+            { 
+                //abrir conexion
                 comandoSQL.Connection = connSQL.AbrirConexion();
+                //enviar nombre del recurso sql
                 comandoSQL.CommandText = "proc_ValidaUsuario";
+                //Tipo de comando
                 comandoSQL.CommandType = CommandType.StoredProcedure;
+                //Agregar parametros
                 comandoSQL.Parameters.AddWithValue("@usuario", usuario);
                 comandoSQL.Parameters.AddWithValue("@password", pass);
-
+                //ejecutar query
                 RenglonesAfectados = comandoSQL.ExecuteNonQuery();
                 comandoSQL.Parameters.Clear();
+                //cerrar sesion
                 connSQL.CerrarConexion();
 
                 return true;

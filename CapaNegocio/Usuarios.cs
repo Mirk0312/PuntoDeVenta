@@ -28,7 +28,7 @@ namespace CapaNegocio
         }
 
 
-        public bool fnValidarLogin()
+        public Boolean fnValidarLogin()
         {
             try
             {
