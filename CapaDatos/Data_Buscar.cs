@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using System.Linq.Expressions;
 
 
 namespace CapaDatos
@@ -19,15 +20,29 @@ namespace CapaDatos
         public DataTable consultaDataGridView(String laConsulta)
         {
             DataTable consultaData = new DataTable();
-
-            comandoSQL.Connection = connSQL.AbrirConexion();
-            SqlDataAdapter consultaDataAdapter = new SqlDataAdapter(comandoSQL);
-            consultaDataAdapter
-
-           
+            try
+            {
+                // Abre la conexión SQL
+                comandoSQL.Connection = connSQL.AbrirConexion();
+                // Asigna la consulta SQL al objeto SqlCommand
+                comandoSQL.CommandText = laConsulta;
+                // Crea un SqlDataAdapter y asigna el SqlCommand a él
+                SqlDataAdapter consultaDataAdapter = new SqlDataAdapter(comandoSQL);
+                // Llena el DataTable con los resultados de la consulta
+                consultaDataAdapter.Fill(consultaData);
+            }
+            catch (Exception ex)
+            {
+                // Maneja cualquier excepción y registra el error
+                Console.WriteLine("[consultaDataGridView] ---> " + ex.Message);
+            }
+            finally
+            {
+                // Asegúrate de cerrar la conexión después de usarla
+                connSQL.CerrarConexion();
+            }
 
             return consultaData;
         }
     }
-  
 }

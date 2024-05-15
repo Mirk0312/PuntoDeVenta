@@ -16,73 +16,59 @@ namespace CapaDatos
         public int RenglonesAfectados = 0;
 
         public DataUsuarios()
-        { 
-           
-        }
-        
-
-        public Boolean Insertar(string nombre, string apellidoP, string apellidoM, string correo, string direccion, string telefono) 
         {
-            try {
-                //Abrir conexion 
+
+        }
+
+        public Boolean Insertar(string nombre, string apellidoP, string apellidoM, string correo, string direccion, string telefono)
+        {
+            try
+            {
                 comandoSQL.Connection = connSQL.AbrirConexion();
-                //Enviar nombre de recursos sql
                 comandoSQL.CommandText = "proc_InsertarUsuario";
-                //Tipo de comando
                 comandoSQL.CommandType = CommandType.StoredProcedure;
-                //Agregar parametros
                 comandoSQL.Parameters.AddWithValue("@nombre", nombre);
-                comandoSQL.Parameters.AddWithValue("apellidoP", apellidoP);
-                comandoSQL.Parameters.AddWithValue("apellidoM", apellidoM);
-                comandoSQL.Parameters.AddWithValue("correo", correo);
-                comandoSQL.Parameters.AddWithValue("direccion", direccion);
-                comandoSQL.Parameters.AddWithValue("telefono",telefono);
-                //Ejecutar query
+                comandoSQL.Parameters.AddWithValue("@apellidoP", apellidoP);
+                comandoSQL.Parameters.AddWithValue("@apellidoM", apellidoM);
+                comandoSQL.Parameters.AddWithValue("@correo", correo);
+                comandoSQL.Parameters.AddWithValue("@direccion", direccion);
+                comandoSQL.Parameters.AddWithValue("@telefono", telefono);
+
                 RenglonesAfectados = comandoSQL.ExecuteNonQuery();
                 comandoSQL.Parameters.Clear();
                 connSQL.CerrarConexion();
-                //cerrar conexion
 
+                return true; // Indica que la inserción fue exitosa
             }
-            catch (Exception ex)             
-            { 
-            Console.WriteLine(ex.ToString);
+            catch (Exception ex)
+            {
+                Console.WriteLine("DataUsuarios:Insertar " + ex.Message);
+                return false; // Indica que hubo un error durante la inserción
             }
-        
-        } //Fin insertar
-
-
+        }
 
         public Boolean Autenticar(string usuario, string pass)
         {
-            try 
+            try
             {
-
-            //Abrir conexion 
-            comandoSQL.Connection = connSQL.AbrirConexion();
-            //Enviar nombre de recursos sql
-            comandoSQL.CommandText = "proc_ValidaUsuario";
-            //Tipo de comando
-            comandoSQL.CommandType = CommandType.StoredProcedure;
-                //Agregar parametros
+                comandoSQL.Connection = connSQL.AbrirConexion();
+                comandoSQL.CommandText = "proc_ValidaUsuario";
+                comandoSQL.CommandType = CommandType.StoredProcedure;
                 comandoSQL.Parameters.AddWithValue("@usuario", usuario);
-                comandoSQL.Parameters.AddWithValue("password", pass);
-                //Ejecutar query
+                comandoSQL.Parameters.AddWithValue("@password", pass);
+
                 RenglonesAfectados = comandoSQL.ExecuteNonQuery();
                 comandoSQL.Parameters.Clear();
                 connSQL.CerrarConexion();
-                //cerrar conexion
+
                 return true;
-
-            } 
+            }
             catch (Exception ex)
-            { 
-            Console.WriteLine("DataUsuario:Autenticar " + ex.Message);
+            {
+                Console.WriteLine("DataUsuarios:Autenticar " + ex.Message);
                 RenglonesAfectados = 0;
-                  }
-        } //Fin autenticar
-
-
-
+                return false;
+            }
+        }
     }
 }

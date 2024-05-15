@@ -46,24 +46,21 @@ namespace POS
                 Usuarios user = new Usuarios();
                 user.setUsuario(usuario);
                 user.setPassword(password);
-                if (user.setUsuario == true())
-
-
+                if (user.fnValidarLogin())
                 {
-
+                    this.Close();
                 }
-                //Consultar UsuarioValido()
-                this.Close();
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrectos.");
+                }
+
             }
             else
             {
-                MessageBox.Show("Atender lo siguiente: \n" + aviso);
+                MessageBox.Show("Atender lo siguiente: \n + aviso");
             }
         }
-
-
-            
-
     
 
         private void txt_password_TextChanged(object sender, EventArgs e)
