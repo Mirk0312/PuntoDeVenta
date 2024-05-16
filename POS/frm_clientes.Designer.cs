@@ -33,13 +33,11 @@
             label2 = new Label();
             picturebox_prueba = new PictureBox();
             label1 = new Label();
-            txt_DireccionPerfil = new TextBox();
-            txt_TelefonoPerfil = new TextBox();
-            txt_CorreoPerfil = new TextBox();
-            txt_ApellidoMPerfil = new TextBox();
-            txt_ApellidoPPerfil = new TextBox();
-            txt_NombrePerfil = new TextBox();
-            label5 = new Label();
+            txt_TelefonoCliente = new TextBox();
+            txt_CorreoCliente = new TextBox();
+            txt_ClaveCliente = new TextBox();
+            txt_RFCCliente = new TextBox();
+            txt_NombreCliente = new TextBox();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
@@ -48,6 +46,10 @@
             btn_EliminarCliente = new Button();
             btn_NuevoCliente = new Button();
             btn_GuardarCliente = new Button();
+            label3 = new Label();
+            txt_numeroCliente = new TextBox();
+            btn_EditarCliente = new Button();
+            btn_ActualizarCliente = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picturebox_prueba).BeginInit();
             panel2.SuspendLayout();
@@ -105,75 +107,57 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9.75F);
-            label1.Location = new Point(31, 341);
+            label1.Location = new Point(31, 317);
             label1.Name = "label1";
             label1.Size = new Size(61, 17);
             label1.TabIndex = 38;
             label1.Text = "Telefono:";
             // 
-            // txt_DireccionPerfil
+            // txt_TelefonoCliente
             // 
-            txt_DireccionPerfil.Location = new Point(204, 286);
-            txt_DireccionPerfil.Margin = new Padding(3, 2, 3, 2);
-            txt_DireccionPerfil.Name = "txt_DireccionPerfil";
-            txt_DireccionPerfil.Size = new Size(263, 23);
-            txt_DireccionPerfil.TabIndex = 37;
+            txt_TelefonoCliente.Location = new Point(204, 317);
+            txt_TelefonoCliente.Margin = new Padding(3, 2, 3, 2);
+            txt_TelefonoCliente.Name = "txt_TelefonoCliente";
+            txt_TelefonoCliente.Size = new Size(263, 23);
+            txt_TelefonoCliente.TabIndex = 36;
             // 
-            // txt_TelefonoPerfil
+            // txt_CorreoCliente
             // 
-            txt_TelefonoPerfil.Location = new Point(204, 335);
-            txt_TelefonoPerfil.Margin = new Padding(3, 2, 3, 2);
-            txt_TelefonoPerfil.Name = "txt_TelefonoPerfil";
-            txt_TelefonoPerfil.Size = new Size(263, 23);
-            txt_TelefonoPerfil.TabIndex = 36;
+            txt_CorreoCliente.Location = new Point(204, 267);
+            txt_CorreoCliente.Margin = new Padding(3, 2, 3, 2);
+            txt_CorreoCliente.Name = "txt_CorreoCliente";
+            txt_CorreoCliente.Size = new Size(263, 23);
+            txt_CorreoCliente.TabIndex = 35;
             // 
-            // txt_CorreoPerfil
+            // txt_ClaveCliente
             // 
-            txt_CorreoPerfil.Location = new Point(204, 240);
-            txt_CorreoPerfil.Margin = new Padding(3, 2, 3, 2);
-            txt_CorreoPerfil.Name = "txt_CorreoPerfil";
-            txt_CorreoPerfil.Size = new Size(263, 23);
-            txt_CorreoPerfil.TabIndex = 35;
+            txt_ClaveCliente.Location = new Point(204, 219);
+            txt_ClaveCliente.Margin = new Padding(3, 2, 3, 2);
+            txt_ClaveCliente.Name = "txt_ClaveCliente";
+            txt_ClaveCliente.Size = new Size(263, 23);
+            txt_ClaveCliente.TabIndex = 34;
             // 
-            // txt_ApellidoMPerfil
+            // txt_RFCCliente
             // 
-            txt_ApellidoMPerfil.Location = new Point(204, 192);
-            txt_ApellidoMPerfil.Margin = new Padding(3, 2, 3, 2);
-            txt_ApellidoMPerfil.Name = "txt_ApellidoMPerfil";
-            txt_ApellidoMPerfil.Size = new Size(263, 23);
-            txt_ApellidoMPerfil.TabIndex = 34;
+            txt_RFCCliente.Location = new Point(204, 177);
+            txt_RFCCliente.Margin = new Padding(3, 2, 3, 2);
+            txt_RFCCliente.Name = "txt_RFCCliente";
+            txt_RFCCliente.Size = new Size(263, 23);
+            txt_RFCCliente.TabIndex = 33;
             // 
-            // txt_ApellidoPPerfil
+            // txt_NombreCliente
             // 
-            txt_ApellidoPPerfil.Location = new Point(204, 135);
-            txt_ApellidoPPerfil.Margin = new Padding(3, 2, 3, 2);
-            txt_ApellidoPPerfil.Name = "txt_ApellidoPPerfil";
-            txt_ApellidoPPerfil.Size = new Size(263, 23);
-            txt_ApellidoPPerfil.TabIndex = 33;
-            // 
-            // txt_NombrePerfil
-            // 
-            txt_NombrePerfil.Location = new Point(204, 82);
-            txt_NombrePerfil.Margin = new Padding(3, 2, 3, 2);
-            txt_NombrePerfil.Name = "txt_NombrePerfil";
-            txt_NombrePerfil.Size = new Size(263, 23);
-            txt_NombrePerfil.TabIndex = 32;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9.75F);
-            label5.Location = new Point(31, 286);
-            label5.Name = "label5";
-            label5.Size = new Size(65, 17);
-            label5.TabIndex = 31;
-            label5.Text = "Direccion:";
+            txt_NombreCliente.Location = new Point(204, 140);
+            txt_NombreCliente.Margin = new Padding(3, 2, 3, 2);
+            txt_NombreCliente.Name = "txt_NombreCliente";
+            txt_NombreCliente.Size = new Size(263, 23);
+            txt_NombreCliente.TabIndex = 32;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9.75F);
-            label6.Location = new Point(31, 240);
+            label6.Location = new Point(31, 267);
             label6.Name = "label6";
             label6.Size = new Size(120, 17);
             label6.TabIndex = 30;
@@ -183,27 +167,27 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 9.75F);
-            label7.Location = new Point(31, 193);
+            label7.Location = new Point(31, 220);
             label7.Name = "label7";
-            label7.Size = new Size(113, 17);
+            label7.Size = new Size(42, 17);
             label7.TabIndex = 29;
-            label7.Text = "Apellido Materno:";
+            label7.Text = "Clave:";
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9.75F);
-            label8.Location = new Point(31, 135);
+            label8.Location = new Point(31, 178);
             label8.Name = "label8";
-            label8.Size = new Size(108, 17);
+            label8.Size = new Size(33, 17);
             label8.TabIndex = 28;
-            label8.Text = "Apellido Paterno:";
+            label8.Text = "RFC:";
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 9.75F);
-            label9.Location = new Point(31, 82);
+            label9.Location = new Point(31, 141);
             label9.Name = "label9";
             label9.Size = new Size(60, 17);
             label9.TabIndex = 27;
@@ -212,6 +196,8 @@
             // panel2
             // 
             panel2.BackColor = Color.DarkBlue;
+            panel2.Controls.Add(btn_ActualizarCliente);
+            panel2.Controls.Add(btn_EditarCliente);
             panel2.Controls.Add(btn_EliminarCliente);
             panel2.Controls.Add(btn_NuevoCliente);
             panel2.Controls.Add(btn_GuardarCliente);
@@ -226,7 +212,7 @@
             // 
             btn_EliminarCliente.Image = Properties.Resources.EliminarArchivo;
             btn_EliminarCliente.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_EliminarCliente.Location = new Point(249, 10);
+            btn_EliminarCliente.Location = new Point(520, 10);
             btn_EliminarCliente.Name = "btn_EliminarCliente";
             btn_EliminarCliente.Size = new Size(88, 30);
             btn_EliminarCliente.TabIndex = 3;
@@ -256,20 +242,60 @@
             btn_GuardarCliente.Text = "      Guardar";
             btn_GuardarCliente.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(31, 102);
+            label3.Name = "label3";
+            label3.Size = new Size(111, 20);
+            label3.TabIndex = 40;
+            label3.Text = "No. de Cliente:";
+            // 
+            // txt_numeroCliente
+            // 
+            txt_numeroCliente.Location = new Point(204, 99);
+            txt_numeroCliente.Margin = new Padding(3, 2, 3, 2);
+            txt_numeroCliente.Name = "txt_numeroCliente";
+            txt_numeroCliente.Size = new Size(263, 23);
+            txt_numeroCliente.TabIndex = 41;
+            // 
+            // btn_EditarCliente
+            // 
+            btn_EditarCliente.Image = Properties.Resources.icons8_update_24;
+            btn_EditarCliente.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_EditarCliente.Location = new Point(259, 10);
+            btn_EditarCliente.Name = "btn_EditarCliente";
+            btn_EditarCliente.Size = new Size(88, 30);
+            btn_EditarCliente.TabIndex = 4;
+            btn_EditarCliente.Text = "      Editar";
+            btn_EditarCliente.UseVisualStyleBackColor = true;
+            // 
+            // btn_ActualizarCliente
+            // 
+            btn_ActualizarCliente.Image = Properties.Resources.GuardarArchivo;
+            btn_ActualizarCliente.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_ActualizarCliente.Location = new Point(389, 10);
+            btn_ActualizarCliente.Name = "btn_ActualizarCliente";
+            btn_ActualizarCliente.Size = new Size(97, 30);
+            btn_ActualizarCliente.TabIndex = 5;
+            btn_ActualizarCliente.Text = "        Actualizar";
+            btn_ActualizarCliente.UseVisualStyleBackColor = true;
+            // 
             // frm_clientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 437);
+            Controls.Add(txt_numeroCliente);
+            Controls.Add(label3);
             Controls.Add(panel2);
             Controls.Add(label1);
-            Controls.Add(txt_DireccionPerfil);
-            Controls.Add(txt_TelefonoPerfil);
-            Controls.Add(txt_CorreoPerfil);
-            Controls.Add(txt_ApellidoMPerfil);
-            Controls.Add(txt_ApellidoPPerfil);
-            Controls.Add(txt_NombrePerfil);
-            Controls.Add(label5);
+            Controls.Add(txt_TelefonoCliente);
+            Controls.Add(txt_CorreoCliente);
+            Controls.Add(txt_ClaveCliente);
+            Controls.Add(txt_RFCCliente);
+            Controls.Add(txt_NombreCliente);
             Controls.Add(label6);
             Controls.Add(label7);
             Controls.Add(label8);
@@ -312,20 +338,21 @@
         private Button btn_CerrarProduc;
         private Label label1;
         private Panel panel1;
-        private Button btn_EliminarCliente;
+       
         private Button btn_NuevoCliente;
         private Button btn_GuardarCliente;
         private Button btn_CerrarCliente;
         private Label label2;
         private PictureBox picturebox_prueba;
         private TextBox txt_DireccionPerfil;
-        private TextBox txt_TelefonoPerfil;
-        private TextBox txt_CorreoPerfil;
-        private TextBox txt_ApellidoMPerfil;
-        private TextBox txt_ApellidoPPerfil;
-        private TextBox txt_NombrePerfil;
+        private TextBox txt_TelefonoCliente;
+        private TextBox txt_CorreoCliente;
+        private TextBox txt_ClaveCliente;
+        private TextBox txt_RFCCliente;
+        private TextBox txt_NombreCliente;
         private Label label5;
-        private Button btn_NuevoCliente;
-        private Button btn_GuardarCliente;
+        private Label label3;
+        private TextBox txt_numeroCliente;
+        private Button btn_ActualizarCliente;
     }
 }
