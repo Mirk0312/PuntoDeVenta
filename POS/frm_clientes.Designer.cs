@@ -43,13 +43,13 @@
             label8 = new Label();
             label9 = new Label();
             panel2 = new Panel();
+            btn_ActualizarCliente = new Button();
+            btn_EditarCliente = new Button();
             btn_EliminarCliente = new Button();
             btn_NuevoCliente = new Button();
             btn_GuardarCliente = new Button();
             label3 = new Label();
             txt_numeroCliente = new TextBox();
-            btn_EditarCliente = new Button();
-            btn_ActualizarCliente = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picturebox_prueba).BeginInit();
             panel2.SuspendLayout();
@@ -96,10 +96,10 @@
             // 
             picturebox_prueba.BackColor = Color.SlateGray;
             picturebox_prueba.Image = Properties.Resources.icons8_clientes_100;
-            picturebox_prueba.Location = new Point(31, 2);
+            picturebox_prueba.Location = new Point(15, 10);
             picturebox_prueba.Margin = new Padding(3, 2, 3, 2);
             picturebox_prueba.Name = "picturebox_prueba";
-            picturebox_prueba.Size = new Size(65, 54);
+            picturebox_prueba.Size = new Size(93, 44);
             picturebox_prueba.TabIndex = 1;
             picturebox_prueba.TabStop = false;
             // 
@@ -208,6 +208,28 @@
             panel2.Size = new Size(800, 50);
             panel2.TabIndex = 39;
             // 
+            // btn_ActualizarCliente
+            // 
+            btn_ActualizarCliente.Image = Properties.Resources.GuardarArchivo;
+            btn_ActualizarCliente.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_ActualizarCliente.Location = new Point(389, 10);
+            btn_ActualizarCliente.Name = "btn_ActualizarCliente";
+            btn_ActualizarCliente.Size = new Size(97, 30);
+            btn_ActualizarCliente.TabIndex = 5;
+            btn_ActualizarCliente.Text = "        Actualizar";
+            btn_ActualizarCliente.UseVisualStyleBackColor = true;
+            // 
+            // btn_EditarCliente
+            // 
+            btn_EditarCliente.Image = Properties.Resources.icons8_update_24;
+            btn_EditarCliente.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_EditarCliente.Location = new Point(259, 10);
+            btn_EditarCliente.Name = "btn_EditarCliente";
+            btn_EditarCliente.Size = new Size(88, 30);
+            btn_EditarCliente.TabIndex = 4;
+            btn_EditarCliente.Text = "      Editar";
+            btn_EditarCliente.UseVisualStyleBackColor = true;
+            // 
             // btn_EliminarCliente
             // 
             btn_EliminarCliente.Image = Properties.Resources.EliminarArchivo;
@@ -259,28 +281,6 @@
             txt_numeroCliente.Name = "txt_numeroCliente";
             txt_numeroCliente.Size = new Size(263, 23);
             txt_numeroCliente.TabIndex = 41;
-            // 
-            // btn_EditarCliente
-            // 
-            btn_EditarCliente.Image = Properties.Resources.icons8_update_24;
-            btn_EditarCliente.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_EditarCliente.Location = new Point(259, 10);
-            btn_EditarCliente.Name = "btn_EditarCliente";
-            btn_EditarCliente.Size = new Size(88, 30);
-            btn_EditarCliente.TabIndex = 4;
-            btn_EditarCliente.Text = "      Editar";
-            btn_EditarCliente.UseVisualStyleBackColor = true;
-            // 
-            // btn_ActualizarCliente
-            // 
-            btn_ActualizarCliente.Image = Properties.Resources.GuardarArchivo;
-            btn_ActualizarCliente.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_ActualizarCliente.Location = new Point(389, 10);
-            btn_ActualizarCliente.Name = "btn_ActualizarCliente";
-            btn_ActualizarCliente.Size = new Size(97, 30);
-            btn_ActualizarCliente.TabIndex = 5;
-            btn_ActualizarCliente.Text = "        Actualizar";
-            btn_ActualizarCliente.UseVisualStyleBackColor = true;
             // 
             // frm_clientes
             // 
