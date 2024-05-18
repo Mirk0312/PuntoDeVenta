@@ -28,230 +28,230 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btn_NuevoProduc = new Button();
-            btn_GuardarProduc = new Button();
-            btn_CancelarProduc = new Button();
-            label1 = new Label();
-            txt_IDProduc = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            txt_CodigoProduc = new TextBox();
-            txt_NombreProduc = new TextBox();
-            txt_DescripcionProduc = new TextBox();
-            txt_CostoProduc = new TextBox();
-            txt_VentaProduc = new TextBox();
-            cbx_UnidadProduc = new ComboBox();
-            cbx_UbicacionProduc = new ComboBox();
-            label9 = new Label();
-            btn_BuscarProduc = new Button();
+            btn_NuevoProducto = new Button();
+            btn_GuardarProducto = new Button();
+            btn_CancelarProducto = new Button();
+            label1Producto = new Label();
+            txt_IDProducto = new TextBox();
+            label2Producto = new Label();
+            label3Producto = new Label();
+            label4Producto = new Label();
+            label5Producto = new Label();
+            label6Producto = new Label();
+            label7Producto = new Label();
+            label8Producto = new Label();
+            txt_CodigoProducto = new TextBox();
+            txt_NombreProducto = new TextBox();
+            txt_DescripcionProducto = new TextBox();
+            txt_CostoProducto = new TextBox();
+            txt_VentaProducto = new TextBox();
+            cbx_UnidadProducto = new ComboBox();
+            cbx_UbicacionProducto = new ComboBox();
+            label9Producto = new Label();
+            btn_BuscarProducto = new Button();
             panel1 = new Panel();
-            btn_EliminarProduc = new Button();
+            btn_EliminarProducto = new Button();
             panel2 = new Panel();
-            btn_CerrarProduc = new Button();
-            pictureBox1 = new PictureBox();
+            btn_CerrarProducto = new Button();
+            pictureBox1Producto = new PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1Producto).BeginInit();
             SuspendLayout();
             // 
-            // btn_NuevoProduc
+            // btn_NuevoProducto
             // 
-            btn_NuevoProduc.Image = Properties.Resources.NuevoArchivo;
-            btn_NuevoProduc.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_NuevoProduc.Location = new Point(20, 10);
-            btn_NuevoProduc.Name = "btn_NuevoProduc";
-            btn_NuevoProduc.Size = new Size(88, 30);
-            btn_NuevoProduc.TabIndex = 0;
-            btn_NuevoProduc.Text = "      Nuevo";
-            btn_NuevoProduc.UseVisualStyleBackColor = true;
-            btn_NuevoProduc.Click += btn_nuevo_Click;
+            btn_NuevoProducto.Image = Properties.Resources.NuevoArchivo;
+            btn_NuevoProducto.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_NuevoProducto.Location = new Point(20, 10);
+            btn_NuevoProducto.Name = "btn_NuevoProducto";
+            btn_NuevoProducto.Size = new Size(88, 30);
+            btn_NuevoProducto.TabIndex = 0;
+            btn_NuevoProducto.Text = "      Nuevo";
+            btn_NuevoProducto.UseVisualStyleBackColor = true;
+            btn_NuevoProducto.Click += btn_nuevo_Click;
             // 
-            // btn_GuardarProduc
+            // btn_GuardarProducto
             // 
-            btn_GuardarProduc.Image = Properties.Resources.GuardarArchivo;
-            btn_GuardarProduc.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_GuardarProduc.Location = new Point(136, 10);
-            btn_GuardarProduc.Name = "btn_GuardarProduc";
-            btn_GuardarProduc.Size = new Size(88, 30);
-            btn_GuardarProduc.TabIndex = 1;
-            btn_GuardarProduc.Text = "      Guardar";
-            btn_GuardarProduc.UseVisualStyleBackColor = true;
-            btn_GuardarProduc.Click += btn_guardar_Click;
+            btn_GuardarProducto.Image = Properties.Resources.GuardarArchivo;
+            btn_GuardarProducto.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_GuardarProducto.Location = new Point(136, 10);
+            btn_GuardarProducto.Name = "btn_GuardarProducto";
+            btn_GuardarProducto.Size = new Size(88, 30);
+            btn_GuardarProducto.TabIndex = 1;
+            btn_GuardarProducto.Text = "      Guardar";
+            btn_GuardarProducto.UseVisualStyleBackColor = true;
+            btn_GuardarProducto.Click += btn_guardar_Click;
             // 
-            // btn_CancelarProduc
+            // btn_CancelarProducto
             // 
-            btn_CancelarProduc.Image = Properties.Resources.CancelarArchivo;
-            btn_CancelarProduc.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_CancelarProduc.Location = new Point(365, 10);
-            btn_CancelarProduc.Name = "btn_CancelarProduc";
-            btn_CancelarProduc.Size = new Size(88, 30);
-            btn_CancelarProduc.TabIndex = 2;
-            btn_CancelarProduc.Text = "      Cancelar";
-            btn_CancelarProduc.UseVisualStyleBackColor = true;
+            btn_CancelarProducto.Image = Properties.Resources.CancelarArchivo;
+            btn_CancelarProducto.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_CancelarProducto.Location = new Point(365, 10);
+            btn_CancelarProducto.Name = "btn_CancelarProducto";
+            btn_CancelarProducto.Size = new Size(88, 30);
+            btn_CancelarProducto.TabIndex = 2;
+            btn_CancelarProducto.Text = "      Cancelar";
+            btn_CancelarProducto.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // label1Producto
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(43, 76);
-            label1.Name = "label1";
-            label1.Size = new Size(18, 15);
-            label1.TabIndex = 3;
-            label1.Text = "ID";
+            label1Producto.AutoSize = true;
+            label1Producto.Location = new Point(43, 76);
+            label1Producto.Name = "label1Producto";
+            label1Producto.Size = new Size(18, 15);
+            label1Producto.TabIndex = 3;
+            label1Producto.Text = "ID";
             // 
-            // txt_IDProduc
+            // txt_IDProducto
             // 
-            txt_IDProduc.Location = new Point(171, 74);
-            txt_IDProduc.Name = "txt_IDProduc";
-            txt_IDProduc.Size = new Size(100, 23);
-            txt_IDProduc.TabIndex = 4;
+            txt_IDProducto.Location = new Point(171, 74);
+            txt_IDProducto.Name = "txt_IDProducto";
+            txt_IDProducto.Size = new Size(100, 23);
+            txt_IDProducto.TabIndex = 4;
             // 
-            // label2
+            // label2Producto
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(43, 110);
-            label2.Name = "label2";
-            label2.Size = new Size(46, 15);
-            label2.TabIndex = 5;
-            label2.Text = "Codigo";
+            label2Producto.AutoSize = true;
+            label2Producto.Location = new Point(43, 110);
+            label2Producto.Name = "label2Producto";
+            label2Producto.Size = new Size(46, 15);
+            label2Producto.TabIndex = 5;
+            label2Producto.Text = "Codigo";
             // 
-            // label3
+            // label3Producto
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(43, 153);
-            label3.Name = "label3";
-            label3.Size = new Size(51, 15);
-            label3.TabIndex = 6;
-            label3.Text = "Nombre";
+            label3Producto.AutoSize = true;
+            label3Producto.Location = new Point(43, 153);
+            label3Producto.Name = "label3Producto";
+            label3Producto.Size = new Size(51, 15);
+            label3Producto.TabIndex = 6;
+            label3Producto.Text = "Nombre";
             // 
-            // label4
+            // label4Producto
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(43, 188);
-            label4.Name = "label4";
-            label4.Size = new Size(69, 15);
-            label4.TabIndex = 7;
-            label4.Text = "Descripcion";
+            label4Producto.AutoSize = true;
+            label4Producto.Location = new Point(43, 188);
+            label4Producto.Name = "label4Producto";
+            label4Producto.Size = new Size(69, 15);
+            label4Producto.TabIndex = 7;
+            label4Producto.Text = "Descripcion";
             // 
-            // label5
+            // label5Producto
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(43, 219);
-            label5.Name = "label5";
-            label5.Size = new Size(104, 15);
-            label5.TabIndex = 8;
-            label5.Text = "Unidad de medida";
+            label5Producto.AutoSize = true;
+            label5Producto.Location = new Point(43, 219);
+            label5Producto.Name = "label5Producto";
+            label5Producto.Size = new Size(104, 15);
+            label5Producto.TabIndex = 8;
+            label5Producto.Text = "Unidad de medida";
             // 
-            // label6
+            // label6Producto
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(43, 289);
-            label6.Name = "label6";
-            label6.Size = new Size(38, 15);
-            label6.TabIndex = 9;
-            label6.Text = "Costo";
+            label6Producto.AutoSize = true;
+            label6Producto.Location = new Point(43, 289);
+            label6Producto.Name = "label6Producto";
+            label6Producto.Size = new Size(38, 15);
+            label6Producto.TabIndex = 9;
+            label6Producto.Text = "Costo";
             // 
-            // label7
+            // label7Producto
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(43, 254);
-            label7.Name = "label7";
-            label7.Size = new Size(60, 15);
-            label7.TabIndex = 10;
-            label7.Text = "Ubicacion";
+            label7Producto.AutoSize = true;
+            label7Producto.Location = new Point(43, 254);
+            label7Producto.Name = "label7Producto";
+            label7Producto.Size = new Size(60, 15);
+            label7Producto.TabIndex = 10;
+            label7Producto.Text = "Ubicacion";
             // 
-            // label8
+            // label8Producto
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(43, 322);
-            label8.Name = "label8";
-            label8.Size = new Size(36, 15);
-            label8.TabIndex = 11;
-            label8.Text = "Venta";
+            label8Producto.AutoSize = true;
+            label8Producto.Location = new Point(43, 322);
+            label8Producto.Name = "label8Producto";
+            label8Producto.Size = new Size(36, 15);
+            label8Producto.TabIndex = 11;
+            label8Producto.Text = "Venta";
             // 
-            // txt_CodigoProduc
+            // txt_CodigoProducto
             // 
-            txt_CodigoProduc.Location = new Point(171, 108);
-            txt_CodigoProduc.Name = "txt_CodigoProduc";
-            txt_CodigoProduc.Size = new Size(232, 23);
-            txt_CodigoProduc.TabIndex = 12;
+            txt_CodigoProducto.Location = new Point(171, 108);
+            txt_CodigoProducto.Name = "txt_CodigoProducto";
+            txt_CodigoProducto.Size = new Size(232, 23);
+            txt_CodigoProducto.TabIndex = 12;
             // 
-            // txt_NombreProduc
+            // txt_NombreProducto
             // 
-            txt_NombreProduc.Location = new Point(171, 148);
-            txt_NombreProduc.Name = "txt_NombreProduc";
-            txt_NombreProduc.Size = new Size(232, 23);
-            txt_NombreProduc.TabIndex = 13;
+            txt_NombreProducto.Location = new Point(171, 148);
+            txt_NombreProducto.Name = "txt_NombreProducto";
+            txt_NombreProducto.Size = new Size(232, 23);
+            txt_NombreProducto.TabIndex = 13;
             // 
-            // txt_DescripcionProduc
+            // txt_DescripcionProducto
             // 
-            txt_DescripcionProduc.Location = new Point(171, 183);
-            txt_DescripcionProduc.Name = "txt_DescripcionProduc";
-            txt_DescripcionProduc.Size = new Size(232, 23);
-            txt_DescripcionProduc.TabIndex = 14;
+            txt_DescripcionProducto.Location = new Point(171, 183);
+            txt_DescripcionProducto.Name = "txt_DescripcionProducto";
+            txt_DescripcionProducto.Size = new Size(232, 23);
+            txt_DescripcionProducto.TabIndex = 14;
             // 
-            // txt_CostoProduc
+            // txt_CostoProducto
             // 
-            txt_CostoProduc.Location = new Point(171, 284);
-            txt_CostoProduc.Name = "txt_CostoProduc";
-            txt_CostoProduc.Size = new Size(232, 23);
-            txt_CostoProduc.TabIndex = 17;
+            txt_CostoProducto.Location = new Point(171, 284);
+            txt_CostoProducto.Name = "txt_CostoProducto";
+            txt_CostoProducto.Size = new Size(232, 23);
+            txt_CostoProducto.TabIndex = 17;
             // 
-            // txt_VentaProduc
+            // txt_VentaProducto
             // 
-            txt_VentaProduc.Location = new Point(171, 318);
-            txt_VentaProduc.Name = "txt_VentaProduc";
-            txt_VentaProduc.Size = new Size(232, 23);
-            txt_VentaProduc.TabIndex = 18;
+            txt_VentaProducto.Location = new Point(171, 318);
+            txt_VentaProducto.Name = "txt_VentaProducto";
+            txt_VentaProducto.Size = new Size(232, 23);
+            txt_VentaProducto.TabIndex = 18;
             // 
-            // cbx_UnidadProduc
+            // cbx_UnidadProducto
             // 
-            cbx_UnidadProduc.FormattingEnabled = true;
-            cbx_UnidadProduc.Location = new Point(171, 218);
-            cbx_UnidadProduc.Name = "cbx_UnidadProduc";
-            cbx_UnidadProduc.Size = new Size(134, 23);
-            cbx_UnidadProduc.TabIndex = 19;
+            cbx_UnidadProducto.FormattingEnabled = true;
+            cbx_UnidadProducto.Location = new Point(171, 218);
+            cbx_UnidadProducto.Name = "cbx_UnidadProducto";
+            cbx_UnidadProducto.Size = new Size(134, 23);
+            cbx_UnidadProducto.TabIndex = 19;
             // 
-            // cbx_UbicacionProduc
+            // cbx_UbicacionProducto
             // 
-            cbx_UbicacionProduc.FormattingEnabled = true;
-            cbx_UbicacionProduc.Location = new Point(171, 248);
-            cbx_UbicacionProduc.Name = "cbx_UbicacionProduc";
-            cbx_UbicacionProduc.Size = new Size(134, 23);
-            cbx_UbicacionProduc.TabIndex = 20;
+            cbx_UbicacionProducto.FormattingEnabled = true;
+            cbx_UbicacionProducto.Location = new Point(171, 248);
+            cbx_UbicacionProducto.Name = "cbx_UbicacionProducto";
+            cbx_UbicacionProducto.Size = new Size(134, 23);
+            cbx_UbicacionProducto.TabIndex = 20;
             // 
-            // label9
+            // label9Producto
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.LightCyan;
-            label9.Location = new Point(99, 16);
-            label9.Name = "label9";
-            label9.Size = new Size(216, 25);
-            label9.TabIndex = 21;
-            label9.Text = "Catalogo de productos";
+            label9Producto.AutoSize = true;
+            label9Producto.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9Producto.ForeColor = Color.LightCyan;
+            label9Producto.Location = new Point(99, 16);
+            label9Producto.Name = "label9Producto";
+            label9Producto.Size = new Size(216, 25);
+            label9Producto.TabIndex = 21;
+            label9Producto.Text = "Catalogo de productos";
             // 
-            // btn_BuscarProduc
+            // btn_BuscarProducto
             // 
-            btn_BuscarProduc.Image = Properties.Resources.Buscar;
-            btn_BuscarProduc.Location = new Point(276, 74);
-            btn_BuscarProduc.Name = "btn_BuscarProduc";
-            btn_BuscarProduc.Size = new Size(28, 23);
-            btn_BuscarProduc.TabIndex = 22;
-            btn_BuscarProduc.UseVisualStyleBackColor = true;
-            btn_BuscarProduc.Click += btn_Buscar_Click;
+            btn_BuscarProducto.Image = Properties.Resources.Buscar;
+            btn_BuscarProducto.Location = new Point(276, 74);
+            btn_BuscarProducto.Name = "btn_BuscarProducto";
+            btn_BuscarProducto.Size = new Size(28, 23);
+            btn_BuscarProducto.TabIndex = 22;
+            btn_BuscarProducto.UseVisualStyleBackColor = true;
+            btn_BuscarProducto.Click += btn_Buscar_Click;
             // 
             // panel1
             // 
             panel1.BackColor = Color.DarkBlue;
-            panel1.Controls.Add(btn_EliminarProduc);
-            panel1.Controls.Add(btn_NuevoProduc);
-            panel1.Controls.Add(btn_CancelarProduc);
-            panel1.Controls.Add(btn_GuardarProduc);
+            panel1.Controls.Add(btn_EliminarProducto);
+            panel1.Controls.Add(btn_NuevoProducto);
+            panel1.Controls.Add(btn_CancelarProducto);
+            panel1.Controls.Add(btn_GuardarProducto);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 400);
             panel1.Margin = new Padding(3, 2, 3, 2);
@@ -259,24 +259,24 @@
             panel1.Size = new Size(800, 50);
             panel1.TabIndex = 23;
             // 
-            // btn_EliminarProduc
+            // btn_EliminarProducto
             // 
-            btn_EliminarProduc.Image = Properties.Resources.EliminarArchivo;
-            btn_EliminarProduc.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_EliminarProduc.Location = new Point(249, 10);
-            btn_EliminarProduc.Name = "btn_EliminarProduc";
-            btn_EliminarProduc.Size = new Size(88, 30);
-            btn_EliminarProduc.TabIndex = 3;
-            btn_EliminarProduc.Text = "      Eliminar";
-            btn_EliminarProduc.TextAlign = ContentAlignment.MiddleRight;
-            btn_EliminarProduc.UseVisualStyleBackColor = true;
+            btn_EliminarProducto.Image = Properties.Resources.EliminarArchivo;
+            btn_EliminarProducto.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_EliminarProducto.Location = new Point(249, 10);
+            btn_EliminarProducto.Name = "btn_EliminarProducto";
+            btn_EliminarProducto.Size = new Size(88, 30);
+            btn_EliminarProducto.TabIndex = 3;
+            btn_EliminarProducto.Text = "      Eliminar";
+            btn_EliminarProducto.TextAlign = ContentAlignment.MiddleRight;
+            btn_EliminarProducto.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
             panel2.BackColor = Color.DarkBlue;
-            panel2.Controls.Add(btn_CerrarProduc);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(label9);
+            panel2.Controls.Add(btn_CerrarProducto);
+            panel2.Controls.Add(pictureBox1Producto);
+            panel2.Controls.Add(label9Producto);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Margin = new Padding(3, 2, 3, 2);
@@ -284,29 +284,29 @@
             panel2.Size = new Size(800, 56);
             panel2.TabIndex = 24;
             // 
-            // btn_CerrarProduc
+            // btn_CerrarProducto
             // 
-            btn_CerrarProduc.Image = Properties.Resources.CerrarVentana;
-            btn_CerrarProduc.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_CerrarProduc.Location = new Point(705, 16);
-            btn_CerrarProduc.Margin = new Padding(3, 2, 3, 2);
-            btn_CerrarProduc.Name = "btn_CerrarProduc";
-            btn_CerrarProduc.Size = new Size(83, 22);
-            btn_CerrarProduc.TabIndex = 23;
-            btn_CerrarProduc.Text = "        Cerrar";
-            btn_CerrarProduc.TextAlign = ContentAlignment.MiddleRight;
-            btn_CerrarProduc.UseVisualStyleBackColor = true;
-            btn_CerrarProduc.Click += btn_CerrarCP_Click;
+            btn_CerrarProducto.Image = Properties.Resources.CerrarVentana;
+            btn_CerrarProducto.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_CerrarProducto.Location = new Point(705, 16);
+            btn_CerrarProducto.Margin = new Padding(3, 2, 3, 2);
+            btn_CerrarProducto.Name = "btn_CerrarProducto";
+            btn_CerrarProducto.Size = new Size(83, 22);
+            btn_CerrarProducto.TabIndex = 23;
+            btn_CerrarProducto.Text = "        Cerrar";
+            btn_CerrarProducto.TextAlign = ContentAlignment.MiddleRight;
+            btn_CerrarProducto.UseVisualStyleBackColor = true;
+            btn_CerrarProducto.Click += btn_CerrarCP_Click;
             // 
-            // pictureBox1
+            // pictureBox1Producto
             // 
-            pictureBox1.Image = Properties.Resources.CatalogoProductos;
-            pictureBox1.Location = new Point(52, 9);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(42, 36);
-            pictureBox1.TabIndex = 22;
-            pictureBox1.TabStop = false;
+            pictureBox1Producto.Image = Properties.Resources.CatalogoProductos;
+            pictureBox1Producto.Location = new Point(52, 9);
+            pictureBox1Producto.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1Producto.Name = "pictureBox1Producto";
+            pictureBox1Producto.Size = new Size(42, 36);
+            pictureBox1Producto.TabIndex = 22;
+            pictureBox1Producto.TabStop = false;
             // 
             // frm_productos
             // 
@@ -315,23 +315,23 @@
             ClientSize = new Size(800, 450);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(btn_BuscarProduc);
-            Controls.Add(cbx_UbicacionProduc);
-            Controls.Add(cbx_UnidadProduc);
-            Controls.Add(txt_VentaProduc);
-            Controls.Add(txt_CostoProduc);
-            Controls.Add(txt_DescripcionProduc);
-            Controls.Add(txt_NombreProduc);
-            Controls.Add(txt_CodigoProduc);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(txt_IDProduc);
-            Controls.Add(label1);
+            Controls.Add(btn_BuscarProducto);
+            Controls.Add(cbx_UbicacionProducto);
+            Controls.Add(cbx_UnidadProducto);
+            Controls.Add(txt_VentaProducto);
+            Controls.Add(txt_CostoProducto);
+            Controls.Add(txt_DescripcionProducto);
+            Controls.Add(txt_NombreProducto);
+            Controls.Add(txt_CodigoProducto);
+            Controls.Add(label8Producto);
+            Controls.Add(label7Producto);
+            Controls.Add(label6Producto);
+            Controls.Add(label5Producto);
+            Controls.Add(label4Producto);
+            Controls.Add(label3Producto);
+            Controls.Add(label2Producto);
+            Controls.Add(txt_IDProducto);
+            Controls.Add(label1Producto);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
@@ -342,38 +342,38 @@
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1Producto).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button btn_NuevoProduc;
-        private Button btn_GuardarProduc;
-        private Button btn_CancelarProduc;
-        private Label label1;
-        private TextBox txt_IDProduc;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private TextBox txt_CodigoProduc;
-        private TextBox txt_NombreProduc;
-        private TextBox txt_DescripcionProduc;
-        private TextBox txt_CostoProduc;
-        private TextBox txt_VentaProduc;
-        private ComboBox cbx_UnidadProduc;
-        private ComboBox cbx_UbicacionProduc;
-        private Label label9;
-        private Button btn_BuscarProduc;
+        private Button btn_NuevoProducto;
+        private Button btn_GuardarProducto;
+        private Button btn_CancelarProducto;
+        private Label label1Producto;
+        private TextBox txt_IDProducto;
+        private Label label2Producto;
+        private Label label3Producto;
+        private Label label4Producto;
+        private Label label5Producto;
+        private Label label6Producto;
+        private Label label7Producto;
+        private Label label8Producto;
+        private TextBox txt_CodigoProducto;
+        private TextBox txt_NombreProducto;
+        private TextBox txt_DescripcionProducto;
+        private TextBox txt_CostoProducto;
+        private TextBox txt_VentaProducto;
+        private ComboBox cbx_UnidadProducto;
+        private ComboBox cbx_UbicacionProducto;
+        private Label label9Producto;
+        private Button btn_BuscarProducto;
         private Panel panel1;
         private Panel panel2;
-        private PictureBox pictureBox1;
-        private Button btn_CerrarProduc;
-        private Button btn_EliminarProduc;
+        private PictureBox pictureBox1Producto;
+        private Button btn_CerrarProducto;
+        private Button btn_EliminarProducto;
     }
 }

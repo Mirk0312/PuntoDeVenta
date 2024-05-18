@@ -28,331 +28,335 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btn_CerrarC = new Button();
-            btn_EliminarC = new Button();
-            btn_AgregarC = new Button();
-            txt_RFCC = new TextBox();
-            label11 = new Label();
-            txt_CorreoC = new TextBox();
-            txt_TelefonoC = new TextBox();
-            txt_NombreC = new TextBox();
-            txt_ClaveC = new TextBox();
-            txt_NumeroclienteC = new TextBox();
-            label10 = new Label();
+            btn_CerrarClientes = new Button();
+            btn_EliminarClientes = new Button();
+            btn_AgregarClientes = new Button();
+            txt_RFCClientes = new TextBox();
+            label11Clientes = new Label();
+            txt_CorreoClientes = new TextBox();
+            txt_TelefonoClientes = new TextBox();
+            txt_NombreClientes = new TextBox();
+            txt_ClaveClientes = new TextBox();
+            txt_NodeCliente = new TextBox();
+            label10Clientes = new Label();
             label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            pictureBox1 = new PictureBox();
-            btn_ActualizarC = new Button();
-            btn_EditarC = new Button();
+            label8Clientes = new Label();
+            label7Clientes = new Label();
+            label6Clientes = new Label();
+            pictureBox1Clientes = new PictureBox();
+            btn_ActualizarClientes = new Button();
+            btn_EditarClientes = new Button();
             panel2 = new Panel();
-            label2 = new Label();
+            label2Clientes = new Label();
             panel1 = new Panel();
-            btn_GuardarC = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            btn_GuardarClientes = new Button();
+            label1Clientes = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1Clientes).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            // btn_CerrarC
+            SuspendLayout();
             // 
-            btn_CerrarC.Image = Properties.Resources.CerrarVentana;
-            btn_CerrarC.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_CerrarC.Location = new Point(807, 26);
-            btn_CerrarC.Name = "btn_CerrarC";
-            btn_CerrarC.Size = new Size(95, 32);
-            btn_CerrarC.TabIndex = 24;
-            btn_CerrarC.Text = "        Cerrar";
-            btn_CerrarC.TextAlign = ContentAlignment.MiddleRight;
-            btn_CerrarC.UseVisualStyleBackColor = true;
-            btn_CerrarC.Click += btn_CerrarCP_Click;
-            btn_CerrarC.UseVisualStyleBackColor = true;
-            // btn_EliminarC
+            // btn_CerrarClientes
             // 
-            btn_EliminarC.Image = Properties.Resources.EliminarArchivo;
-            btn_EliminarC.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_EliminarC.Location = new Point(286, 15);
-            btn_EliminarC.Name = "btn_EliminarC";
-            btn_EliminarC.Size = new Size(110, 40);
-            btn_EliminarC.TabIndex = 31;
-            btn_EliminarC.Text = "  Eliminar";
-            btn_EliminarC.UseVisualStyleBackColor = true;
-            btn_EliminarC.Text = "  Eliminar";
-            btn_EliminarC.UseVisualStyleBackColor = true;
+            btn_CerrarClientes.Image = Properties.Resources.CerrarVentana;
+            btn_CerrarClientes.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_CerrarClientes.Location = new Point(807, 26);
+            btn_CerrarClientes.Name = "btn_CerrarClientes";
+            btn_CerrarClientes.Size = new Size(95, 32);
+            btn_CerrarClientes.TabIndex = 24;
+            btn_CerrarClientes.Text = "        Cerrar";
+            btn_CerrarClientes.TextAlign = ContentAlignment.MiddleRight;
+            btn_CerrarClientes.UseVisualStyleBackColor = true;
+            btn_CerrarClientes.Click += btn_CerrarCP_Click;
             // 
-            btn_AgregarC.Image = Properties.Resources.icons8_add_24;
-            btn_AgregarC.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_AgregarC.Location = new Point(25, 13);
-            btn_AgregarC.Name = "btn_AgregarC";
-            btn_AgregarC.Size = new Size(103, 40);
-            btn_AgregarC.TabIndex = 30;
-            btn_AgregarC.Text = "  Agregar";
-            btn_AgregarC.UseVisualStyleBackColor = true;
-            btn_AgregarC.Text = "  Agregar";
-            btn_AgregarC.UseVisualStyleBackColor = true;
+            // btn_EliminarClientes
             // 
-            txt_RFCC.Location = new Point(242, 214);
-            txt_RFCC.Name = "txt_RFCC";
-            txt_RFCC.Size = new Size(362, 27);
-            txt_RFCC.TabIndex = 28;
-            txt_RFCC.Size = new Size(151, 23);
-            txt_RFCC.TabIndex = 28;
+            btn_EliminarClientes.Image = Properties.Resources.EliminarArchivo;
+            btn_EliminarClientes.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_EliminarClientes.Location = new Point(286, 15);
+            btn_EliminarClientes.Name = "btn_EliminarClientes";
+            btn_EliminarClientes.Size = new Size(110, 40);
+            btn_EliminarClientes.TabIndex = 31;
+            btn_EliminarClientes.Text = "  Eliminar";
+            btn_EliminarClientes.UseVisualStyleBackColor = true;
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.Location = new Point(25, 214);
-            label11.Name = "label11";
-            label11.Size = new Size(43, 23);
-            label11.TabIndex = 27;
-            label11.Text = "RFC:";
-            label11.TabIndex = 27;
-            label11.Text = "* RFC";
+            // btn_AgregarClientes
             // 
-            txt_CorreoC.Location = new Point(242, 326);
-            txt_CorreoC.Name = "txt_CorreoC";
-            txt_CorreoC.Size = new Size(362, 27);
-            txt_CorreoC.TabIndex = 26;
-            txt_CorreoC.Size = new Size(151, 23);
-            txt_CorreoC.TabIndex = 26;
+            btn_AgregarClientes.Image = Properties.Resources.icons8_add_24;
+            btn_AgregarClientes.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_AgregarClientes.Location = new Point(25, 13);
+            btn_AgregarClientes.Name = "btn_AgregarClientes";
+            btn_AgregarClientes.Size = new Size(103, 40);
+            btn_AgregarClientes.TabIndex = 30;
+            btn_AgregarClientes.Text = "  Agregar";
+            btn_AgregarClientes.UseVisualStyleBackColor = true;
             // 
-            txt_TelefonoC.Location = new Point(242, 388);
-            txt_TelefonoC.Name = "txt_TelefonoC";
-            txt_TelefonoC.Size = new Size(362, 27);
-            txt_TelefonoC.TabIndex = 25;
-            txt_TelefonoC.Size = new Size(152, 23);
-            txt_TelefonoC.TabIndex = 25;
+            // txt_RFCClientes
             // 
-            txt_NombreC.Location = new Point(242, 161);
-            txt_NombreC.Name = "txt_NombreC";
-            txt_NombreC.Size = new Size(362, 27);
-            txt_NombreC.TabIndex = 24;
-            txt_NombreC.Size = new Size(152, 23);
-            txt_NombreC.TabIndex = 24;
+            txt_RFCClientes.Location = new Point(206, 214);
+            txt_RFCClientes.Name = "txt_RFCClientes";
+            txt_RFCClientes.Size = new Size(310, 23);
+            txt_RFCClientes.TabIndex = 28;
             // 
-            txt_ClaveC.Location = new Point(242, 265);
-            txt_ClaveC.Name = "txt_ClaveC";
-            txt_ClaveC.Size = new Size(362, 27);
-            txt_ClaveC.TabIndex = 23;
-            txt_ClaveC.Size = new Size(152, 23);
-            txt_ClaveC.TabIndex = 23;
+            // label11Clientes
             // 
-            txt_NumeroclienteC.Location = new Point(242, 113);
-            txt_NumeroclienteC.Name = "txt_NumeroclienteC";
-            txt_NumeroclienteC.Size = new Size(362, 27);
-            txt_NumeroclienteC.TabIndex = 22;
-            txt_NumeroclienteC.Size = new Size(152, 23);
-            txt_NumeroclienteC.TabIndex = 22;
+            label11Clientes.AutoSize = true;
+            label11Clientes.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11Clientes.Location = new Point(25, 214);
+            label11Clientes.Name = "label11Clientes";
+            label11Clientes.Size = new Size(36, 19);
+            label11Clientes.TabIndex = 27;
+            label11Clientes.Text = "RFC:";
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(25, 330);
-            label10.Name = "label10";
-            label10.Size = new Size(62, 23);
-            label10.TabIndex = 21;
-            label10.Text = "Correo";
-            label10.TabIndex = 21;
-            label10.Text = "* Correo";
+            // txt_CorreoClientes
+            // 
+            txt_CorreoClientes.Location = new Point(206, 311);
+            txt_CorreoClientes.Name = "txt_CorreoClientes";
+            txt_CorreoClientes.Size = new Size(310, 23);
+            txt_CorreoClientes.TabIndex = 26;
+            // 
+            // txt_TelefonoClientes
+            // 
+            txt_TelefonoClientes.Location = new Point(206, 374);
+            txt_TelefonoClientes.Name = "txt_TelefonoClientes";
+            txt_TelefonoClientes.Size = new Size(310, 23);
+            txt_TelefonoClientes.TabIndex = 25;
+            // 
+            // txt_NombreClientes
+            // 
+            txt_NombreClientes.Location = new Point(206, 162);
+            txt_NombreClientes.Name = "txt_NombreClientes";
+            txt_NombreClientes.Size = new Size(310, 23);
+            txt_NombreClientes.TabIndex = 24;
+            // 
+            // txt_ClaveClientes
+            // 
+            txt_ClaveClientes.Location = new Point(206, 261);
+            txt_ClaveClientes.Name = "txt_ClaveClientes";
+            txt_ClaveClientes.Size = new Size(310, 23);
+            txt_ClaveClientes.TabIndex = 23;
+            // 
+            // txt_NodeCliente
+            // 
+            txt_NodeCliente.Location = new Point(206, 114);
+            txt_NodeCliente.Name = "txt_NodeCliente";
+            txt_NodeCliente.Size = new Size(310, 23);
+            txt_NodeCliente.TabIndex = 22;
+            // 
+            // label10Clientes
+            // 
+            label10Clientes.AutoSize = true;
+            label10Clientes.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10Clientes.Location = new Point(25, 311);
+            label10Clientes.Name = "label10Clientes";
+            label10Clientes.Size = new Size(124, 19);
+            label10Clientes.TabIndex = 21;
+            label10Clientes.Text = "Correo electronico:";
             // 
             // label9
-            label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(25, 388);
+            // 
             label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(25, 388);
+            label9.Name = "label9";
             label9.Size = new Size(83, 23);
-            label9.TabIndex = 20;
-            label9.Text = "Teléfono: ";
             label9.TabIndex = 20;
             label9.Text = "* Teléfono: ";
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(25, 162);
-            label8.Name = "label8";
-            label8.Size = new Size(77, 23);
-            label8.TabIndex = 19;
-            label8.Text = "Nombre:";
-            label8.TabIndex = 19;
-            label8.Text = "* Nombre:";
+            // label8Clientes
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(25, 265);
-            label7.Name = "label7";
-            label7.Size = new Size(55, 23);
-            label7.TabIndex = 18;
-            label7.Text = "Clave:";
-            label7.Click += label7_Click;
-            label7.Text = "Clave:";
-            label7.Click += label7_Click;
+            label8Clientes.AutoSize = true;
+            label8Clientes.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8Clientes.Location = new Point(25, 162);
+            label8Clientes.Name = "label8Clientes";
+            label8Clientes.Size = new Size(62, 19);
+            label8Clientes.TabIndex = 19;
+            label8Clientes.Text = "Nombre:";
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(25, 113);
-            label6.Name = "label6";
-            label6.Size = new Size(123, 23);
-            label6.TabIndex = 17;
-            label6.Text = "No. de Cliente:";
-            label6.TabIndex = 17;
-            label6.Text = "No. de Cliente:";
+            // label7Clientes
             // 
-            pictureBox1.Image = Properties.Resources.icons8_clientes_100;
-            pictureBox1.Location = new Point(3, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(119, 136);
-            pictureBox1.TabIndex = 32;
-            pictureBox1.TabStop = false;
-            pictureBox1.TabIndex = 32;
-            pictureBox1.TabStop = false;
+            label7Clientes.AutoSize = true;
+            label7Clientes.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7Clientes.Location = new Point(25, 265);
+            label7Clientes.Name = "label7Clientes";
+            label7Clientes.Size = new Size(45, 19);
+            label7Clientes.TabIndex = 18;
+            label7Clientes.Text = "Clave:";
+            label7Clientes.Click += label7_Click;
             // 
-            btn_ActualizarC.Image = Properties.Resources.icons8_update_24;
-            btn_ActualizarC.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_ActualizarC.Location = new Point(425, 13);
-            btn_ActualizarC.Name = "btn_ActualizarC";
-            btn_ActualizarC.Size = new Size(109, 38);
-            btn_ActualizarC.TabIndex = 33;
-            btn_ActualizarC.Text = "    Actualizar";
-            btn_ActualizarC.UseVisualStyleBackColor = true;
-            btn_ActualizarC.Text = "    Actualizar";
-            // btn_EditarC
+            // label6Clientes
             // 
-            btn_EditarC.Image = Properties.Resources.icons8_update_24;
-            btn_EditarC.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_EditarC.Location = new Point(560, 10);
-            btn_EditarC.Name = "btn_EditarC";
-            btn_EditarC.Size = new Size(107, 41);
-            btn_EditarC.TabIndex = 34;
-            btn_EditarC.Text = "    Editar";
-            btn_EditarC.UseVisualStyleBackColor = true;
+            label6Clientes.AutoSize = true;
+            label6Clientes.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6Clientes.Location = new Point(25, 113);
+            label6Clientes.Name = "label6Clientes";
+            label6Clientes.Size = new Size(111, 20);
+            label6Clientes.TabIndex = 17;
+            label6Clientes.Text = "No. de Cliente:";
+            // 
+            // pictureBox1Clientes
+            // 
+            pictureBox1Clientes.Image = Properties.Resources.icons8_clientes_100;
+            pictureBox1Clientes.Location = new Point(3, 0);
+            pictureBox1Clientes.Name = "pictureBox1Clientes";
+            pictureBox1Clientes.Size = new Size(119, 136);
+            pictureBox1Clientes.TabIndex = 32;
+            pictureBox1Clientes.TabStop = false;
+            // 
+            // btn_ActualizarClientes
+            // 
+            btn_ActualizarClientes.Image = Properties.Resources.icons8_update_24;
+            btn_ActualizarClientes.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_ActualizarClientes.Location = new Point(425, 13);
+            btn_ActualizarClientes.Name = "btn_ActualizarClientes";
+            btn_ActualizarClientes.Size = new Size(109, 38);
+            btn_ActualizarClientes.TabIndex = 33;
+            btn_ActualizarClientes.Text = "    Actualizar";
+            btn_ActualizarClientes.UseVisualStyleBackColor = true;
+            // 
+            // btn_EditarClientes
+            // 
+            btn_EditarClientes.Image = Properties.Resources.icons8_update_24;
+            btn_EditarClientes.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_EditarClientes.Location = new Point(560, 10);
+            btn_EditarClientes.Name = "btn_EditarClientes";
+            btn_EditarClientes.Size = new Size(107, 41);
+            btn_EditarClientes.TabIndex = 34;
+            btn_EditarClientes.Text = "    Editar";
+            btn_EditarClientes.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
             panel2.BackColor = Color.DarkBlue;
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(btn_CerrarC);
+            panel2.Controls.Add(label2Clientes);
+            panel2.Controls.Add(pictureBox1Clientes);
+            panel2.Controls.Add(btn_CerrarClientes);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(914, 75);
             panel2.TabIndex = 42;
             // 
-            // label2
+            // label2Clientes
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.DarkBlue;
-            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.AliceBlue;
-            label2.Location = new Point(128, 23);
-            label2.Name = "label2";
-            label2.Size = new Size(99, 31);
-            label2.TabIndex = 21;
-            label2.Text = "Clientes";
-            label2.Click += label2_Click;
+            label2Clientes.AutoSize = true;
+            label2Clientes.BackColor = Color.DarkBlue;
+            label2Clientes.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2Clientes.ForeColor = Color.AliceBlue;
+            label2Clientes.Location = new Point(128, 23);
+            label2Clientes.Name = "label2Clientes";
+            label2Clientes.Size = new Size(81, 25);
+            label2Clientes.TabIndex = 21;
+            label2Clientes.Text = "Clientes";
+            label2Clientes.Click += label2_Click;
             // 
             // panel1
             // 
             panel1.BackColor = Color.DarkBlue;
-            panel1.Controls.Add(btn_GuardarC);
-            panel1.Controls.Add(btn_AgregarC);
-            panel1.Controls.Add(btn_EditarC);
-            panel1.Controls.Add(btn_EliminarC);
-            panel1.Controls.Add(btn_ActualizarC);
+            panel1.Controls.Add(btn_GuardarClientes);
+            panel1.Controls.Add(btn_AgregarClientes);
+            panel1.Controls.Add(btn_EditarClientes);
+            panel1.Controls.Add(btn_EliminarClientes);
+            panel1.Controls.Add(btn_ActualizarClientes);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 516);
             panel1.Name = "panel1";
             panel1.Size = new Size(914, 67);
             panel1.TabIndex = 43;
             // 
-            // btn_GuardarC
+            // btn_GuardarClientes
             // 
-            btn_GuardarC.Image = Properties.Resources.GuardarArchivo;
-            btn_GuardarC.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_GuardarC.Location = new Point(155, 13);
-            btn_GuardarC.Margin = new Padding(3, 4, 3, 4);
-            btn_GuardarC.Name = "btn_GuardarC";
-            btn_GuardarC.Size = new Size(101, 40);
-            btn_GuardarC.TabIndex = 1;
-            btn_GuardarC.Text = "      Guardar";
-            btn_GuardarC.UseVisualStyleBackColor = true;
-            button1.Text = "    Editar";
-            button1.UseVisualStyleBackColor = true;
+            btn_GuardarClientes.Image = Properties.Resources.GuardarArchivo;
+            btn_GuardarClientes.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_GuardarClientes.Location = new Point(155, 13);
+            btn_GuardarClientes.Margin = new Padding(3, 4, 3, 4);
+            btn_GuardarClientes.Name = "btn_GuardarClientes";
+            btn_GuardarClientes.Size = new Size(101, 40);
+            btn_GuardarClientes.TabIndex = 1;
+            btn_GuardarClientes.Text = "      Guardar";
+            btn_GuardarClientes.UseVisualStyleBackColor = true;
+            // 
+            // label1Clientes
+            // 
+            label1Clientes.AutoSize = true;
+            label1Clientes.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1Clientes.Location = new Point(26, 380);
+            label1Clientes.Name = "label1Clientes";
+            label1Clientes.Size = new Size(61, 17);
+            label1Clientes.TabIndex = 44;
+            label1Clientes.Text = "Telefono:";
             // 
             // frm_clientes
             // 
             ClientSize = new Size(914, 583);
-            Controls.Add(panel1);
-            Controls.Add(panel2);
-            Controls.Add(txt_RFCC);
-            Controls.Add(label11);
-            Controls.Add(txt_CorreoC);
-            Controls.Add(txt_TelefonoC);
-            Controls.Add(txt_NombreC);
-            Controls.Add(txt_ClaveC);
-            Controls.Add(txt_NumeroclienteC);
-            Controls.Add(label10);
-            Controls.Add(txt_NumeroclienteC);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
+            Controls.Add(label1Clientes);
+            Controls.Add(txt_RFCClientes);
+            Controls.Add(label11Clientes);
+            Controls.Add(txt_CorreoClientes);
+            Controls.Add(txt_TelefonoClientes);
+            Controls.Add(txt_NombreClientes);
+            Controls.Add(txt_ClaveClientes);
+            Controls.Add(label10Clientes);
+            Controls.Add(txt_NodeCliente);
+            Controls.Add(label8Clientes);
+            Controls.Add(label7Clientes);
+            Controls.Add(label6Clientes);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "frm_clientes";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1Clientes).EndInit();
+            panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
-main
+
         private Button btn_EliminarC;
-        private Label label2;
-        private Button btn_EliminarC;
+        private Label label2Clientes;
+        private Button btn_EliminarClientes;
 
 
         #endregion
-        private Button btn_EliminarCliente;
+
+        private Button btn_EliminarClienteliente;
+        private Button btn_AgregarClientes;
         private TextBox txt_RFCClientes;
-
-        private Button btn_AgregarC;
-        private TextBox txt_RFCC;
-        private Label label11;
+       
+        private Label label11Clientes;
         private TextBox txt_CorreoClientes;
-        private TextBox txt_CorreoC;
+    
         private TextBox txt_TelefonoClientes;
+        
         private TextBox txt_NombreClientes;
-        private TextBox txt_NombreC;
-        private TextBox txt_ClaveC;
-        private TextBox txt_NumeroclienteC;
+        
         private TextBox txt_ClaveClientes;
+        private TextBox txt_NodeCliente;
+      
         private TextBox txt_NumeroDeCliente;
-        private Label label10;
+        private Label label10Clientes;
         private Label label9;
-        private Label label8;
-        private Label label7;
-        private Label label6;
- main
-        private Button btn_CerrarC;
-        private Button btn_EditarC;
-        private Panel panel2;
-        private Label label2;
-
-        private PictureBox pictureBox1;
-        private Button btn_ActualizarCliente;
-        private Button btn_ActualizarC;
-        private Button btn_EditarCliente;
-        private Panel panel2;
+        private Label label8Clientes;
+        private Label label7Clientes;
+        private Label label6Clientes;
+ 
         private Button btn_CerrarCliente;
+        private Button btn_EditarClientes;
+        private Panel panel2;
+        private Label label15;
+
+        private PictureBox pictureBox1Clientes;
+        private Button btn_ActualizarCliente;
+        private Button btn_ActualizarClientes;
+       
+      
         private Button btn_CerrarProduc;
-        private Label label1;
+        private Label label1Clientes;
         private Panel panel1;
-        private Button btn_GuardarC;
-        private Button btn_CerrarC;
+        private Button btn_GuardarClientes;
+        private Button btn_CerrarClientes;
         private Button button1;
     }
 }

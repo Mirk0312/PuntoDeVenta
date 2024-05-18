@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            btn_cerrar = new Button();
-            pictureBox3 = new PictureBox();
+            btn_cerrarLogin = new Button();
+            pictureBox3Login = new PictureBox();
             label3 = new Label();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            btn_IngresarL = new Button();
-            txt_passwordL = new TextBox();
-            txt_UsuarioL = new TextBox();
-            label2 = new Label();
-            label1 = new Label();
+            pictureBox2Login = new PictureBox();
+            pictureBox1Login = new PictureBox();
+            btn_IngresarLogin = new Button();
+            txt_passwordLogin = new TextBox();
+            txt_UsuarioLogin = new TextBox();
+            label2Login = new Label();
+            label1Login = new Label();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3Login).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2Login).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1Login).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.LightBlue;
-            panel1.Controls.Add(btn_cerrar);
-            panel1.Controls.Add(pictureBox3);
+            panel1.Controls.Add(btn_cerrarLogin);
+            panel1.Controls.Add(pictureBox3Login);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(btn_IngresarL);
-            panel1.Controls.Add(txt_passwordL);
-            panel1.Controls.Add(txt_UsuarioL);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(pictureBox2Login);
+            panel1.Controls.Add(pictureBox1Login);
+            panel1.Controls.Add(btn_IngresarLogin);
+            panel1.Controls.Add(txt_passwordLogin);
+            panel1.Controls.Add(txt_UsuarioLogin);
+            panel1.Controls.Add(label2Login);
+            panel1.Controls.Add(label1Login);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -65,31 +65,31 @@
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
-            // btn_cerrar
+            // btn_cerrarLogin
             // 
-            btn_cerrar.BackColor = Color.Gray;
-            btn_cerrar.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_cerrar.ForeColor = SystemColors.ControlLightLight;
-            btn_cerrar.Image = Properties.Resources.CerrarVentana;
-            btn_cerrar.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_cerrar.Location = new Point(549, 9);
-            btn_cerrar.Margin = new Padding(3, 2, 3, 2);
-            btn_cerrar.Name = "btn_cerrar";
-            btn_cerrar.Size = new Size(101, 33);
-            btn_cerrar.TabIndex = 11;
-            btn_cerrar.Text = "     Cerrar";
-            btn_cerrar.UseVisualStyleBackColor = false;
-            btn_cerrar.Click += btn_cerrar_Click;
+            btn_cerrarLogin.BackColor = Color.Gray;
+            btn_cerrarLogin.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_cerrarLogin.ForeColor = SystemColors.ControlLightLight;
+            btn_cerrarLogin.Image = Properties.Resources.CerrarVentana;
+            btn_cerrarLogin.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_cerrarLogin.Location = new Point(549, 9);
+            btn_cerrarLogin.Margin = new Padding(3, 2, 3, 2);
+            btn_cerrarLogin.Name = "btn_cerrarLogin";
+            btn_cerrarLogin.Size = new Size(101, 33);
+            btn_cerrarLogin.TabIndex = 11;
+            btn_cerrarLogin.Text = "     Cerrar";
+            btn_cerrarLogin.UseVisualStyleBackColor = false;
+            btn_cerrarLogin.Click += btn_cerrar_Click;
             // 
-            // pictureBox3
+            // pictureBox3Login
             // 
-            pictureBox3.Image = Properties.Resources.STARK50_removebg_preview;
-            pictureBox3.Location = new Point(261, 36);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(149, 125);
-            pictureBox3.TabIndex = 10;
-            pictureBox3.TabStop = false;
+            pictureBox3Login.Image = Properties.Resources.STARK50_removebg_preview;
+            pictureBox3Login.Location = new Point(261, 36);
+            pictureBox3Login.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3Login.Name = "pictureBox3Login";
+            pictureBox3Login.Size = new Size(149, 125);
+            pictureBox3Login.TabIndex = 10;
+            pictureBox3Login.TabStop = false;
             // 
             // label3
             // 
@@ -100,74 +100,73 @@
             label3.Size = new Size(0, 32);
             label3.TabIndex = 7;
             // 
-            // pictureBox2
+            // pictureBox2Login
             // 
-            pictureBox2.Image = Properties.Resources.icons8_candado_30;
-            pictureBox2.Location = new Point(51, 205);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(30, 30);
-            pictureBox2.TabIndex = 6;
-            pictureBox2.TabStop = false;
+            pictureBox2Login.Image = Properties.Resources.icons8_candado_30;
+            pictureBox2Login.Location = new Point(51, 205);
+            pictureBox2Login.Name = "pictureBox2Login";
+            pictureBox2Login.Size = new Size(30, 30);
+            pictureBox2Login.TabIndex = 6;
+            pictureBox2Login.TabStop = false;
             // 
-            // pictureBox1
+            // pictureBox1Login
             // 
-            pictureBox1.Image = Properties.Resources.icons8_usuario_30;
-            pictureBox1.Location = new Point(51, 169);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(30, 30);
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
+            pictureBox1Login.Image = Properties.Resources.icons8_usuario_30;
+            pictureBox1Login.Location = new Point(51, 169);
+            pictureBox1Login.Name = "pictureBox1Login";
+            pictureBox1Login.Size = new Size(30, 30);
+            pictureBox1Login.TabIndex = 5;
+            pictureBox1Login.TabStop = false;
             // 
-            // btn_IngresarL
+            // btn_IngresarLogin
             // 
-            btn_IngresarL.BackColor = Color.DarkGray;
-            btn_IngresarL.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_IngresarL.Image = Properties.Resources.Entrar;
-            btn_IngresarL.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_IngresarL.Location = new Point(273, 241);
-            btn_IngresarL.Name = "btn_IngresarL";
-            btn_IngresarL.Size = new Size(116, 50);
-            btn_IngresarL.TabIndex = 4;
-            btn_IngresarL.Text = "       Ingresar";
-            btn_IngresarL.TextAlign = ContentAlignment.MiddleRight;
-            btn_IngresarL.UseVisualStyleBackColor = false;
-            btn_IngresarL.Click += btn_ingresar_Click;
+            btn_IngresarLogin.BackColor = Color.DarkGray;
+            btn_IngresarLogin.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_IngresarLogin.Image = Properties.Resources.Entrar;
+            btn_IngresarLogin.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_IngresarLogin.Location = new Point(273, 241);
+            btn_IngresarLogin.Name = "btn_IngresarLogin";
+            btn_IngresarLogin.Size = new Size(116, 50);
+            btn_IngresarLogin.TabIndex = 4;
+            btn_IngresarLogin.Text = "       Ingresar";
+            btn_IngresarLogin.TextAlign = ContentAlignment.MiddleRight;
+            btn_IngresarLogin.UseVisualStyleBackColor = false;
+            btn_IngresarLogin.Click += btn_ingresar_Click;
             // 
-            // txt_passwordL
+            // txt_passwordLogin
             // 
-            txt_passwordL.Location = new Point(251, 208);
-            txt_passwordL.Name = "txt_passwordL";
-            txt_passwordL.PasswordChar = '*';
-            txt_passwordL.Size = new Size(233, 23);
-            txt_passwordL.TabIndex = 3;
-        
+            txt_passwordLogin.Location = new Point(251, 208);
+            txt_passwordLogin.Name = "txt_passwordLogin";
+            txt_passwordLogin.PasswordChar = '*';
+            txt_passwordLogin.Size = new Size(233, 23);
+            txt_passwordLogin.TabIndex = 3;
             // 
-            // txt_UsuarioL
+            // txt_UsuarioLogin
             // 
-            txt_UsuarioL.Location = new Point(251, 173);
-            txt_UsuarioL.Name = "txt_UsuarioL";
-            txt_UsuarioL.Size = new Size(233, 23);
-            txt_UsuarioL.TabIndex = 2;
+            txt_UsuarioLogin.Location = new Point(251, 173);
+            txt_UsuarioLogin.Name = "txt_UsuarioLogin";
+            txt_UsuarioLogin.Size = new Size(233, 23);
+            txt_UsuarioLogin.TabIndex = 2;
             // 
-            // label2
+            // label2Login
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(82, 210);
-            label2.Name = "label2";
-            label2.Size = new Size(158, 21);
-            label2.TabIndex = 1;
-            label2.Text = "Ingrese contraseña:";
+            label2Login.AutoSize = true;
+            label2Login.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2Login.Location = new Point(82, 210);
+            label2Login.Name = "label2Login";
+            label2Login.Size = new Size(158, 21);
+            label2Login.TabIndex = 1;
+            label2Login.Text = "Ingrese contraseña:";
             // 
-            // label1
+            // label1Login
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(84, 176);
-            label1.Name = "label1";
-            label1.Size = new Size(121, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Ingrese usuario:";
+            label1Login.AutoSize = true;
+            label1Login.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1Login.Location = new Point(84, 176);
+            label1Login.Name = "label1Login";
+            label1Login.Size = new Size(121, 20);
+            label1Login.TabIndex = 0;
+            label1Login.Text = "Ingrese usuario:";
             // 
             // frm_login
             // 
@@ -186,24 +185,24 @@
             Text = "Form1";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3Login).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2Login).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1Login).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private TextBox txt_passwordL;
-        private TextBox txt_UsuarioL;
-        private Label label2;
-        private Label label1;
-        private Button btn_IngresarL;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
+        private TextBox txt_passwordLogin;
+        private TextBox txt_UsuarioLogin;
+        private Label label2Login;
+        private Label label1Login;
+        private Button btn_IngresarLogin;
+        private PictureBox pictureBox1Login;
+        private PictureBox pictureBox2Login;
         private Label label3;
-        private PictureBox pictureBox3;
-        private Button btn_cerrar;
+        private PictureBox pictureBox3Login;
+        private Button btn_cerrarLogin;
     }
 }

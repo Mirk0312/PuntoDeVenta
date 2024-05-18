@@ -29,88 +29,88 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            btn_CerrarB = new Button();
-            btn_BuscarB = new Button();
-            txt_BuscarB = new TextBox();
-            label2 = new Label();
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
+            btn_CerrarBuscar = new Button();
+            btn_BuscarBuscar = new Button();
+            txt_BuscarBuscar = new TextBox();
+            label2Buscar = new Label();
+            pictureBox1Buscar = new PictureBox();
+            label1Buscar = new Label();
             dgV_datos = new DataGridView();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1Buscar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgV_datos).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(btn_CerrarB);
-            panel1.Controls.Add(btn_BuscarB);
-            panel1.Controls.Add(txt_BuscarB);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(btn_CerrarBuscar);
+            panel1.Controls.Add(btn_BuscarBuscar);
+            panel1.Controls.Add(txt_BuscarBuscar);
+            panel1.Controls.Add(label2Buscar);
+            panel1.Controls.Add(pictureBox1Buscar);
+            panel1.Controls.Add(label1Buscar);
             panel1.Location = new Point(1, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 115);
             panel1.TabIndex = 0;
             // 
-            // btn_CerrarB
+            // btn_CerrarBuscar
             // 
-            btn_CerrarB.Image = Properties.Resources.CerrarVentana;
-            btn_CerrarB.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_CerrarB.Location = new Point(704, 6);
-            btn_CerrarB.Margin = new Padding(3, 2, 3, 2);
-            btn_CerrarB.Name = "btn_CerrarB";
-            btn_CerrarB.Size = new Size(83, 24);
-            btn_CerrarB.TabIndex = 25;
-            btn_CerrarB.Text = "        Cerrar";
-            btn_CerrarB.TextAlign = ContentAlignment.MiddleRight;
-            btn_CerrarB.UseVisualStyleBackColor = true;
-            btn_CerrarB.Click += btn_CerrarCP_Click;
+            btn_CerrarBuscar.Image = Properties.Resources.CerrarVentana;
+            btn_CerrarBuscar.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_CerrarBuscar.Location = new Point(704, 6);
+            btn_CerrarBuscar.Margin = new Padding(3, 2, 3, 2);
+            btn_CerrarBuscar.Name = "btn_CerrarBuscar";
+            btn_CerrarBuscar.Size = new Size(83, 24);
+            btn_CerrarBuscar.TabIndex = 25;
+            btn_CerrarBuscar.Text = "        Cerrar";
+            btn_CerrarBuscar.TextAlign = ContentAlignment.MiddleRight;
+            btn_CerrarBuscar.UseVisualStyleBackColor = true;
+            btn_CerrarBuscar.Click += btn_CerrarCP_Click;
             // 
-            // btn_BuscarB
+            // btn_BuscarBuscar
             // 
-            btn_BuscarB.Location = new Point(542, 44);
-            btn_BuscarB.Name = "btn_BuscarB";
-            btn_BuscarB.Size = new Size(75, 23);
-            btn_BuscarB.TabIndex = 4;
-            btn_BuscarB.Text = "Buscar";
-            btn_BuscarB.UseVisualStyleBackColor = true;
-            btn_BuscarB.Click += btn_buscar_Click;
+            btn_BuscarBuscar.Location = new Point(542, 44);
+            btn_BuscarBuscar.Name = "btn_BuscarBuscar";
+            btn_BuscarBuscar.Size = new Size(75, 23);
+            btn_BuscarBuscar.TabIndex = 4;
+            btn_BuscarBuscar.Text = "Buscar";
+            btn_BuscarBuscar.UseVisualStyleBackColor = true;
+            btn_BuscarBuscar.Click += btn_buscar_Click;
             // 
-            // txt_BuscarB
+            // txt_BuscarBuscar
             // 
-            txt_BuscarB.Location = new Point(212, 46);
-            txt_BuscarB.Name = "txt_BuscarB";
-            txt_BuscarB.Size = new Size(317, 23);
-            txt_BuscarB.TabIndex = 3;
+            txt_BuscarBuscar.Location = new Point(212, 46);
+            txt_BuscarBuscar.Name = "txt_BuscarBuscar";
+            txt_BuscarBuscar.Size = new Size(317, 23);
+            txt_BuscarBuscar.TabIndex = 3;
             // 
-            // label2
+            // label2Buscar
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(104, 52);
-            label2.Name = "label2";
-            label2.Size = new Size(82, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Dato a buscar:";
+            label2Buscar.AutoSize = true;
+            label2Buscar.Location = new Point(104, 52);
+            label2Buscar.Name = "label2Buscar";
+            label2Buscar.Size = new Size(82, 15);
+            label2Buscar.TabIndex = 2;
+            label2Buscar.Text = "Dato a buscar:";
             // 
-            // pictureBox1
+            // pictureBox1Buscar
             // 
-            pictureBox1.Location = new Point(25, 23);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(48, 48);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            pictureBox1Buscar.Location = new Point(25, 23);
+            pictureBox1Buscar.Name = "pictureBox1Buscar";
+            pictureBox1Buscar.Size = new Size(48, 48);
+            pictureBox1Buscar.TabIndex = 1;
+            pictureBox1Buscar.TabStop = false;
             // 
-            // label1
+            // label1Buscar
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(104, 7);
-            label1.Name = "label1";
-            label1.Size = new Size(65, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Buscar";
+            label1Buscar.AutoSize = true;
+            label1Buscar.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1Buscar.Location = new Point(104, 7);
+            label1Buscar.Name = "label1Buscar";
+            label1Buscar.Size = new Size(65, 20);
+            label1Buscar.TabIndex = 0;
+            label1Buscar.Text = "Buscar";
             // 
             // dgV_datos
             // 
@@ -141,7 +141,7 @@
             Load += frm_Buscar_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1Buscar).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgV_datos).EndInit();
             ResumeLayout(false);
         }
@@ -149,12 +149,12 @@
         #endregion
 
         private Panel panel1;
-        private Button btn_BuscarB;
-        private TextBox txt_BuscarB;
-        private Label label2;
-        private PictureBox pictureBox1;
-        private Label label1;
+        private Button btn_BuscarBuscar;
+        private TextBox txt_BuscarBuscar;
+        private Label label2Buscar;
+        private PictureBox pictureBox1Buscar;
+        private Label label1Buscar;
         private DataGridView dgV_datos;
-        private Button btn_CerrarB;
+        private Button btn_CerrarBuscar;
     }
 }

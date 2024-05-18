@@ -22,8 +22,8 @@ namespace POS
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
             // Obtener el nombre de usuario y la contraseña ingresados por el usuario
-            string usuario = txt_UsuarioL.Text;
-            string contraseña = txt_passwordL.Text;
+            string usuario = txt_UsuarioLogin.Text;
+            string contraseña = txt_passwordLogin.Text;
 
             // Crear una instancia de la clase DataUsuarios para autenticar al usuario
             DataUsuarios dataUsuarios = new DataUsuarios();

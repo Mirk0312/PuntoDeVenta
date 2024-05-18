@@ -13,10 +13,10 @@ namespace CapaDatos
     {
         SqlConnection conn;
 
-        string nombreServidor = "JONSNOW\\SQLEXPRESS";
-        string nombreBD = "SystemPOS";
-        string usuarioBD = "RichardSnow";
-        string passwordBD = "f12345";
+        string nombreServidor = "LPKM\\SQLEXPRESS";
+        string nombreBD = "POS";
+        string usuarioBD = "Admin";
+        string passwordBD = "admin123";
         private string conexionString;
 
         public ConexionSQL()

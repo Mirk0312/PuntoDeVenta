@@ -22,16 +22,16 @@ namespace POS
         {
             try
             {
-                txt_IDProduc.Enabled = false;
-                txt_IDProduc.Text = "NUEVO";
+                txt_IDProducto.Enabled = false;
+                txt_IDProducto.Text = "NUEVO";
 
-                txt_CodigoProduc.Text = "";
-                txt_NombreProduc.Text = "";
-                txt_DescripcionProduc.Text = "";
-                txt_VentaProduc.Text = "";
-                txt_CostoProduc.Text = "";
-                cbx_UnidadProduc.SelectedIndex = 0;
-                cbx_UbicacionProduc.SelectedIndex = 0;
+                txt_CodigoProducto.Text = "";
+                txt_NombreProducto.Text = "";
+                txt_DescripcionProducto.Text = "";
+                txt_VentaProducto.Text = "";
+                txt_CostoProducto.Text = "";
+                cbx_UnidadProducto.SelectedIndex = 0;
+                cbx_UbicacionProducto.SelectedIndex = 0;
 
             }
             catch (Exception ex)
@@ -49,37 +49,37 @@ namespace POS
         private void btn_guardar_Click(object sender, EventArgs e)
         {
             //Validar datos 
-            if (txt_CodigoProduc.Text.Length == 0)
+            if (txt_CodigoProducto.Text.Length == 0)
             {
 
                 MessageBox.Show("Obligatorio codigo del producto");
 
             }
-            else if (txt_NombreProduc.Text.Length == 0)
+            else if (txt_NombreProducto.Text.Length == 0)
             {
                 MessageBox.Show("Obligatorio NOMBRE del producto");
             }
-            else if (txt_DescripcionProduc.Text.Length == 0)
+            else if (txt_DescripcionProducto.Text.Length == 0)
             {
                 MessageBox.Show("Obligatorio DESCRIPCION del producto");
 
             }
-            else if (txt_CostoProduc.Text.Length == 0)
+            else if (txt_CostoProducto.Text.Length == 0)
             {
                 MessageBox.Show("Obligatorio COSTO del producto");
 
             }
-            else if (cbx_UbicacionProduc.SelectedIndex == 0) { 
+            else if (cbx_UbicacionProducto.SelectedIndex == 0) { 
                 MessageBox.Show("Obligatorio UBICACION del producto");
              }
 
                 //Recolectar campos
                 String id ="", codigo= "", nombre = "", descripcion = "", ubicacion = "", costo;
-                codigo = txt_CodigoProduc.Text;
-                nombre = txt_NombreProduc.Text;
-                descripcion = txt_DescripcionProduc.Text;
-                ubicacion = cbx_UbicacionProduc.SelectedValue.ToString();
-                costo = txt_CostoProduc.Text;
+                codigo = txt_CodigoProducto.Text;
+                nombre = txt_NombreProducto.Text;
+                descripcion = txt_DescripcionProducto.Text;
+                ubicacion = cbx_UbicacionProducto.SelectedValue.ToString();
+                costo = txt_CostoProducto.Text;
 
 
                 Productos pr = new Productos(codigo, nombre, descripcion, ubicacion, costo);
@@ -87,7 +87,7 @@ namespace POS
                 //Instanciar clase productos de capa negocio
 
                 // Determinar si es un nuevo registro o una actualización
-                if (txt_IDProduc.Text == "nuevo".ToUpper())
+                if (txt_IDProducto.Text == "nuevo".ToUpper())
                 {
                     // Estructura para un "INSERT"
                     if (pr.fnInsertar())
@@ -100,7 +100,7 @@ namespace POS
                 {
 
                     // Estructura para un "UPDATE"
-                    id = txt_IDProduc.Text;
+                    id = txt_IDProducto.Text;
                     pr.setID(id);
                     if (pr.fnActualizar())
                         MessageBox.Show("Actualizado correctamente");
@@ -114,7 +114,7 @@ namespace POS
             frmhijo.setQuery("SELECT * FROM PRODUCTOS");
             frmhijo.setCampo("nombre");
             DialogResult resultado = frmhijo.ShowDialog();
-            txt_IDProduc.Text = frmhijo.ID_BUSQUEDA;
+            txt_IDProducto.Text = frmhijo.ID_BUSQUEDA;
             //Mostrar frmBuscar, despues del cierre
 
             //obtener ID de la busqueda

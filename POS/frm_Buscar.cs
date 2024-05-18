@@ -35,13 +35,13 @@ namespace POS
         {
             if (query.Length == 0)
                 consulta = "SELECT 'SIN DATOS A BUSCAR O BUSQUEDA INCOMPLETA DESCRIPCION";
-            else if (txt_BuscarB.Text.Length == 0)
+            else if (txt_BuscarBuscar.Text.Length == 0)
             {
                 consulta = query + " order by " + campo + "nombre asc";
             }
             else
             {
-                consulta = query + "where " + campo + " like % " + txt_BuscarB.Text + "%";
+                consulta = query + "where " + campo + " like % " + txt_BuscarBuscar.Text + "%";
             }
             return consulta;
         }
@@ -85,7 +85,7 @@ namespace POS
 
         private void btn_buscar_Click(object sender, EventArgs e)
         {
-            String cadena = txt_BuscarB.Text;
+            String cadena = txt_BuscarBuscar.Text;
             if (cadena.Length == 0)
                 cadena = query;
             else

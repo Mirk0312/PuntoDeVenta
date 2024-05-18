@@ -24,6 +24,7 @@ namespace CapaDatos
 
         public Boolean Insertar(string nombre, string apellidoP, string apellidoM, string correo, string direccion, string telefono)
         {
+            //INSERTAR PERFILES
             try
             {
                 //abrir conexion
