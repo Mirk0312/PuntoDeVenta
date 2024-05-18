@@ -1,4 +1,6 @@
 using System.Diagnostics.Eventing.Reader;
+using CapaDatos;
+using CapaNegocio;
 
 namespace POS
 {
@@ -19,62 +21,28 @@ namespace POS
 
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
+            // Obtener el nombre de usuario y la contraseña ingresados por el usuario
+            string usuario = txt_UsuarioL.Text;
+            string contraseña = txt_passwordL.Text;
 
-            //Validar
-            Boolean validado = false;
-            String aviso = "Ninguno";
-            String usuario, password;
-            if (txt_UsuarioL.Text.Length == 0)
+            // Crear una instancia de la clase DataUsuarios para autenticar al usuario
+            DataUsuarios dataUsuarios = new DataUsuarios();
+
+            // Llamar al método Autenticar para verificar las credenciales
+            bool credencialesValidas = dataUsuarios.Autenticar(usuario, contraseña);
+
+            if (credencialesValidas)
             {
-                validado = false;
-                aviso = "Obligatorio ingresar usuario \n ";
-
-            }
-            if (txt_passwordL.Text.Length == 0)
-            {
-                validado = false;
-                aviso = "Obligatorio ingresar contraseña \n ";
-
-            }
-            //Recolectar campos en pantalla
-            if (validado) 
-            { 
-            usuario = txt_UsuarioL.Text;
-            password = txt_passwordL.Text;
-                //Instanciar objeto
-                Usuarios user = new Usuarios();
-                user.setUsuario(usuario);
-                user.setPassword(password);
-                if (user.) 
-                
-                
-                { 
-                
-                }
-                //Consultar UsuarioValido()
-                this.Close();
+                // Si las credenciales son válidas, permitir que el usuario acceda a la aplicación principal
+                frm_principal formPrincipal = new frm_principal();
+                formPrincipal.Show();
+                this.Hide(); // Ocultar el formulario de inicio de sesión
             }
             else
             {
-                MessageBox.Show("Atender lo siguiente: \n" + aviso);
+                // Si las credenciales no son válidas, mostrar un mensaje de error
+                MessageBox.Show("Usuario o contraseña incorrectos.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
-            //Validar usuario y contrase�a
-            if (CapaNegocio.Utilerias.validaVacio(txt_UsuarioL.Text))
-            {
-                //Llamar a la BD
-
-                this.Close();
-
-
-            }
-            else
-            {
-                MessageBox.Show("Es obligatorio ingresar el usuario");
-            }
-
         }
 
         private void txt_password_TextChanged(object sender, EventArgs e)

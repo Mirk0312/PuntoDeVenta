@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    internal class Usuarios
+    public class Usuarios
     {
-        String usuario, password;
+        private String usuario, password;
         public void setUsuario(string usuario) {
             this.usuario = usuario;
         }
@@ -22,28 +22,32 @@ namespace CapaNegocio
         {
             this.password = password;
         }
-        public string getPassword()      {  return this.password;}
+        public string getPassword()      
+        {  
+            return this.password;
+        }
 
 
         public Boolean fnValidarLogin()
         {
             try
             {
-
-                Boolean resultado = false;
                 //Instanciar usuario en la capa de datos
                 DataUsuarios user = new DataUsuarios();
-                user.Autenticar(getUsuario(), getPassword());
-                //enviar datos
-
-                //esperar respuesta
-                return true;
-
+                // Llamar al método Autenticar y obtener el resultado
+                bool resultado = user.Autenticar(getUsuario(), getPassword());
+                // Devolver el resultado de la autenticación
+                return resultado;
             }
-           catch (Exception ex)
+            catch (Exception ex)
             {
-             Console.WriteLine("[fnValidarLogin] ---> " + ex.Message);
+                // Manejar cualquier excepción y registrarla en la consola
+                Console.WriteLine("[fnValidarLogin] ---> " + ex.Message);
+                // Devolver falso en caso de excepción
+                return false;
             }
         }
+
     }
 }
+

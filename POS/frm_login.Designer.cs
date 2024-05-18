@@ -140,7 +140,7 @@
             txt_passwordL.PasswordChar = '*';
             txt_passwordL.Size = new Size(233, 23);
             txt_passwordL.TabIndex = 3;
-            txt_passwordL.TextChanged += txt_password_TextChanged;
+        
             // 
             // txt_UsuarioL
             // 

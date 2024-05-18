@@ -53,8 +53,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
-            SuspendLayout();
-            // 
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             // btn_CerrarC
             // 
             btn_CerrarC.Image = Properties.Resources.CerrarVentana;
@@ -67,7 +67,7 @@
             btn_CerrarC.TextAlign = ContentAlignment.MiddleRight;
             btn_CerrarC.UseVisualStyleBackColor = true;
             btn_CerrarC.Click += btn_CerrarCP_Click;
-            // 
+            btn_CerrarC.UseVisualStyleBackColor = true;
             // btn_EliminarC
             // 
             btn_EliminarC.Image = Properties.Resources.EliminarArchivo;
@@ -78,8 +78,8 @@
             btn_EliminarC.TabIndex = 31;
             btn_EliminarC.Text = "  Eliminar";
             btn_EliminarC.UseVisualStyleBackColor = true;
-            // 
-            // btn_AgregarC
+            btn_EliminarC.Text = "  Eliminar";
+            btn_EliminarC.UseVisualStyleBackColor = true;
             // 
             btn_AgregarC.Image = Properties.Resources.icons8_add_24;
             btn_AgregarC.ImageAlign = ContentAlignment.MiddleLeft;
@@ -89,15 +89,15 @@
             btn_AgregarC.TabIndex = 30;
             btn_AgregarC.Text = "  Agregar";
             btn_AgregarC.UseVisualStyleBackColor = true;
-            // 
-            // txt_RFCC
+            btn_AgregarC.Text = "  Agregar";
+            btn_AgregarC.UseVisualStyleBackColor = true;
             // 
             txt_RFCC.Location = new Point(242, 214);
             txt_RFCC.Name = "txt_RFCC";
             txt_RFCC.Size = new Size(362, 27);
             txt_RFCC.TabIndex = 28;
-            // 
-            // label11
+            txt_RFCC.Size = new Size(151, 23);
+            txt_RFCC.TabIndex = 28;
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -106,43 +106,43 @@
             label11.Size = new Size(43, 23);
             label11.TabIndex = 27;
             label11.Text = "RFC:";
-            // 
-            // txt_CorreoC
+            label11.TabIndex = 27;
+            label11.Text = "* RFC";
             // 
             txt_CorreoC.Location = new Point(242, 326);
             txt_CorreoC.Name = "txt_CorreoC";
             txt_CorreoC.Size = new Size(362, 27);
             txt_CorreoC.TabIndex = 26;
-            // 
-            // txt_TelefonoC
+            txt_CorreoC.Size = new Size(151, 23);
+            txt_CorreoC.TabIndex = 26;
             // 
             txt_TelefonoC.Location = new Point(242, 388);
             txt_TelefonoC.Name = "txt_TelefonoC";
             txt_TelefonoC.Size = new Size(362, 27);
             txt_TelefonoC.TabIndex = 25;
-            // 
-            // txt_NombreC
+            txt_TelefonoC.Size = new Size(152, 23);
+            txt_TelefonoC.TabIndex = 25;
             // 
             txt_NombreC.Location = new Point(242, 161);
             txt_NombreC.Name = "txt_NombreC";
             txt_NombreC.Size = new Size(362, 27);
             txt_NombreC.TabIndex = 24;
-            // 
-            // txt_ClaveC
+            txt_NombreC.Size = new Size(152, 23);
+            txt_NombreC.TabIndex = 24;
             // 
             txt_ClaveC.Location = new Point(242, 265);
             txt_ClaveC.Name = "txt_ClaveC";
             txt_ClaveC.Size = new Size(362, 27);
             txt_ClaveC.TabIndex = 23;
-            // 
-            // txt_NumeroclienteC
+            txt_ClaveC.Size = new Size(152, 23);
+            txt_ClaveC.TabIndex = 23;
             // 
             txt_NumeroclienteC.Location = new Point(242, 113);
             txt_NumeroclienteC.Name = "txt_NumeroclienteC";
             txt_NumeroclienteC.Size = new Size(362, 27);
             txt_NumeroclienteC.TabIndex = 22;
-            // 
-            // label10
+            txt_NumeroclienteC.Size = new Size(152, 23);
+            txt_NumeroclienteC.TabIndex = 22;
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -151,18 +151,18 @@
             label10.Size = new Size(62, 23);
             label10.TabIndex = 21;
             label10.Text = "Correo";
+            label10.TabIndex = 21;
+            label10.Text = "* Correo";
             // 
             // label9
-            // 
-            label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.Location = new Point(25, 388);
-            label9.Name = "label9";
+            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.Size = new Size(83, 23);
             label9.TabIndex = 20;
             label9.Text = "Teléfono: ";
-            // 
-            // label8
+            label9.TabIndex = 20;
+            label9.Text = "* Teléfono: ";
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -171,8 +171,8 @@
             label8.Size = new Size(77, 23);
             label8.TabIndex = 19;
             label8.Text = "Nombre:";
-            // 
-            // label7
+            label8.TabIndex = 19;
+            label8.Text = "* Nombre:";
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -182,8 +182,8 @@
             label7.TabIndex = 18;
             label7.Text = "Clave:";
             label7.Click += label7_Click;
-            // 
-            // label6
+            label7.Text = "Clave:";
+            label7.Click += label7_Click;
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -192,8 +192,8 @@
             label6.Size = new Size(123, 23);
             label6.TabIndex = 17;
             label6.Text = "No. de Cliente:";
-            // 
-            // pictureBox1
+            label6.TabIndex = 17;
+            label6.Text = "No. de Cliente:";
             // 
             pictureBox1.Image = Properties.Resources.icons8_clientes_100;
             pictureBox1.Location = new Point(3, 0);
@@ -201,8 +201,8 @@
             pictureBox1.Size = new Size(119, 136);
             pictureBox1.TabIndex = 32;
             pictureBox1.TabStop = false;
-            // 
-            // btn_ActualizarC
+            pictureBox1.TabIndex = 32;
+            pictureBox1.TabStop = false;
             // 
             btn_ActualizarC.Image = Properties.Resources.icons8_update_24;
             btn_ActualizarC.ImageAlign = ContentAlignment.MiddleLeft;
@@ -212,7 +212,7 @@
             btn_ActualizarC.TabIndex = 33;
             btn_ActualizarC.Text = "    Actualizar";
             btn_ActualizarC.UseVisualStyleBackColor = true;
-            // 
+            btn_ActualizarC.Text = "    Actualizar";
             // btn_EditarC
             // 
             btn_EditarC.Image = Properties.Resources.icons8_update_24;
@@ -274,11 +274,11 @@
             btn_GuardarC.TabIndex = 1;
             btn_GuardarC.Text = "      Guardar";
             btn_GuardarC.UseVisualStyleBackColor = true;
+            button1.Text = "    Editar";
+            button1.UseVisualStyleBackColor = true;
             // 
             // frm_clientes
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 583);
             Controls.Add(panel1);
             Controls.Add(panel2);
@@ -290,31 +290,33 @@
             Controls.Add(txt_ClaveC);
             Controls.Add(txt_NumeroclienteC);
             Controls.Add(label10);
-            Controls.Add(label9);
+            Controls.Add(txt_NumeroclienteC);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "frm_clientes";
-            Text = "frm_clientes";
-            Load += frm_clientes_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel2.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
-
-        #endregion
+        private Button btn_EliminarC;
+        private Label label2;
         private Button btn_EliminarC;
         private Button btn_AgregarC;
         private TextBox txt_RFCC;
         private Label label11;
         private TextBox txt_CorreoC;
-        private TextBox txt_TelefonoC;
+        private TextBox txt_TelefonoClientes;
         private TextBox txt_NombreC;
         private TextBox txt_ClaveC;
         private TextBox txt_NumeroclienteC;
@@ -323,13 +325,13 @@
         private Label label8;
         private Label label7;
         private Label label6;
-        private PictureBox pictureBox1;
-        private Button btn_ActualizarC;
         private Button btn_CerrarC;
         private Button btn_EditarC;
         private Panel panel2;
         private Label label2;
         private Panel panel1;
         private Button btn_GuardarC;
+        private Button btn_CerrarC;
+        private Button button1;
     }
 }

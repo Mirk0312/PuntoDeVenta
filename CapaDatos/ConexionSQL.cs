@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -6,23 +6,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CapaDatos
 {
     public class ConexionSQL
     {
-      private SqlConnection conn;
-        string conexionString;
-        String nombreServidor = "";
-        string nombreBD = "POS";
-        string usuarioBD = "";
-        string passwordBD = "";
+        SqlConnection conn;
+
+        string nombreServidor = "JONSNOW\\SQLEXPRESS";
+        string nombreBD = "SystemPOS";
+        string usuarioBD = "RichardSnow";
+        string passwordBD = "f12345";
+        private string conexionString;
+
         public ConexionSQL()
         {
             try
             {
-                conexionString = $"Server={nombreServidor};Database={nombreBD};User ID{usuarioBD},Password{passwordBD}";
-                conn = new SqlConnection(); //ConectionString
-
+                conexionString = $"Server={nombreServidor};Database={nombreBD};User ID={usuarioBD};Password={passwordBD}";
+                conn = new SqlConnection(conexionString); // ConnectionString
             }
             catch (Exception ex)
             {
@@ -31,7 +33,7 @@ namespace CapaDatos
         }
 
         public SqlConnection AbrirConexion()
-            {
+        {
             try
             {
                 if (conn.State == ConnectionState.Closed)
@@ -43,28 +45,20 @@ namespace CapaDatos
                 Console.WriteLine(ex.Message);
                 return null;
             }
-
         }
-        
-         public SqlConnection CerrarConexion()
-            {
+
+
+        public void CerrarConexion()
+        {
             try
             {
-               if (conn.State == ConnectionState.Open)
-                   conn.Close();
-              return conn;
+                if (conn.State == System.Data.ConnectionState.Open)
+                    conn.Close();
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-               return null;
-    }
-
-}
+            }
         }
     }
-
-              
-    
-
-
+}

@@ -141,7 +141,7 @@
             txt_NombrePe.Size = new Size(300, 27);
             txt_NombrePe.TabIndex = 13;
             // 
-            // btn_CerrarP
+            // btn_EliminarPerfil
             // 
             btn_CerrarP.Image = Properties.Resources.CerrarVentana;
             btn_CerrarP.ImageAlign = ContentAlignment.MiddleLeft;
@@ -154,7 +154,7 @@
             btn_CerrarP.UseVisualStyleBackColor = true;
             btn_CerrarP.Click += btn_CerrarU_Click;
             // 
-            // pictureBox1
+            // btn_NuevoPerfil
             // 
             pictureBox1.BackColor = Color.SlateGray;
             pictureBox1.Image = Properties.Resources.icons8_clientes_100;
