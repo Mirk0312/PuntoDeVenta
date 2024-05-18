@@ -309,26 +309,47 @@
             ResumeLayout(false);
             PerformLayout();
         }
+main
         private Button btn_EliminarC;
         private Label label2;
         private Button btn_EliminarC;
+
+
+        #endregion
+        private Button btn_EliminarCliente;
+        private TextBox txt_RFCClientes;
+
         private Button btn_AgregarC;
         private TextBox txt_RFCC;
         private Label label11;
+        private TextBox txt_CorreoClientes;
         private TextBox txt_CorreoC;
         private TextBox txt_TelefonoClientes;
+        private TextBox txt_NombreClientes;
         private TextBox txt_NombreC;
         private TextBox txt_ClaveC;
         private TextBox txt_NumeroclienteC;
+        private TextBox txt_ClaveClientes;
+        private TextBox txt_NumeroDeCliente;
         private Label label10;
         private Label label9;
         private Label label8;
         private Label label7;
         private Label label6;
+ main
         private Button btn_CerrarC;
         private Button btn_EditarC;
         private Panel panel2;
         private Label label2;
+
+        private PictureBox pictureBox1;
+        private Button btn_ActualizarCliente;
+        private Button btn_ActualizarC;
+        private Button btn_EditarCliente;
+        private Panel panel2;
+        private Button btn_CerrarCliente;
+        private Button btn_CerrarProduc;
+        private Label label1;
         private Panel panel1;
         private Button btn_GuardarC;
         private Button btn_CerrarC;
