@@ -14,6 +14,8 @@ namespace CapaDatos
         private ConexionSQL connSQL = new ConexionSQL();
         private SqlCommand comandoSQL = new SqlCommand();
         public int RenglonesAfectados = 0;
+        public string NombreUsuario = "";
+        public string UserName = "";
 
         public DataUsuarios()
         {
@@ -55,23 +57,34 @@ namespace CapaDatos
         public Boolean Autenticar(string usuario, string pass)
         {
             try
-            { 
-                //abrir conexion
+            {
+                // Abrir conexión
                 comandoSQL.Connection = connSQL.AbrirConexion();
-                //enviar nombre del recurso sql
+                // Enviar nombre del recurso sql
                 comandoSQL.CommandText = "proc_ValidaUsuario";
-                //Tipo de comando
+                // Tipo de comando
                 comandoSQL.CommandType = CommandType.StoredProcedure;
-                //Agregar parametros
+                // Agregar parámetros
                 comandoSQL.Parameters.AddWithValue("@usuario", usuario);
                 comandoSQL.Parameters.AddWithValue("@password", pass);
-                //ejecutar query
-                RenglonesAfectados = comandoSQL.ExecuteNonQuery();
-                comandoSQL.Parameters.Clear();
-                //cerrar sesion
-                connSQL.CerrarConexion();
+                // Ejecutar consulta y leer resultados
+                SqlDataReader reader = comandoSQL.ExecuteReader();
 
-                return true;
+                // Verificar si se encontró una fila que coincide con las credenciales
+                if (reader.HasRows)
+                {
+                    // Credenciales válidas, cerrar conexión y devolver true
+                    reader.Close();
+                    connSQL.CerrarConexion();
+                    return true;
+                }
+                else
+                {
+                    // No se encontraron coincidencias, cerrar conexión y devolver false
+                    reader.Close();
+                    connSQL.CerrarConexion();
+                    return false;
+                }
             }
             catch (Exception ex)
             {
@@ -80,5 +93,8 @@ namespace CapaDatos
                 return false;
             }
         }
+
+
+
     }
 }
