@@ -45,8 +45,7 @@
             panel2 = new Panel();
             label2 = new Label();
             panel1 = new Panel();
-            this.btn_EliminarPe = new Button();
-            this.btn_NuevoPe = new Button();
+            
             btn_CancelarPe = new Button();
             btn_GuardarPe = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -83,7 +82,7 @@
             label7.Size = new Size(146, 23);
             label7.TabIndex = 8;
             label7.Text = "Apellido Materno:";
-            label7.Click += label7_Click;
+            
             // 
             // label8
             // 
@@ -94,7 +93,7 @@
             label8.Size = new Size(140, 23);
             label8.TabIndex = 7;
             label8.Text = "Apellido Paterno:";
-            label8.Click += label8_Click;
+            
             // 
             // label9
             // 
@@ -204,13 +203,12 @@
             label2.Size = new Size(94, 31);
             label2.TabIndex = 21;
             label2.Text = "Perfiles";
-            label2.Click += label2_Click;
+           
             // 
             // panel1
             // 
             panel1.BackColor = Color.DarkBlue;
-            panel1.Controls.Add(this.btn_EliminarPe);
-            panel1.Controls.Add(this.btn_NuevoPe);
+           
             panel1.Controls.Add(btn_CancelarPe);
             panel1.Controls.Add(btn_GuardarPe);
             panel1.Dock = DockStyle.Bottom;
@@ -221,28 +219,11 @@
             // 
             // btn_EliminarPe
             // 
-            this.btn_EliminarPe.Image = Properties.Resources.EliminarArchivo;
-            this.btn_EliminarPe.ImageAlign = ContentAlignment.MiddleLeft;
-            this.btn_EliminarPe.Location = new Point(286, 13);
-            this.btn_EliminarPe.Margin = new Padding(3, 4, 3, 4);
-            this.btn_EliminarPe.Name = "btn_EliminarPe";
-            this.btn_EliminarPe.Size = new Size(101, 40);
-            this.btn_EliminarPe.TabIndex = 4;
-            this.btn_EliminarPe.Text = "      Eliminar";
-            this.btn_EliminarPe.TextAlign = ContentAlignment.MiddleRight;
-            this.btn_EliminarPe.UseVisualStyleBackColor = true;
+           
             // 
             // btn_NuevoPe
             // 
-            this.btn_NuevoPe.Image = Properties.Resources.NuevoArchivo;
-            this.btn_NuevoPe.ImageAlign = ContentAlignment.MiddleLeft;
-            this.btn_NuevoPe.Location = new Point(23, 13);
-            this.btn_NuevoPe.Margin = new Padding(3, 4, 3, 4);
-            this.btn_NuevoPe.Name = "btn_NuevoPe";
-            this.btn_NuevoPe.Size = new Size(101, 40);
-            this.btn_NuevoPe.TabIndex = 0;
-            this.btn_NuevoPe.Text = "      Nuevo";
-            this.btn_NuevoPe.UseVisualStyleBackColor = true;
+           
             // 
             // btn_CancelarPe
             // 

@@ -14,7 +14,7 @@ namespace POS
     {
         public frm_clientes()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
 
         private void label7_Click(object sender, EventArgs e)

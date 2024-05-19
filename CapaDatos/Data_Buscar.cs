@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Linq.Expressions;
 
-
 namespace CapaDatos
 {
     public class Data_buscar
@@ -17,7 +16,7 @@ namespace CapaDatos
 
         public int renglonesAfectados = 0;
 
-        public DataTable consultaDataGridView(String laConsulta)
+        public DataTable consultaDataGridView(string laConsulta)
         {
             DataTable consultaData = new DataTable();
             try

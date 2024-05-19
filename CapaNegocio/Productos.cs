@@ -1,40 +1,39 @@
 ﻿using CapaDatos;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 namespace CapaNegocio
 {
     public class Productos
     {
-       private string id, codigo, nombre, descripcion, ubicacion, costo;
+        // Campos privados
+        private string id, codigo, nombre, descripcion, ubicacion, costo;
 
+        // Métodos de acceso y modificación para cada campo
         public void setID(string valor)
         {
             id = valor;
-
         }
+
         public string getID()
         {
             return id;
         }
 
-        public void setCodigo(string valor) 
+        public void setCodigo(string valor)
         {
-            codigo = valor;        
+            codigo = valor;
         }
-        public string getCodigo() 
+
+        public string getCodigo()
         {
             return codigo;
         }
+
         public void setNombre(string valor)
         {
             nombre = valor;
-
         }
+
         public string getNombre()
         {
             return nombre;
@@ -44,15 +43,17 @@ namespace CapaNegocio
         {
             descripcion = valor;
         }
+
         public string getDescripcion()
         {
             return descripcion;
         }
+
         public void setUbicacion(string valor)
         {
             ubicacion = valor;
-
         }
+
         public string getUbicacion()
         {
             return ubicacion;
@@ -62,14 +63,13 @@ namespace CapaNegocio
         {
             costo = valor;
         }
+
         public string getCosto()
         {
             return costo;
         }
 
-
-
-
+        // Constructor con parámetros
         public Productos(string codigo, string nombre, string descripcion, string ubicacion, string costo)
         {
             this.codigo = codigo;
@@ -79,38 +79,37 @@ namespace CapaNegocio
             this.costo = costo;
         }
 
-        public Boolean fnInsertar() 
+        // Método para insertar un producto
+        public Boolean fnInsertar()
         {
-           Boolean resultado = false;
-            Data_Productos prod = new Data_Productos();
-            resultado=prod.Insertar(codigo,nombre, descripcion,ubicacion, costo);
-            return resultado;
-            
-           
-            return false;    
+            try
+            {
+                Boolean resultado = false;
+                Data_Productos prod = new Data_Productos();
+                resultado = prod.Insertar(codigo, nombre, descripcion, ubicacion, costo);
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al insertar el producto: " + ex.Message);
+                return false;
+            }
         }
+
+        // Método para actualizar un producto
         public Boolean fnActualizar()
         {
             try
             {
-                // Crear una instancia de la clase Data_Productos para manejar las operaciones de base de datos
                 Data_Productos prod = new Data_Productos();
-
-              
                 bool resultado = prod.Actualizar(id, codigo, nombre, descripcion, ubicacion, costo);
-
-     
                 return resultado;
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error al actualizar el producto: " + ex.Message);
-                return false; 
+                return false;
             }
         }
-
-
     }
-
 }
-
