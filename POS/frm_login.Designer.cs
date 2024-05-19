@@ -79,6 +79,7 @@
             btn_cerrarLogin.TabIndex = 11;
             btn_cerrarLogin.Text = "     Cerrar";
             btn_cerrarLogin.UseVisualStyleBackColor = false;
+            btn_cerrarLogin.Click += btn_cerrarLogin_Click;
             // 
             // pictureBox3Login
             // 

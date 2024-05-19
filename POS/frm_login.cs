@@ -11,10 +11,11 @@ namespace POS
     public partial class frm_login : Form
     {
         private string connectionString = "Server=LPKM\\SQLEXPRESS;Database=POS;Integrated Security=True;";
+        ConexionSQL conn = new ConexionSQL();
         public frm_login()
         {
             InitializeComponent();
-           
+
         }
 
 
@@ -29,14 +30,14 @@ namespace POS
             string Usuario = txt_UsuarioLogin.Text;
             string Password = txt_passwordLogin.Text;
 
-            if (AuthenticateUser(Usuario, Password))
+            if (AutenticarUsuario(Usuario, Password))
             {
                 MessageBox.Show("Ingresando al Sistema");
                 // Continua con la siguiente parte de tu aplicación
                 frm_principal principal = new frm_principal();
                 principal.Show();
                 this.Hide();
-               
+
             }
             else
             {
@@ -44,7 +45,7 @@ namespace POS
             }
         }
 
-        private bool AuthenticateUser(string usuario, string password)
+        private bool AutenticarUsuario(string usuario, string password)
         {
             bool Autenticado = false;
 
@@ -79,14 +80,20 @@ namespace POS
                 }
                 return builder.ToString();
             }
-        }
-        private void btn_cerrar_Click(object sender, EventArgs e) {
+        
+     }
+
+        private void btn_cerrarLogin_Click(object sender, EventArgs e)
+        {
             if (frm_principal.Abierto)
             {
+               
                 this.Close();
             }
-            else {
-                Application.Exit();
+            else
+            {
+                conn.CerrarConexion();
+               Application.Exit();
             }
         }
     }
