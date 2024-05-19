@@ -29,14 +29,7 @@ namespace POS
             frmproductos.Show();
         }
 
-        private void btn_clientes_Click(object sender, EventArgs e)
-        {
-            frm_clientes frmclientes = new frm_clientes();
-            frmclientes.TopLevel = false;
-            panel_principal.Controls.Add(frmclientes);
-            frmclientes.Dock = DockStyle.Fill;
-            frmclientes.Show();
-        }
+
 
         private void btn_inicio_Click(object sender, EventArgs e)
         {
@@ -111,5 +104,15 @@ namespace POS
         {
 
         }
+
+        private void btn_clientes_Click(object sender, EventArgs e)
+        {
+            frm_clientes frmclientes = new frm_clientes();
+            frmclientes.TopLevel = false;
+            panel_principal.Controls.Add(frmclientes);
+            frmclientes.Dock = DockStyle.Fill;
+            frmclientes.Show();
+        }
+
     }
 }
