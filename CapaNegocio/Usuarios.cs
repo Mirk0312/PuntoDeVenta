@@ -28,26 +28,6 @@ namespace CapaNegocio
         }
 
 
-        public Boolean fnValidarLogin()
-        {
-            try
-            {
-                //Instanciar usuario en la capa de datos
-                DataUsuarios user = new DataUsuarios();
-                // Llamar al método Autenticar y obtener el resultado
-                bool resultado = user.Autenticar(getUsuario(), getPassword());
-                // Devolver el resultado de la autenticación
-                return resultado;
-            }
-            catch (Exception ex)
-            {
-                // Manejar cualquier excepción y registrarla en la consola
-                Console.WriteLine("[fnValidarLogin] ---> " + ex.Message);
-                // Devolver falso en caso de excepción
-                return false;
-            }
-        }
-
     }
 }
 

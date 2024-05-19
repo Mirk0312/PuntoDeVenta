@@ -55,45 +55,7 @@ namespace CapaDatos
             }
         }
 
-        public Boolean Autenticar(string usuario, string pass)
-        {
-            try
-            {
-                // Abrir conexión
-                comandoSQL.Connection = connSQL.AbrirConexion();
-                // Enviar nombre del recurso sql
-                comandoSQL.CommandText = "proc_ValidaUsuario";
-                // Tipo de comando
-                comandoSQL.CommandType = CommandType.StoredProcedure;
-                // Agregar parámetros
-                comandoSQL.Parameters.AddWithValue("@usuario", usuario);
-                comandoSQL.Parameters.AddWithValue("@password", pass);
-                // Ejecutar consulta y leer resultados
-                SqlDataReader reader = comandoSQL.ExecuteReader();
-
-                // Verificar si se encontró una fila que coincide con las credenciales
-                if (reader.HasRows)
-                {
-                    // Credenciales válidas, cerrar conexión y devolver true
-                    reader.Close();
-                    connSQL.CerrarConexion();
-                    return true;
-                }
-                else
-                {
-                    // No se encontraron coincidencias, cerrar conexión y devolver false
-                    reader.Close();
-                    connSQL.CerrarConexion();
-                    return false;
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("DataUsuarios:Autenticar " + ex.Message);
-                RenglonesAfectados = 0;
-                return false;
-            }
-        }
+      
 
 
 

@@ -1,11 +1,16 @@
 using System.Diagnostics.Eventing.Reader;
+using System.Text;
 using CapaDatos;
 using CapaNegocio;
+using System.Data.SqlClient;
+using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace POS
 {
     public partial class frm_login : Form
     {
+        private string connectionString = "Server=LPKM\\SQLEXPRESS;Database=POS;Integrated Security=True;";
         public frm_login()
         {
             InitializeComponent();
@@ -21,43 +26,66 @@ namespace POS
 
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
-            // Obtener el nombre de usuario y la contraseña ingresados por el usuario
-            string usuario = txt_UsuarioLogin.Text;
-            string contraseña = txt_passwordLogin.Text;
+            string Usuario = txt_UsuarioLogin.Text;
+            string Password = txt_passwordLogin.Text;
 
-            // Crear una instancia de la clase DataUsuarios para autenticar al usuario
-            DataUsuarios dataUsuarios = new DataUsuarios();
-
-            // Llamar al método Autenticar para verificar las credenciales
-            bool credencialesValidas = dataUsuarios.Autenticar(usuario, contraseña);
-
-            if (credencialesValidas)
+            if (AuthenticateUser(Usuario, Password))
             {
-                // Si las credenciales son válidas, permitir que el usuario acceda a la aplicación principal
-                frm_principal formPrincipal = new frm_principal();
-                formPrincipal.Show();
-                this.Hide(); // Ocultar el formulario de inicio de sesión
+                MessageBox.Show("Ingresando al Sistema");
+                // Continua con la siguiente parte de tu aplicación
+                frm_principal principal = new frm_principal();
+                principal.Show();
+                this.Hide();
+               
             }
             else
             {
-                // Si las credenciales no son válidas, mostrar un mensaje de error
-                MessageBox.Show("Usuario o contraseña incorrectos.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Contraseña o usuario incorrecto.");
             }
         }
 
-        private void txt_password_TextChanged(object sender, EventArgs e)
+        private bool AuthenticateUser(string usuario, string password)
         {
+            bool Autenticado = false;
 
+            string query = "SELECT COUNT(1) FROM Usuarios WHERE Usuario = @Usuario AND Password = @Password";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Usuario", usuario);
+                    command.Parameters.AddWithValue("@Password", password);  // En una aplicación real, usa contraseñas hasheadas
+
+                    connection.Open();
+                    int count = (int)command.ExecuteScalar();
+                    Autenticado = (count == 1);
+                }
+            }
+
+            return Autenticado;
         }
 
-        private void btn_cerrar_Click(object sender, EventArgs e)
+        // Método para hashear la contraseña (opcional, recomendado para producción)
+        private string HashPassword(string password)
         {
+            using (var sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                var builder = new StringBuilder();
+                foreach (var t in bytes)
+                {
+                    builder.Append(t.ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
+        private void btn_cerrar_Click(object sender, EventArgs e) {
             if (frm_principal.Abierto)
             {
                 this.Close();
             }
-            else
-            {
+            else {
                 Application.Exit();
             }
         }
