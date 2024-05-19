@@ -41,5 +41,10 @@ namespace POS
         {
 
         }
+
+        private void InitializeComponent()
+        {
+
+        }
     }
 }
