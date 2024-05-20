@@ -1,4 +1,4 @@
-﻿using CapaNegocio.CapaNegocio;
+﻿using CapaNegocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,18 +29,18 @@ namespace POS
                 txt_idCliente.Enabled = false;
                 txt_idCliente.Text = "NUEVO";
 
+                
                 txt_nombre.Clear();
                 txt_rfc.Clear();
                 txt_clave.Clear();
                 txt_correo.Clear();
-                txt_telefono.Clear();
+               txt_telefono.Clear();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error en NUEVO: " + ex.Message);
             }
         }
-    }
 
         private void btn_guardar_Click(object sender, EventArgs e)
         {
@@ -73,11 +73,12 @@ namespace POS
                 }
 
                 // Recolectar datos del formulario
-                string nombre = txt_nombre.Text;
-                string RFC = txt_rfc.Text;
-                string clave = txt_clave.Text;
-                string correo = txt_correo.Text;
-                string telefono = txt_telefono.Text;
+                string id = "", nombre, RFC, clave, correo, telefono;
+                nombre = txt_nombre.Text;
+                RFC = txt_rfc.Text;
+                clave = txt_clave.Text;
+                correo = txt_correo.Text;
+                telefono = txt_telefono.Text;
 
                 // Crear un nuevo cliente
                 Clientes  cr = new Clientes(nombre, RFC, clave, correo, telefono);
@@ -89,7 +90,7 @@ namespace POS
                     if (cr.Insertar())
                     {
                         MessageBox.Show("Cliente guardado correctamente.");
-                        nuevo()
+                        nuevo();
                     }
                     else
                     {
@@ -99,11 +100,12 @@ namespace POS
                 else
                 {
                     // Actualizar un cliente existente
-                    cliente.Id = txt_idCliente.Text; // Asignar el ID del cliente
-                    if (cliente.Actualizar())
+                    id = txt_idCliente.Text;
+                    cr.setId(id); // Asignar el ID del cliente
+                    if (cr.Actualizar())
                     {
                         MessageBox.Show("Cliente actualizado correctamente.");
-                        LimpiarCampos();
+                        nuevo();
                     }
                     else
                     {
@@ -116,7 +118,7 @@ namespace POS
 
         private void btn_nuevo_Click(object sender, EventArgs e)
         {
-
+            nuevo();
         }
 
         private void btn_actualizar_Click(object sender, EventArgs e)
