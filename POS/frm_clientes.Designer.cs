@@ -44,6 +44,7 @@
             btn_nuevo = new Button();
             btn_actualizar = new Button();
             btn_eliminar = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -188,11 +189,22 @@
             btn_eliminar.UseVisualStyleBackColor = true;
             btn_eliminar.Click += btn_eliminar_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(742, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 16;
+            button1.Text = "Cerrar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // frm_clientes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(860, 505);
+            Controls.Add(button1);
             Controls.Add(btn_eliminar);
             Controls.Add(btn_actualizar);
             Controls.Add(btn_nuevo);
@@ -235,5 +247,6 @@
         private Button btn_nuevo;
         private Button btn_actualizar;
         private Button btn_eliminar;
+        private Button button1;
     }
 }

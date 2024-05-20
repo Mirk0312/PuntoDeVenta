@@ -113,6 +113,5 @@ namespace POS
             frmclientes.Dock = DockStyle.Fill;
             frmclientes.Show();
         }
-
     }
 }

@@ -140,5 +140,10 @@ namespace POS
         {
             // Implementa la lógica para actualizar la lista de clientes
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
