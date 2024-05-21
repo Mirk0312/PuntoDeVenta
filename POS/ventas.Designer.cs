@@ -74,7 +74,7 @@
             // 
             // Vender
             // 
-            Vender.Location = new Point(694, 185);
+            Vender.Location = new Point(694, 191);
             Vender.Name = "Vender";
             Vender.Size = new Size(94, 23);
             Vender.TabIndex = 4;
@@ -94,7 +94,7 @@
             // 
             // btn_eliminarVenta
             // 
-            btn_eliminarVenta.Location = new Point(694, 144);
+            btn_eliminarVenta.Location = new Point(694, 153);
             btn_eliminarVenta.Name = "btn_eliminarVenta";
             btn_eliminarVenta.Size = new Size(94, 23);
             btn_eliminarVenta.TabIndex = 6;
