@@ -16,5 +16,10 @@ namespace POS
         {
             InitializeComponent();
         }
+
+        private void btn_cerrarCompras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
