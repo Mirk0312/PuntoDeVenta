@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Data.SqlClient;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
+
 namespace CapaDatos
 {
     public class Data_Proveedores
     {
-
         private ConexionSQL connSQL = new ConexionSQL();
         public int renglonesAfectados = 0;
 
-        // Método para insertar un cliente en la base de datos
+        // Método para insertar un proveedor en la base de datos
         public bool Insertar(string empresa, string encargado, string producto, string costo, string venta)
         {
             try
@@ -32,7 +30,7 @@ namespace CapaDatos
                     renglonesAfectados = comandoSQL.ExecuteNonQuery();
 
                     // Devolver true si la inserción fue exitosa
-                    return true;
+                    return renglonesAfectados > 0;
                 }
             }
             catch (Exception ex)
@@ -43,6 +41,8 @@ namespace CapaDatos
                 return false;
             }
         }
+
+        // Método para actualizar un proveedor en la base de datos
         public bool Actualizar(string id, string empresa, string encargado, string producto, string costo, string venta)
         {
             try
@@ -64,7 +64,7 @@ namespace CapaDatos
                     renglonesAfectados = comandoSQL.ExecuteNonQuery();
 
                     // Devolver true si la actualización fue exitosa
-                    return true;
+                    return renglonesAfectados > 0;
                 }
             }
             catch (Exception ex)
@@ -75,6 +75,8 @@ namespace CapaDatos
                 return false;
             }
         }
+
+        // Método para eliminar un proveedor en la base de datos
         public bool Eliminar(string id)
         {
             try
@@ -100,13 +102,15 @@ namespace CapaDatos
                 return false;
             }
         }
-        public DataTable ObtenerProoveedorPorID(string id)
+
+        // Método para obtener un proveedor por ID en la base de datos
+        public DataTable ObtenerProveedorPorID(string id)
         {
             DataTable dt = new DataTable();
             try
             {
                 using (SqlConnection connection = connSQL.AbrirConexion())
-                using (SqlCommand comandoSQL = new SqlCommand("SELECT * FROM Proveedor WHERE Id = @id", connection))
+                using (SqlCommand comandoSQL = new SqlCommand("SELECT * FROM Proveedores WHERE Id = @id", connection))
                 {
                     comandoSQL.Parameters.AddWithValue("@id", id);
                     using (SqlDataAdapter adapter = new SqlDataAdapter(comandoSQL))

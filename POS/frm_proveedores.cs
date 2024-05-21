@@ -111,7 +111,7 @@ namespace POS
                 {
                     // Estructura para un "UPDATE"
                     id = txt_IDP.Text;
-                    pv.setId(id);
+                    pv.SetId(id);
                     try
                     {
                         if (pv.fnActualizar())
