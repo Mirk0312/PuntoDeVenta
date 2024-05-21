@@ -144,7 +144,8 @@ namespace POS
         {
             this.Close();
         }
-        private void btn_BuscarProduc_Click(object sender, EventArgs e)
+       
+        private void btn_buscar_Click(object sender, EventArgs e)
         {
             // Llamar a un formulario hijo que se llamará FrmBuscar y pasar query
             frm_Buscar frmhijo = new frm_Buscar();
@@ -171,6 +172,8 @@ namespace POS
                     // Cargar otros campos necesarios...
                 }
             }
+
+
         }
     }
 }

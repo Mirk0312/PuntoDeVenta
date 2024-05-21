@@ -30,7 +30,7 @@
         {
             btn_NuevoProduc = new Button();
             btn_GuardarProduc = new Button();
-            btn_CancelarProduc = new Button();
+            btn_buscar = new Button();
             label1 = new Label();
             txt_IDProduc = new TextBox();
             label2 = new Label();
@@ -85,17 +85,18 @@
             btn_GuardarProduc.UseVisualStyleBackColor = true;
             btn_GuardarProduc.Click += btn_guardar_Click;
             // 
-            // btn_CancelarProduc
+            // btn_buscar
             // 
-            btn_CancelarProduc.Image = Properties.Resources.CancelarArchivo;
-            btn_CancelarProduc.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_CancelarProduc.Location = new Point(417, 13);
-            btn_CancelarProduc.Margin = new Padding(3, 4, 3, 4);
-            btn_CancelarProduc.Name = "btn_CancelarProduc";
-            btn_CancelarProduc.Size = new Size(101, 40);
-            btn_CancelarProduc.TabIndex = 2;
-            btn_CancelarProduc.Text = "      Cancelar";
-            btn_CancelarProduc.UseVisualStyleBackColor = true;
+            btn_buscar.Image = Properties.Resources.Buscar;
+            btn_buscar.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_buscar.Location = new Point(417, 13);
+            btn_buscar.Margin = new Padding(3, 4, 3, 4);
+            btn_buscar.Name = "btn_buscar";
+            btn_buscar.Size = new Size(133, 40);
+            btn_buscar.TabIndex = 2;
+            btn_buscar.Text = "Buscar";
+            btn_buscar.UseVisualStyleBackColor = true;
+            btn_buscar.Click += btn_buscar_Click;
             // 
             // label1
             // 
@@ -257,14 +258,13 @@
             btn_BuscarProduc.Size = new Size(32, 31);
             btn_BuscarProduc.TabIndex = 22;
             btn_BuscarProduc.UseVisualStyleBackColor = true;
-            btn_BuscarProduc.Click += btn_BuscarProduc_Click;
             // 
             // panel1
             // 
             panel1.BackColor = Color.DarkBlue;
             panel1.Controls.Add(btn_EliminarProduc);
             panel1.Controls.Add(btn_NuevoProduc);
-            panel1.Controls.Add(btn_CancelarProduc);
+            panel1.Controls.Add(btn_buscar);
             panel1.Controls.Add(btn_GuardarProduc);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 533);
@@ -363,7 +363,7 @@
 
         private Button btn_NuevoProduc;
         private Button btn_GuardarProduc;
-        private Button btn_CancelarProduc;
+        private Button btn_buscar;
         private Label label1;
         private TextBox txt_IDProduc;
         private Label label2;

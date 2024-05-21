@@ -122,5 +122,13 @@ namespace POS
             frmventas.Show();
         }
 
+        private void label15_Click(object sender, EventArgs e)
+        {
+            frm_Buscar buscar = new frm_Buscar();
+            buscar.TopLevel = false;
+            panel_principal.Controls.Add(buscar);
+            buscar.Dock = DockStyle.Fill;
+            buscar.Show();
+        }
     }
 }
