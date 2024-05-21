@@ -200,6 +200,7 @@
             label10.TabIndex = 25;
             label10.Text = "      Compras";
             label10.TextAlign = ContentAlignment.MiddleRight;
+            label10.Click += btn_compras_Click;
             // 
             // panel14
             // 

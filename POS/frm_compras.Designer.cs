@@ -72,15 +72,15 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(264, 65);
+            label1.Location = new Point(265, 75);
             label1.Name = "label1";
-            label1.Size = new Size(280, 23);
+            label1.Size = new Size(275, 23);
             label1.TabIndex = 1;
-            label1.Text = "Compras de Productos realizadas:";
+            label1.Text = "Compras de Productos realizadas";
             // 
             // btn_cerrarCompras
             // 
-            btn_cerrarCompras.Location = new Point(694, 59);
+            btn_cerrarCompras.Location = new Point(694, 73);
             btn_cerrarCompras.Name = "btn_cerrarCompras";
             btn_cerrarCompras.Size = new Size(94, 29);
             btn_cerrarCompras.TabIndex = 2;

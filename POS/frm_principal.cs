@@ -121,7 +121,14 @@ namespace POS
             frmventas.Dock = DockStyle.Fill;
             frmventas.Show();
         }
-
+        private void btn_compras_Click(object sender, EventArgs e)
+        {
+            frm_compras compras = new frm_compras();
+            compras.TopLevel = false;
+            panel_principal.Controls.Add(compras);
+            compras.Dock = DockStyle.Fill;
+            compras.Show();
+        }
         private void label15_Click(object sender, EventArgs e)
         {
             frm_Buscar buscar = new frm_Buscar();
@@ -129,6 +136,11 @@ namespace POS
             panel_principal.Controls.Add(buscar);
             buscar.Dock = DockStyle.Fill;
             buscar.Show();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
