@@ -1,114 +1,59 @@
 ﻿using System;
-using System.Text;
 using CapaDatos;
 
 namespace CapaNegocio
 {
     public class Proveedores
     {
-        private string id, empresa, encargado, producto, costo, venta;
+        public string Id { get; private set; }
+        public string Empresa { get; private set; }
+        public string Encargado { get; private set; }
+        public string Producto { get; private set; }
+        public string Costo { get; private set; }
+        public string Venta { get; private set; }
 
-        public void setId(string valor)
+        public Proveedores(string empresa, string encargado, string producto, string costo, string venta)
         {
-            id = valor;
+            Empresa = empresa;
+            Encargado = encargado;
+            Producto = producto;
+            Costo = costo;
+            Venta = venta;
         }
 
-        public string getId()
-        {
-            return id;
-        }
+        public void SetId(string valor) => Id = valor;
+        public void SetEmpresa(string valor) => Empresa = valor;
+        public void SetEncargado(string valor) => Encargado = valor;
+        public void SetProducto(string valor) => Producto = valor;
+        public void SetCosto(string valor) => Costo = valor;
+        public void SetVenta(string valor) => Venta = valor;
 
-        public void setEmpresa(string valor)
-        {
-            empresa = valor;
-        }
-
-        public string getEmpresa()
-        {
-            return empresa;
-        }
-
-        public void setEncargado(string valor)
-        {
-            encargado = valor;
-        }
-
-        public string getEncargado()
-        {
-            return encargado;
-        }
-
-        public void setProducto(string valor)
-        {
-            producto = valor;
-        }
-
-        public string getProducto()
-        {
-            return producto;
-        }
-
-        public void setCosto(string valor)
-        {
-            costo = valor;
-        }
-
-        public string getCosto()
-        {
-            return costo;
-        }
-        public void setVenta(string valor)
-        {
-            venta = valor;
-        }
-
-        public string getVenta()
-        {
-            return venta;
-        }
-
-
-
-        public Proveedores(string empresa, string encargado, string producto, string costo, string venta) { 
-        
-        
-            this.empresa = empresa;
-            this.encargado = encargado;
-            this.producto = producto;
-            this.costo = costo;
-            this.venta = venta;
-        }
-        public Boolean fnInsertar()
-        {
-            try {
-                Boolean resultado = false;
-                Data_Proveedores prod = new Data_Proveedores();
-                resultado = prod.Insertar(empresa, encargado, producto, costo, venta);
-                return resultado;
-
-            }     
-            catch (Exception ex) 
-            {           
-                Console.WriteLine("Error al insertar proveedor:" + ex.Message);
-                return false;
-            }
-        }
-        public Boolean fnActualizar()
+        public bool fnInsertar()
         {
             try
             {
-                Boolean resultado = false;
                 Data_Proveedores prod = new Data_Proveedores();
-                resultado = prod.Insertar(empresa, encargado, producto, costo, venta);
-                return resultado;
-
+                return prod.Insertar(Empresa, Encargado, Producto, Costo, Venta);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error al actualizar proveedor:" + ex.Message);
+                Console.WriteLine("Error al insertar proveedor: " + ex.Message);
                 return false;
             }
         }
 
+        public bool fnActualizar()
+        {
+            try
+            {
+                Data_Proveedores prod = new Data_Proveedores();
+                return prod.Actualizar(Id, Empresa, Encargado, Producto, Costo, Venta);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar proveedor: " + ex.Message);
+                return false;
+            }
+        }
     }
 }
