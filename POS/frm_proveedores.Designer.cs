@@ -211,6 +211,7 @@
             btn_NuevoP.TabIndex = 0;
             btn_NuevoP.Text = "      Nuevo";
             btn_NuevoP.UseVisualStyleBackColor = true;
+            btn_NuevoP.Click += btn_NuevoP_Click_1;
             // 
             // btn_CancelarP
             // 
@@ -219,9 +220,9 @@
             btn_CancelarP.Location = new Point(421, 13);
             btn_CancelarP.Margin = new Padding(3, 4, 3, 4);
             btn_CancelarP.Name = "btn_CancelarP";
-            btn_CancelarP.Size = new Size(101, 40);
+            btn_CancelarP.Size = new Size(131, 40);
             btn_CancelarP.TabIndex = 2;
-            btn_CancelarP.Text = "      Cancelar";
+            btn_CancelarP.Text = "      Actualizar";
             btn_CancelarP.UseVisualStyleBackColor = true;
             // 
             // btn_GuardarP
@@ -235,6 +236,7 @@
             btn_GuardarP.TabIndex = 1;
             btn_GuardarP.Text = "      Guardar";
             btn_GuardarP.UseVisualStyleBackColor = true;
+            btn_GuardarP.Click += btn_GuardarP_Click_1;
             // 
             // panel2
             // 

@@ -69,9 +69,9 @@ namespace CapaNegocio
 
 
 
-        public Proveedores(string id, string empresa, string encargado, string producto, string costo, string venta) { 
+        public Proveedores(string empresa, string encargado, string producto, string costo, string venta) { 
         
-            this.id = id;
+        
             this.empresa = empresa;
             this.encargado = encargado;
             this.producto = producto;
