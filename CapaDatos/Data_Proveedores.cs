@@ -100,5 +100,26 @@ namespace CapaDatos
                 return false;
             }
         }
+        public DataTable ObtenerProoveedorPorID(string id)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                using (SqlConnection connection = connSQL.AbrirConexion())
+                using (SqlCommand comandoSQL = new SqlCommand("SELECT * FROM Proveedor WHERE Id = @id", connection))
+                {
+                    comandoSQL.Parameters.AddWithValue("@id", id);
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(comandoSQL))
+                    {
+                        adapter.Fill(dt);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al obtener el proveedor: " + ex.Message);
+            }
+            return dt;
+        }
     }
 }

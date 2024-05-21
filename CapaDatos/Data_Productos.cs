@@ -74,6 +74,31 @@ namespace CapaDatos
                 return false;
             }
         }
+        public bool Eliminar(string id)
+        {
+            try
+            {
+                using (SqlConnection connection = connSQL.AbrirConexion())
+                using (SqlCommand comandoSQL = new SqlCommand("DELETE FROM Producto WHERE Id = @id", connection))
+                {
+                    // Agregar parámetro
+                    comandoSQL.Parameters.AddWithValue("@id", id);
+
+                    // Ejecutar la consulta y obtener el número de filas afectadas
+                    renglonesAfectados = comandoSQL.ExecuteNonQuery();
+
+                    // Devolver true si el cliente fue eliminado exitosamente
+                    return renglonesAfectados > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejar la excepción e imprimir el mensaje de error
+                Console.WriteLine("Error al eliminar el producto: " + ex.Message);
+                // Devolver false si ocurrió un error durante la eliminación
+                return false;
+            }
+        }
         public DataTable ObtenerProductoPorID(string id)
         {
             DataTable dt = new DataTable();

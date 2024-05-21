@@ -113,5 +113,14 @@ namespace POS
             frmclientes.Dock = DockStyle.Fill;
             frmclientes.Show();
         }
+        private void btn_ventas_Click(object sender, EventArgs e)
+        {
+            ventas frmventas = new ventas();
+            frmventas.TopLevel = false;
+            panel_principal.Controls.Add(frmventas);
+            frmventas.Dock = DockStyle.Fill;
+            frmventas.Show();
+        }
+
     }
 }
